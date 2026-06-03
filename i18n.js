@@ -7,7 +7,7 @@
   var COMMON = {
     zh: {
       nav_home:"首页", nav_services:"服务", nav_markets:"市场", nav_whyus:"为何选择我们",
-      nav_results:"成果", nav_contact:"联系", nav_cta:"免费SEO诊断", nav_mag:"杂志", nav_price:"价格",
+      nav_results:"成果", nav_contact:"联系", nav_cta:"免费SEO诊断", nav_mag:"杂志", nav_price:"价格", art_hc:"2026 谷歌有用内容系统解析", art_wb:"白帽外链：什么仍能提升排名", art_cw:"核心网页指标与INP：速度清单", art_nv:"Naver 与 Google：赢得韩国搜索", art_se:"进入东南亚：本地化指南", art_sg:"在线体育游戏App营销",
       svc_seo:"谷歌SEO排名", svc_back:"外链建设", svc_web:"网站开发", svc_content:"内容与文案",
       svc_sns:"社交媒体营销", svc_video:"视频制作",
       mkt_kr:"韩国市场", mkt_jp:"日本市场", mkt_sea:"东南亚",
@@ -19,7 +19,7 @@
     },
     ja: {
       nav_home:"ホーム", nav_services:"サービス", nav_markets:"市場", nav_whyus:"選ばれる理由",
-      nav_results:"実績", nav_contact:"お問い合わせ", nav_cta:"無料SEO診断", nav_mag:"マガジン", nav_price:"料金",
+      nav_results:"実績", nav_contact:"お問い合わせ", nav_cta:"無料SEO診断", nav_mag:"マガジン", nav_price:"料金", art_hc:"2026年 Googleの有用なコンテンツ システム", art_wb:"ホワイトハット被リンク：今も効くもの", art_cw:"Core Web VitalsとINP：速度チェックリスト", art_nv:"Naver対Google：韓国検索で勝つ", art_se:"東南アジア進出：ローカライズの手引き", art_sg:"オンラインスポーツゲームアプリのマーケティング",
       svc_seo:"Google SEO 順位", svc_back:"被リンク構築", svc_web:"ウェブサイト制作", svc_content:"コンテンツ＆ライティング",
       svc_sns:"SNSマーケティング", svc_video:"動画制作",
       mkt_kr:"韓国市場", mkt_jp:"日本市場", mkt_sea:"東南アジア",
@@ -31,7 +31,7 @@
     },
     th: {
       nav_home:"หน้าแรก", nav_services:"บริการ", nav_markets:"ตลาด", nav_whyus:"ทำไมต้องเรา",
-      nav_results:"ผลลัพธ์", nav_contact:"ติดต่อ", nav_cta:"ตรวจ SEO ฟรี", nav_mag:"นิตยสาร", nav_price:"ราคา",
+      nav_results:"ผลลัพธ์", nav_contact:"ติดต่อ", nav_cta:"ตรวจ SEO ฟรี", nav_mag:"นิตยสาร", nav_price:"ราคา", art_hc:"ระบบ Helpful Content ของ Google ปี 2026", art_wb:"แบ็กลิงก์สายขาว: อะไรที่ยังดันอันดับ", art_cw:"Core Web Vitals และ INP: เช็กลิสต์ความเร็ว", art_nv:"Naver กับ Google: ชนะการค้นหาในเกาหลี", art_se:"บุกเอเชียตะวันออกเฉียงใต้: คู่มือโลคัลไลซ์", art_sg:"การตลาดแอปเกมกีฬาออนไลน์",
       svc_seo:"จัดอันดับ SEO บน Google", svc_back:"สร้างลิงก์ย้อนกลับ", svc_web:"พัฒนาเว็บไซต์", svc_content:"เนื้อหาและการเขียน",
       svc_sns:"การตลาดโซเชียลมีเดีย", svc_video:"ผลิตวิดีโอ",
       mkt_kr:"ตลาดเกาหลี", mkt_jp:"ตลาดญี่ปุ่น", mkt_sea:"เอเชียตะวันออกเฉียงใต้",
@@ -43,7 +43,7 @@
     },
     ko: {
       nav_home:"홈", nav_services:"서비스", nav_markets:"시장", nav_whyus:"회사 소개",
-      nav_results:"성과", nav_contact:"문의", nav_cta:"무료 SEO 진단", nav_mag:"매거진", nav_price:"가격",
+      nav_results:"성과", nav_contact:"문의", nav_cta:"무료 SEO 진단", nav_mag:"매거진", nav_price:"가격", art_hc:"2026 구글 도움이 되는 콘텐츠 시스템", art_wb:"화이트햇 백링크: 지금도 통하는 것", art_cw:"코어 웹 바이탈 & INP: 속도 체크리스트", art_nv:"네이버 vs 구글: 한국 검색 공략", art_se:"동남아 진출: 현지화 플레이북", art_sg:"온라인 스포츠 게임 앱 마케팅",
       svc_seo:"구글 SEO 순위", svc_back:"백링크 구축", svc_web:"웹사이트 개발", svc_content:"콘텐츠 & 카피라이팅",
       svc_sns:"소셜미디어 마케팅", svc_video:"영상 제작",
       mkt_kr:"한국 시장", mkt_jp:"일본 시장", mkt_sea:"동남아시아",
