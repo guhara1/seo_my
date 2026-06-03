@@ -426,6 +426,7 @@
           <button data-lang="zh"><span class="flag">🇨🇳</span> 中文</button>
           <button data-lang="th"><span class="flag">🇹🇭</span> ไทย</button>
           <button data-lang="ja"><span class="flag">🇯🇵</span> 日本語</button>
+          <button data-lang="ko"><span class="flag">🇰🇷</span> 한국어</button>
         </div>
       </div>
 
@@ -831,8 +832,8 @@ const langLabel = document.getElementById('langLabel');
 langBtn.addEventListener('click', e => { e.stopPropagation(); lang.classList.toggle('open'); });
 document.addEventListener('click', () => lang.classList.remove('open'));
 
-const labels = { en:'EN', zh:'中文', th:'ไทย', ja:'日本語' };
-const htmlLang = { en:'en', zh:'zh', th:'th', ja:'ja' };
+const labels = { en:'EN', zh:'中文', th:'ไทย', ja:'日本語', ko:'한국어' };
+const htmlLang = { en:'en', zh:'zh', th:'th', ja:'ja', ko:'ko' };
 
 const i18n = {
   zh: {
@@ -975,6 +976,53 @@ const i18n = {
     f_opt_seo:"SEO＆Google順位", f_opt_back:"被リンク構築", f_opt_web:"ウェブサイト制作", f_opt_content:"コンテンツ＆ライティング", f_opt_sns:"SNSマーケティング", f_opt_video:"動画制作",
     foot_about:"クアラルンプールのSEO＆被リンク エージェンシー。あなたのサイトをGoogleの1ページ目へ — 韓国・日本・東南アジアで。",
     foot_svc:"サービス", foot_markets:"市場", foot_company:"会社", foot_rights:"無断転載を禁じます。", foot_made:"クアラルンプール発 · 世界へ"
+  },
+  ko: {
+    nav_home:"홈", nav_services:"서비스", nav_markets:"시장", nav_about:"왜 우리인가", nav_results:"성과", nav_contact:"문의", nav_cta:"무료 SEO 진단",
+    svc_seo:"구글 SEO 순위", svc_seo_d:"1페이지에 오르고 유지하기", svc_back:"백링크 구축", svc_back_d:"화이트햇 권위 링크",
+    svc_web:"웹사이트 개발", svc_web_d:"빠르고 색인 가능하며 전환 최적화", svc_content:"콘텐츠 &amp; 카피라이팅", svc_content_d:"전문 작가의 SEO 콘텐츠",
+    svc_sns:"소셜 미디어 마케팅", svc_sns_d:"SNS 전략 &amp; 운영", svc_video:"동영상 제작", svc_video_d:"전환을 이끄는 영상 마케팅",
+    mkt_kr:"한국 시장", mkt_kr_d:"네이버 &amp; 구글 전략", mkt_jp:"일본 시장", mkt_jp_d:"현지화된 일본 캠페인", mkt_sea:"동남아시아", mkt_sea_d:"말레이시아·싱가포르·태국 외",
+    hero_eyebrow:"쿠알라룸푸르 · SEO &amp; 성장 에이전시", hero_title:"귀사의 웹사이트를 구글 <em>첫 페이지</em>에 올립니다.",
+    hero_sub:"최신 구글 가이드라인에 최적화된 풀서비스 SEO, 권위 있는 백링크, 그리고 콘텐츠 — 한국, 일본, 동남아시아 전역의 실질적인 트래픽을 이끕니다.",
+    hero_cta1:"무료 SEO 진단 받기", hero_cta2:"서비스 보기", trust_label:"아시아 브랜드들의 신뢰",
+    proof_tag:"입증된 성과", proof_title:"실제 대시보드. 실제 순위.", proof_sub:"막연한 약속이 아닌, 직접 확인할 수 있는 스크린샷으로 보고합니다. 클라이언트들이 실제로 경험한 성장입니다.",
+    proof_c1:"자연 클릭 수와 노출 수가 매달 꾸준히 상승.", proof_c2:"목표 키워드가 1페이지에 진입하고 유지.", proof_c3:"양질의 트래픽 증가, 이탈률 감소, 리드 증가.",
+    team_tag:"팀 소개", team_title:"귀사의 순위를 만드는 사람들.", team_sub:"소규모 시니어 팀 — 직접 실행하는 SEO 전략가, 작가, 개발자로 구성.",
+    team_r1:"창업자 &amp; SEO 리드", team_r2:"콘텐츠 &amp; 현지화", team_r3:"웹 개발자",
+    sec_svc_tag:"우리가 하는 일", sec_svc_title:"순위 상승, 성장, 전환에 필요한 모든 것.", sec_svc_sub:"전략·구축·콘텐츠·링크 권위까지 — 풀스택 디지털 마케팅을 한 에이전시에서.",
+    card_seo_t:"구글 SEO &amp; 1페이지 순위", card_seo_d:"핵심 서비스입니다. 기술 SEO, 페이지 최적화, 구글 E-E-A-T 및 유용한 콘텐츠 가이드라인에 맞춘 콘텐츠 — 상위 순위를 확보하고 유지합니다.",
+    card_back_t:"백링크 구축", card_back_d:"관련 사이트에서 제공하는 고권위 화이트햇 백링크로 실질적인 도메인 신뢰도를 구축합니다.",
+    card_web_t:"웹사이트 개발", card_web_d:"빠르고 모바일 우선, 완전한 색인 지원, 깔끔한 SEO 코드로 제작된 웹사이트.",
+    card_content_t:"콘텐츠 &amp; 카피라이팅", card_content_d:"전문 작가가 검색 최적화된 기사, 랜딩 페이지, 블로그를 제작합니다.",
+    card_sns_t:"소셜 미디어(SNS) 마케팅", card_sns_d:"Instagram, Facebook, LINE 등에서의 전략, 콘텐츠, 유료 광고 운영.",
+    card_video_t:"동영상 제작 &amp; 마케팅", card_video_d:"쇼트폼·브랜드 영상을 제작·배포하여 조회수와 리드를 창출합니다.",
+    back_tag:"우리의 전문 분야", back_title:"구글이 실제로 인정하는 권위 있는 백링크.",
+    back_sub:"링크는 여전히 구글의 가장 강력한 순위 신호 중 하나입니다 — 단, 올바른 링크에 한해서입니다. 우리는 관련성 높은 화이트햇 백링크를 안전하고 지속 가능하게 구축합니다.",
+    back_li1_t:"100% 화이트햇.", back_li1_d:"PBN 없음, 스팸 없음 — 구글 링크 가이드라인을 완전히 준수.",
+    back_li2_t:"관련성 &amp; 문맥 최적화.", back_li2_d:"귀사의 업종 및 목표 시장 사이트로부터의 링크.",
+    back_li3_t:"투명한 보고.", back_li3_d:"모든 링크를 실시간 지표로 추적하여 직접 확인 가능.",
+    back_li4_t:"한국 &amp; 일본 도달.", back_li4_d:"아시아 시장을 위한 현지어 게재.",
+    back_metric_lab:"도메인 권위 성장",
+    stat1_n:"87%", stat1_l:"6개월 이내에 1페이지에 도달한 클라이언트 비율", stat2_n:"5,200+", stat2_l:"구축된 고품질 백링크 수",
+    stat3_n:"4", stat3_l:"핵심 시장: 말레이시아·한국·일본·동남아시아", stat4_n:"96%", stat4_l:"클라이언트 재계약률",
+    proc_tag:"작업 방식", proc_title:"명확하고 가이드라인 중심의 프로세스.", proc_sub:"블랙햇 지름길 없음. 모든 단계가 구글 웹마스터 가이드라인을 따라 귀사의 사이트를 장기적으로 보호합니다.",
+    step1_t:"감사 &amp; 조사", step1_d:"각 시장의 사이트, 경쟁사, 목표 키워드를 분석합니다.",
+    step2_t:"전략", step2_d:"SEO, 콘텐츠, 백링크, 채널에 대한 맞춤형 로드맵.",
+    step3_t:"실행", step3_d:"페이지 최적화, 콘텐츠, 화이트햇 링크 구축 및 캠페인 시작.",
+    step4_t:"보고 &amp; 확장", step4_d:"투명한 월별 보고 후 효과적인 전략을 더욱 강화합니다.",
+    mk_tag:"성장 지역", mk_title:"한국, 일본 &amp; 동남아시아를 위해 설계.", mk_sub:"귀사 비즈니스에 가장 중요한 시장에 대한 현지어 전략과 현지 검색 전문성.",
+    mk_kr_t:"한국", mk_kr_d:"현지 검색 행동에 맞춘 현지화 키워드, 콘텐츠, 링크 전략으로 네이버와 구글 모두에서 한국 오디언스에게 도달합니다.", mk_kr_tag3:"한국어 콘텐츠",
+    mk_jp_t:"일본", mk_jp_d:"일본 시장을 위한 현지화 캠페인 — 구글 &amp; Yahoo! Japan 최적화, 원어민 카피라이팅, 문화에 맞는 크리에이티브.", mk_jp_tag3:"일본어 콘텐츠",
+    res_tag:"실제 성과", res_quote:"\"5개월도 안 돼 4페이지에서 <span class='accent'>상위 3위</span>로 올랐습니다. 일본과 한국에서의 자연 유입 리드가 두 배 이상 증가했습니다.\"",
+    res_role:"마케팅 디렉터, 서울 기반 이커머스 브랜드",
+    cta_title:"구글 첫 페이지를 차지할 준비가 되셨나요?", cta_sub:"무료 의무 없는 SEO 진단을 받아보세요. 현재 순위와 최상위로 가는 방법을 구체적으로 보여드립니다.", cta_btn:"무료 진단 신청하기",
+    ct_tag:"문의하기", ct_title:"순위에 대해 이야기합시다.", ct_sub:"비즈니스와 목표를 알려주세요. 영업일 기준 하루 내로 답변 드립니다.",
+    ct_office:"사무실", ct_email:"이메일", ct_lang_k:"사용 언어",
+    f_name:"이름", f_email:"이메일", f_web:"웹사이트 URL", f_svc:"관심 서비스", f_msg:"메시지", f_send:"WhatsApp으로 전송", ct_whatsapp:"WhatsApp",
+    f_opt_seo:"SEO &amp; 구글 순위", f_opt_back:"백링크 구축", f_opt_web:"웹사이트 개발", f_opt_content:"콘텐츠 &amp; 카피라이팅", f_opt_sns:"소셜 미디어 마케팅", f_opt_video:"동영상 제작",
+    foot_about:"쿠알라룸푸르의 SEO &amp; 백링크 에이전시. 귀사의 웹사이트를 구글 첫 페이지에 — 한국, 일본, 동남아시아 전역에서.",
+    foot_svc:"서비스", foot_markets:"시장", foot_company:"회사", foot_rights:"모든 권리 보유.", foot_made:"쿠알라룸푸르에서 제작 · 세계를 위해"
   }
 };
 
