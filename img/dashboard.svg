@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" viewBox="0 0 760 460" role="img" aria-label="Performance dashboard placeholder — replace with a real screenshot">
+  <defs>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CBF24A" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#CBF24A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="460" rx="18" fill="#0E120F"/>
+  <rect x="0.5" y="0.5" width="759" height="459" rx="18" fill="none" stroke="rgba(232,233,227,0.12)"/>
+
+  <!-- browser bar -->
+  <path d="M0 18a18 18 0 0 1 18-18h724a18 18 0 0 1 18 18v38H0z" fill="#161B17"/>
+  <circle cx="28" cy="28" r="6" fill="#ff5f56"/>
+  <circle cx="50" cy="28" r="6" fill="#ffbd2e"/>
+  <circle cx="72" cy="28" r="6" fill="#27c93f"/>
+  <rect x="110" y="17" width="320" height="22" rx="11" fill="rgba(255,255,255,0.06)"/>
+  <text x="128" y="32" font-family="Archivo, sans-serif" font-size="13" fill="#8E978C">analytics · organic performance</text>
+
+  <!-- heading -->
+  <text x="40" y="108" font-family="Archivo, sans-serif" font-size="14" fill="#8E978C">Organic clicks — last 6 months</text>
+  <text x="40" y="150" font-family="Bricolage Grotesque, Archivo, sans-serif" font-weight="800" font-size="42" fill="#E9EAE3">+214%</text>
+  <rect x="232" y="124" width="64" height="26" rx="13" fill="rgba(203,242,74,0.12)"/>
+  <text x="248" y="142" font-family="Archivo, sans-serif" font-weight="700" font-size="13" fill="#CBF24A">▲ up</text>
+
+  <!-- gridlines -->
+  <g stroke="rgba(232,233,227,0.07)" stroke-width="1">
+    <line x1="40" y1="210" x2="720" y2="210"/>
+    <line x1="40" y1="270" x2="720" y2="270"/>
+    <line x1="40" y1="330" x2="720" y2="330"/>
+    <line x1="40" y1="390" x2="720" y2="390"/>
+  </g>
+
+  <!-- area + line -->
+  <path d="M70 372 L182 350 L294 360 L406 300 L518 236 L630 152 L690 120 L690 392 L70 392 Z" fill="url(#area)"/>
+  <path d="M70 372 L182 350 L294 360 L406 300 L518 236 L630 152 L690 120" fill="none" stroke="#CBF24A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#CBF24A">
+    <circle cx="70" cy="372" r="5"/><circle cx="182" cy="350" r="5"/><circle cx="294" cy="360" r="5"/>
+    <circle cx="406" cy="300" r="5"/><circle cx="518" cy="236" r="5"/><circle cx="630" cy="152" r="5"/><circle cx="690" cy="120" r="5"/>
+  </g>
+
+  <!-- x labels -->
+  <g font-family="Archivo, sans-serif" font-size="12" fill="#6B736A" text-anchor="middle">
+    <text x="70" y="416">M1</text><text x="182" y="416">M2</text><text x="294" y="416">M3</text>
+    <text x="406" y="416">M4</text><text x="518" y="416">M5</text><text x="630" y="416">M6</text>
+  </g>
+
+  <text x="720" y="446" text-anchor="end" font-family="Archivo, sans-serif" font-size="11" fill="#4f564e">SAMPLE — replace with your real screenshot</text>
+</svg>

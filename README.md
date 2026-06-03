@@ -29,8 +29,31 @@ python3 -m http.server 8000
 ├── index.html      # the whole site (HTML + CSS + JS inline)
 ├── robots.txt      # crawler directives
 ├── sitemap.xml     # sitemap for search engines
+├── img/            # placeholder images (replace with real assets)
+├── kr/             # Korean cross-border landing pages
 └── README.md
 ```
+
+## Replacing the placeholder images
+
+The site ships with on-brand SVG placeholders in `img/` so it looks complete
+before real assets exist. Swap them for real photos/logos to maximise trust —
+keep the same file names (or update the `src` in `index.html`):
+
+| Placeholder | Replace with | Used in |
+|-------------|--------------|---------|
+| `img/logo-1/2/3.svg` | Real **client / partner logos** (SVG or transparent PNG) | "Trusted by" logo wall |
+| `img/dashboard.svg` | Real **Search Console / Analytics screenshots** | "Proven results" section |
+| `img/portrait.svg` | Real **team & testimonial photos** (square, ~400×400) | Team section + testimonial |
+
+Tips for keeping the site fast (you're an SEO agency — this matters):
+
+- Export photos as **WebP** and compress them; keep each under ~150 KB
+- Keep the `width`/`height` and `loading="lazy"` attributes already on the
+  `<img>` tags to avoid layout shift (good Core Web Vitals)
+- Write a descriptive `alt` for every image
+- Only use **real** client logos — placeholder/fake logos hurt trust and
+  can be misleading. Remove the logo wall until you have real clients.
 
 ## Notes / TODO
 

@@ -301,6 +301,39 @@
   .foot-col a:hover{color:var(--lime);padding-left:5px}
   .foot-bottom{border-top:1px solid var(--line);padding-top:28px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;color:var(--muted-2);font-size:14px}
 
+  /* ===== CLIENT LOGO WALL ===== */
+  .logo-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:20px;align-items:center;max-width:1040px;margin:0 auto}
+  .logo-wall img{width:100%;height:auto;opacity:.5;filter:grayscale(1);transition:.25s}
+  .logo-wall img:hover{opacity:.95;filter:none}
+
+  /* ===== PROOF / SCREENSHOTS ===== */
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .shot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--panel);transition:.25s}
+  .shot:hover{border-color:rgba(203,242,74,.4);transform:translateY(-5px)}
+  .shot img{width:100%;height:auto;display:block;border-bottom:1px solid var(--line)}
+  .shot .cap{padding:16px 18px}
+  .shot .cap b{display:block;font-family:var(--ff-display);font-weight:600;font-size:15.5px;margin-bottom:4px}
+  .shot .cap span{color:var(--muted);font-size:13.5px;line-height:1.5}
+
+  /* ===== TEAM ===== */
+  .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .member{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.02),transparent);transition:.25s}
+  .member:hover{border-color:rgba(203,242,74,.4);transform:translateY(-5px)}
+  .member img{width:100%;height:auto;display:block;aspect-ratio:1/1;object-fit:cover}
+  .member .mb{padding:20px}
+  .member .mb .nm{font-family:var(--ff-display);font-weight:700;font-size:18px}
+  .member .mb .rl{color:var(--lime);font-size:14px;margin-top:4px;font-weight:600}
+
+  /* testimonial avatar photo */
+  .quote .av{overflow:hidden;padding:0}
+  .quote .av img{width:100%;height:100%;object-fit:cover}
+
+  @media(max-width:760px){
+    .logo-wall{grid-template-columns:repeat(3,1fr);gap:16px}
+    .shots{grid-template-columns:1fr}
+    .team-grid{grid-template-columns:1fr}
+  }
+
   .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s ease}
   .reveal.in{opacity:1;transform:none}
 
@@ -374,7 +407,7 @@
       </div>
 
       <div class="item"><a href="#process" data-i18n="nav_about">Why Us</a></div>
-      <div class="item"><a href="#results" data-i18n="nav_results">Results</a></div>
+      <div class="item"><a href="#proof" data-i18n="nav_results">Results</a></div>
       <div class="item"><a href="#contact" data-i18n="nav_contact">Contact</a></div>
 
       <div class="lang" id="lang">
@@ -432,9 +465,14 @@
 
 <!-- ===================== TRUST MARQUEE ===================== -->
 <div class="trust">
-  <p class="trust-label" data-i18n="trust_label">Built on the platforms that matter</p>
-  <div class="marquee" aria-hidden="true">
-    <span>Google Search</span><span>★</span><span>Naver</span><span>★</span><span>Yahoo! Japan</span><span>★</span><span>YouTube</span><span>★</span><span>Instagram</span><span>★</span><span>Ahrefs</span><span>★</span><span>Google Search</span><span>★</span><span>Naver</span><span>★</span><span>Yahoo! Japan</span><span>★</span><span>YouTube</span><span>★</span><span>Instagram</span><span>★</span><span>Ahrefs</span><span>★</span>
+  <p class="trust-label" data-i18n="trust_label">Trusted by brands across Asia</p>
+  <div class="logo-wall">
+    <img src="img/logo-1.svg" width="180" height="56" loading="lazy" alt="Client logo">
+    <img src="img/logo-2.svg" width="180" height="56" loading="lazy" alt="Client logo">
+    <img src="img/logo-3.svg" width="180" height="56" loading="lazy" alt="Client logo">
+    <img src="img/logo-1.svg" width="180" height="56" loading="lazy" alt="Client logo">
+    <img src="img/logo-2.svg" width="180" height="56" loading="lazy" alt="Client logo">
+    <img src="img/logo-3.svg" width="180" height="56" loading="lazy" alt="Client logo">
   </div>
 </div>
 
@@ -531,6 +569,31 @@
   </div>
 </div>
 
+<!-- ===================== PROOF / SCREENSHOTS ===================== -->
+<section id="proof">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag" data-i18n="proof_tag">Proven results</span>
+      <h2 class="big" data-i18n="proof_title">Real dashboards. Real rankings.</h2>
+      <p data-i18n="proof_sub">We report with screenshots you can verify — not vague promises. Here's the kind of growth our clients see.</p>
+    </div>
+    <div class="shots">
+      <article class="shot reveal">
+        <img src="img/dashboard.svg" width="760" height="460" loading="lazy" alt="Search Console organic clicks growth screenshot">
+        <div class="cap"><b>Search Console</b><span data-i18n="proof_c1">Organic clicks &amp; impressions climbing month over month.</span></div>
+      </article>
+      <article class="shot reveal">
+        <img src="img/dashboard.svg" width="760" height="460" loading="lazy" alt="Keyword ranking growth screenshot">
+        <div class="cap"><b>Keyword rankings</b><span data-i18n="proof_c2">Target keywords moving onto page one and holding.</span></div>
+      </article>
+      <article class="shot reveal">
+        <img src="img/dashboard.svg" width="760" height="460" loading="lazy" alt="Web analytics traffic screenshot">
+        <div class="cap"><b>Analytics</b><span data-i18n="proof_c3">More qualified traffic, lower bounce, more leads.</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== PROCESS ===================== -->
 <section id="process">
   <div class="wrap">
@@ -573,13 +636,38 @@
   </div>
 </section>
 
+<!-- ===================== TEAM ===================== -->
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-tag" data-i18n="team_tag">The team</span>
+      <h2 class="big" data-i18n="team_title">The people behind your rankings.</h2>
+      <p data-i18n="team_sub">A small, senior team — SEO strategists, writers and developers who actually do the work.</p>
+    </div>
+    <div class="team-grid">
+      <article class="member reveal">
+        <img src="img/portrait.svg" width="400" height="400" loading="lazy" alt="Team member portrait">
+        <div class="mb"><div class="nm">Aiman R.</div><div class="rl" data-i18n="team_r1">Founder &amp; SEO Lead</div></div>
+      </article>
+      <article class="member reveal">
+        <img src="img/portrait.svg" width="400" height="400" loading="lazy" alt="Team member portrait">
+        <div class="mb"><div class="nm">Sofia L.</div><div class="rl" data-i18n="team_r2">Content &amp; Localization</div></div>
+      </article>
+      <article class="member reveal">
+        <img src="img/portrait.svg" width="400" height="400" loading="lazy" alt="Team member portrait">
+        <div class="mb"><div class="nm">Wei T.</div><div class="rl" data-i18n="team_r3">Web Developer</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== TESTIMONIAL ===================== -->
 <section id="results">
   <div class="wrap quote reveal">
     <span class="sec-tag" style="justify-content:center" data-i18n="res_tag">Real results</span>
     <blockquote data-i18n="res_quote">"We went from page four to the <span class='accent'>top three results</span> in under five months. Organic leads from Japan and Korea more than doubled."</blockquote>
     <div class="who">
-      <span class="av">JK</span>
+      <span class="av"><img src="img/portrait.svg" width="48" height="48" loading="lazy" alt="Ji-an Kim portrait"></span>
       <span style="text-align:left"><span class="nm">Ji-an Kim</span><br><span class="rl" data-i18n="res_role">Marketing Director, Seoul-based e-commerce brand</span></span>
     </div>
   </div>
@@ -663,7 +751,7 @@
       <div class="foot-col">
         <h4 data-i18n="foot_company">Company</h4>
         <a href="#process" data-i18n="nav_about">Why Us</a>
-        <a href="#results" data-i18n="nav_results">Results</a>
+        <a href="#proof" data-i18n="nav_results">Results</a>
         <a href="#contact" data-i18n="nav_contact">Contact</a>
       </div>
     </div>
@@ -749,7 +837,11 @@ const i18n = {
     mkt_kr:"韩国市场", mkt_kr_d:"Naver与谷歌策略", mkt_jp:"日本市场", mkt_jp_d:"本地化日本营销", mkt_sea:"东南亚", mkt_sea_d:"马来西亚·新加坡·泰国等",
     hero_eyebrow:"吉隆坡 · SEO与增长机构", hero_title:"我们让您的网站登上谷歌<em>首页</em>。",
     hero_sub:"全方位SEO、权威外链与内容，严格遵循谷歌最新指南——为韩国、日本及东南亚带来精准流量。",
-    hero_cta1:"获取免费SEO诊断", hero_cta2:"查看我们的服务", trust_label:"立足于真正重要的平台",
+    hero_cta1:"获取免费SEO诊断", hero_cta2:"查看我们的服务", trust_label:"深受亚洲品牌信赖",
+    proof_tag:"实证成果", proof_title:"真实的数据，真实的排名。", proof_sub:"我们用可验证的截图汇报，而非空泛承诺。以下是客户实际看到的增长。",
+    proof_c1:"自然点击与展示逐月攀升。", proof_c2:"目标关键词进入首页并稳居。", proof_c3:"更多精准流量、更低跳出率、更多询盘。",
+    team_tag:"我们的团队", team_title:"您排名背后的团队。", team_sub:"一支精干的资深团队——真正动手的SEO策略师、写手与开发者。",
+    team_r1:"创始人兼SEO负责人", team_r2:"内容与本地化", team_r3:"网站开发",
     sec_svc_tag:"我们的服务", sec_svc_title:"排名、增长与转化所需的一切。", sec_svc_sub:"一站式数字营销——策略、建站、内容，以及提升排名的外链权重。",
     card_seo_t:"谷歌SEO与首页排名", card_seo_d:"我们的核心服务。技术SEO、页面优化与符合谷歌E-E-A-T及有用内容指南的内容——让您稳居榜首。",
     card_back_t:"外链建设", card_back_d:"来自相关网站的高权威白帽外链，建立真正的域名信任度。",
@@ -792,7 +884,11 @@ const i18n = {
     mkt_kr:"ตลาดเกาหลี", mkt_kr_d:"กลยุทธ์ Naver และ Google", mkt_jp:"ตลาดญี่ปุ่น", mkt_jp_d:"แคมเปญญี่ปุ่นแบบเฉพาะถิ่น", mkt_sea:"เอเชียตะวันออกเฉียงใต้", mkt_sea_d:"มาเลเซีย·สิงคโปร์·ไทย และอื่นๆ",
     hero_eyebrow:"กัวลาลัมเปอร์ · เอเจนซี SEO และการเติบโต", hero_title:"เรานำเว็บไซต์ของคุณขึ้น<em>หน้าแรก</em>ของ Google",
     hero_sub:"บริการ SEO ครบวงจร ลิงก์ย้อนกลับคุณภาพ และเนื้อหาที่สร้างตามแนวทางล่าสุดของ Google — ดึงทราฟฟิกคุณภาพจากเกาหลี ญี่ปุ่น และเอเชียตะวันออกเฉียงใต้",
-    hero_cta1:"รับการตรวจ SEO ฟรี", hero_cta2:"ดูบริการของเรา", trust_label:"สร้างบนแพลตฟอร์มที่สำคัญ",
+    hero_cta1:"รับการตรวจ SEO ฟรี", hero_cta2:"ดูบริการของเรา", trust_label:"ได้รับความไว้วางใจจากแบรนด์ทั่วเอเชีย",
+    proof_tag:"ผลลัพธ์ที่พิสูจน์ได้", proof_title:"แดชบอร์ดจริง อันดับจริง", proof_sub:"เรารายงานด้วยภาพหน้าจอที่ตรวจสอบได้ ไม่ใช่คำสัญญาเลื่อนลอย นี่คือการเติบโตที่ลูกค้าของเราเห็นจริง",
+    proof_c1:"คลิกและการแสดงผลแบบออร์แกนิกเพิ่มขึ้นทุกเดือน", proof_c2:"คีย์เวิร์ดเป้าหมายขึ้นหน้าแรกและอยู่ที่นั่น", proof_c3:"ทราฟฟิกคุณภาพมากขึ้น อัตราตีกลับต่ำลง ลีดมากขึ้น",
+    team_tag:"ทีมของเรา", team_title:"ทีมงานเบื้องหลังอันดับของคุณ", team_sub:"ทีมเล็กแต่มากประสบการณ์ — นักกลยุทธ์ SEO นักเขียน และนักพัฒนาที่ลงมือทำจริง",
+    team_r1:"ผู้ก่อตั้งและหัวหน้า SEO", team_r2:"เนื้อหาและการแปลท้องถิ่น", team_r3:"นักพัฒนาเว็บ",
     sec_svc_tag:"สิ่งที่เราทำ", sec_svc_title:"ทุกอย่างที่คุณต้องการเพื่อจัดอันดับ เติบโต และเปลี่ยนเป็นยอดขาย", sec_svc_sub:"เอเจนซีเดียวครบทุกบริการการตลาดดิจิทัล — กลยุทธ์ สร้างเว็บ เนื้อหา และพลังลิงก์ที่ดันอันดับให้สูงขึ้น",
     card_seo_t:"SEO Google และการจัดอันดับหน้าแรก", card_seo_d:"บริการหลักของเรา SEO เชิงเทคนิค การปรับหน้าเว็บ และเนื้อหาที่ปรับตามแนวทาง E-E-A-T และ Helpful Content ของ Google — เพื่อให้เว็บคุณครองตำแหน่งสูงสุดและรักษาไว้",
     card_back_t:"การสร้างลิงก์ย้อนกลับ", card_back_d:"ลิงก์ย้อนกลับแบบ White-hat คุณภาพสูงจากเว็บที่เกี่ยวข้อง สร้างความน่าเชื่อถือของโดเมนอย่างแท้จริง",
@@ -835,7 +931,11 @@ const i18n = {
     mkt_kr:"韓国市場", mkt_kr_d:"NaverとGoogle戦略", mkt_jp:"日本市場", mkt_jp_d:"ローカライズした日本向け施策", mkt_sea:"東南アジア", mkt_sea_d:"マレーシア・シンガポール・タイ ほか",
     hero_eyebrow:"クアラルンプール · SEO＆グロース エージェンシー", hero_title:"あなたのサイトをGoogleの<em>1ページ目</em>へ。",
     hero_sub:"フルサービスのSEO、権威ある被リンク、Googleの最新ガイドラインに沿ったコンテンツ — 韓国・日本・東南アジアで質の高い流入を生み出します。",
-    hero_cta1:"無料SEO診断を受ける", hero_cta2:"サービスを見る", trust_label:"重要なプラットフォームを基盤に",
+    hero_cta1:"無料SEO診断を受ける", hero_cta2:"サービスを見る", trust_label:"アジアのブランドに信頼されています",
+    proof_tag:"確かな実績", proof_title:"本物のデータ、本物の順位。", proof_sub:"曖昧な約束ではなく、検証できるスクリーンショットで報告します。クライアントが実際に得ている成長です。",
+    proof_c1:"オーガニックのクリックと表示回数が月ごとに上昇。", proof_c2:"狙ったキーワードが1ページ目に定着。", proof_c3:"質の高い流入が増え、直帰率は下がり、リードが増加。",
+    team_tag:"チーム", team_title:"あなたの順位を支える人たち。", team_sub:"少数精鋭のチーム — 実際に手を動かすSEOストラテジスト、ライター、開発者。",
+    team_r1:"創業者 & SEOリード", team_r2:"コンテンツ & ローカライズ", team_r3:"ウェブ開発者",
     sec_svc_tag:"提供サービス", sec_svc_title:"順位・成長・成約に必要なすべて。", sec_svc_sub:"戦略・制作・コンテンツ、そして順位を押し上げるリンクの権威まで — デジタルマーケティングをワンストップで。",
     card_seo_t:"Google SEO＆1ページ目表示", card_seo_d:"当社の中核サービス。テクニカルSEO、オンページ最適化、GoogleのE-E-A-Tと有用なコンテンツのガイドラインに沿ったコンテンツで、上位を獲得し維持します。",
     card_back_t:"被リンク構築", card_back_d:"関連性の高いサイトからの権威あるホワイトハット被リンクで、本物のドメイン信頼性を築きます。",
