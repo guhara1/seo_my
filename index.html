@@ -606,11 +606,12 @@
       <div class="info-block">
         <div class="row"><span class="ic">📍</span><span><span class="k" data-i18n="ct_office">Office</span><br><span class="v">Jalan Ampang, Kuala Lumpur, Malaysia</span></span></div>
         <div class="row"><span class="ic">✉️</span><span><span class="k" data-i18n="ct_email">Email</span><br><span class="v">hello@rankforge.my</span></span></div>
+        <div class="row"><span class="ic">🟢</span><span><span class="k" data-i18n="ct_whatsapp">WhatsApp</span><br><a class="v" id="waLink" href="#" target="_blank" rel="noopener">Chat with us</a></span></div>
         <div class="row"><span class="ic">💬</span><span><span class="k" data-i18n="ct_lang_k">We speak</span><br><span class="v">English · 한국어 · 日本語 · 中文 · ไทย</span></span></div>
       </div>
     </div>
 
-    <form class="reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ Sent — thank you!';">
+    <form class="reveal" id="leadForm">
       <div class="two">
         <div class="fld"><label for="f-name" data-i18n="f_name">Full name</label><input id="f-name" name="name" type="text" required autocomplete="name"></div>
         <div class="fld"><label for="f-email" data-i18n="f_email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
@@ -629,7 +630,7 @@
         </div>
       </div>
       <div class="fld"><label for="f-msg" data-i18n="f_msg">Your message</label><textarea id="f-msg" name="message" placeholder=""></textarea></div>
-      <button type="submit" class="btn btn-primary" data-i18n="f_send">Send message</button>
+      <button type="submit" class="btn btn-primary" data-i18n="f_send">Send via WhatsApp</button>
     </form>
   </div>
 </section>
@@ -674,8 +675,39 @@
 </footer>
 
 <script>
+/* ============================================================
+   WHATSAPP CONFIG — replace with the client's real number.
+   Use full international format, digits only (country code, no +,
+   no spaces or dashes). Malaysia example: 60123456789
+   ============================================================ */
+const WHATSAPP_NUMBER = "60123456789";
+
 /* ---------- year ---------- */
 document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* ---------- WhatsApp: direct chat link ---------- */
+const waLink = document.getElementById('waLink');
+if (waLink) {
+  waLink.href = "https://wa.me/" + WHATSAPP_NUMBER +
+    "?text=" + encodeURIComponent("Hi RANKFORGE, I'd like a free SEO audit.");
+}
+
+/* ---------- WhatsApp: send contact form as a chat message ---------- */
+const leadForm = document.getElementById('leadForm');
+if (leadForm) {
+  leadForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const f = leadForm.elements;
+    const msg =
+      "New enquiry from rankforge.my\n" +
+      "Name: " + (f.name.value || "-") + "\n" +
+      "Email: " + (f.email.value || "-") + "\n" +
+      "Website: " + (f.website.value || "-") + "\n" +
+      "Service: " + (f.service.value || "-") + "\n" +
+      "Message: " + (f.message.value || "-");
+    window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+  });
+}
 
 /* ---------- mobile menu ---------- */
 const burger = document.getElementById('burger');
@@ -747,7 +779,7 @@ const i18n = {
     cta_title:"准备好占领谷歌首页了吗？", cta_sub:"获取免费、无义务的SEO诊断。我们将清楚展示您当前的排名及登顶方案。", cta_btn:"申请我的免费诊断",
     ct_tag:"联系我们", ct_title:"聊聊排名吧。", ct_sub:"告诉我们您的业务与目标。我们将在一个工作日内回复。",
     ct_office:"办公室", ct_email:"邮箱", ct_lang_k:"我们的语言",
-    f_name:"姓名", f_email:"邮箱", f_web:"网站网址", f_svc:"感兴趣的服务", f_msg:"您的留言", f_send:"发送信息",
+    f_name:"姓名", f_email:"邮箱", f_web:"网站网址", f_svc:"感兴趣的服务", f_msg:"您的留言", f_send:"通过WhatsApp发送", ct_whatsapp:"WhatsApp",
     f_opt_seo:"SEO与谷歌排名", f_opt_back:"外链建设", f_opt_web:"网站开发", f_opt_content:"内容与文案", f_opt_sns:"社交媒体营销", f_opt_video:"视频制作",
     foot_about:"吉隆坡的SEO与外链机构。我们让您的网站登上谷歌首页——覆盖韩国、日本与东南亚。",
     foot_svc:"服务", foot_markets:"市场", foot_company:"公司", foot_rights:"版权所有。", foot_made:"产自吉隆坡 · 服务全球"
@@ -790,7 +822,7 @@ const i18n = {
     cta_title:"พร้อมครองหน้าแรกของ Google แล้วหรือยัง?", cta_sub:"รับการตรวจ SEO ฟรีไม่มีข้อผูกมัด เราจะแสดงให้เห็นว่าวันนี้คุณอยู่อันดับไหนและเราจะพาคุณขึ้นสู่จุดสูงสุดอย่างไร", cta_btn:"ขอตรวจฟรีของฉัน",
     ct_tag:"ติดต่อเรา", ct_title:"มาคุยเรื่องอันดับกัน", ct_sub:"บอกเราเกี่ยวกับธุรกิจและเป้าหมายของคุณ เราตอบกลับภายในหนึ่งวันทำการ",
     ct_office:"สำนักงาน", ct_email:"อีเมล", ct_lang_k:"เราพูดภาษา",
-    f_name:"ชื่อ-นามสกุล", f_email:"อีเมล", f_web:"URL เว็บไซต์", f_svc:"บริการที่สนใจ", f_msg:"ข้อความของคุณ", f_send:"ส่งข้อความ",
+    f_name:"ชื่อ-นามสกุล", f_email:"อีเมล", f_web:"URL เว็บไซต์", f_svc:"บริการที่สนใจ", f_msg:"ข้อความของคุณ", f_send:"ส่งผ่าน WhatsApp", ct_whatsapp:"WhatsApp",
     f_opt_seo:"SEO และการจัดอันดับ Google", f_opt_back:"การสร้างลิงก์ย้อนกลับ", f_opt_web:"พัฒนาเว็บไซต์", f_opt_content:"เนื้อหาและการเขียน", f_opt_sns:"การตลาดโซเชียลมีเดีย", f_opt_video:"ผลิตวิดีโอ",
     foot_about:"เอเจนซี SEO และลิงก์ย้อนกลับแห่งกัวลาลัมเปอร์ เรานำเว็บไซต์ของคุณขึ้นหน้าแรกของ Google — ครอบคลุมเกาหลี ญี่ปุ่น และเอเชียตะวันออกเฉียงใต้",
     foot_svc:"บริการ", foot_markets:"ตลาด", foot_company:"บริษัท", foot_rights:"สงวนลิขสิทธิ์", foot_made:"ผลิตในกัวลาลัมเปอร์ · ให้บริการทั่วโลก"
@@ -833,7 +865,7 @@ const i18n = {
     cta_title:"Googleの1ページ目を手にする準備はできましたか？", cta_sub:"無料・義務なしのSEO診断を受けてください。現在の順位と、トップへ導く方法を具体的にお見せします。", cta_btn:"無料診断を申し込む",
     ct_tag:"お問い合わせ", ct_title:"順位について話しましょう。", ct_sub:"事業内容と目標をお聞かせください。1営業日以内にご返信します。",
     ct_office:"オフィス", ct_email:"メール", ct_lang_k:"対応言語",
-    f_name:"お名前", f_email:"メール", f_web:"ウェブサイトURL", f_svc:"ご興味のあるサービス", f_msg:"メッセージ", f_send:"送信する",
+    f_name:"お名前", f_email:"メール", f_web:"ウェブサイトURL", f_svc:"ご興味のあるサービス", f_msg:"メッセージ", f_send:"WhatsAppで送信", ct_whatsapp:"WhatsApp",
     f_opt_seo:"SEO＆Google順位", f_opt_back:"被リンク構築", f_opt_web:"ウェブサイト制作", f_opt_content:"コンテンツ＆ライティング", f_opt_sns:"SNSマーケティング", f_opt_video:"動画制作",
     foot_about:"クアラルンプールのSEO＆被リンク エージェンシー。あなたのサイトをGoogleの1ページ目へ — 韓国・日本・東南アジアで。",
     foot_svc:"サービス", foot_markets:"市場", foot_company:"会社", foot_rights:"無断転載を禁じます。", foot_made:"クアラルンプール発 · 世界へ"

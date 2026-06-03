@@ -36,10 +36,12 @@ python3 -m http.server 8000
 
 The following placeholders should be replaced with real details before launch:
 
+- **`WHATSAPP_NUMBER`** at the top of the `<script>` in `index.html` — set
+  this to the client's real WhatsApp number (international format, digits
+  only, no `+`). The contact form and the "WhatsApp" link both open a
+  pre-filled chat via `wa.me`, so no backend is needed.
 - Phone number in the JSON-LD (`+60-3-0000-0000`)
 - Email address (`hello@rankforge.my`) and office address
-- Contact form currently only shows a success message — wire it to a real
-  backend or form service (e.g. Formspree, a serverless function, etc.)
 - Add an `og.jpg` social-share image at the site root
 - Confirm the production domain (`www.rankforge.my`) across meta tags,
   `robots.txt`, and `sitemap.xml`
