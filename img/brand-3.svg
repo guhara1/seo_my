@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" role="img" aria-label="Jalan Coffee Co.">
+  <rect x="13" y="24" width="21" height="13" rx="3" fill="#C97E4C"/>
+  <path d="M34 27 h3 a4 4 0 0 1 0 8 h-3" fill="none" stroke="#C97E4C" stroke-width="2.5"/>
+  <path d="M19 15 v4 M25 14 v5 M31 15 v4" stroke="#7A8270" stroke-width="2" stroke-linecap="round"/>
+  <text x="50" y="28" font-family="Archivo, Arial, sans-serif" font-weight="700" font-size="17" fill="#EDEFE7">Jalan</text>
+  <text x="50" y="45" font-family="Archivo, Arial, sans-serif" font-weight="600" font-size="10" letter-spacing="2" fill="#9AA191">COFFEE CO.</text>
+</svg>

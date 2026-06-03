@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" role="img" aria-label="Siam Botanica">
+  <path d="M26 13 C14 24 14 38 26 47 C38 38 38 24 26 13 Z" fill="none" stroke="#5FAE7A" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M26 20 V42" stroke="#5FAE7A" stroke-width="2"/>
+  <text x="50" y="28" font-family="Archivo, Arial, sans-serif" font-weight="700" font-size="17" letter-spacing="1" fill="#EDEFE7">SIAM</text>
+  <text x="50" y="45" font-family="Archivo, Arial, sans-serif" font-weight="600" font-size="10" letter-spacing="2.5" fill="#9AA191">BOTANICA</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" role="img" aria-label="Seoul Glow">
+  <defs><radialGradient id="g4"><stop offset="0" stop-color="#CBF24A"/><stop offset="1" stop-color="#CBF24A" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="26" cy="30" r="16" fill="url(#g4)"/>
+  <circle cx="26" cy="30" r="8" fill="none" stroke="#EDEFE7" stroke-width="2"/>
+  <text x="50" y="28" font-family="Archivo, Arial, sans-serif" font-weight="700" font-size="17" fill="#EDEFE7">Seoul</text>
+  <text x="50" y="45" font-family="Archivo, Arial, sans-serif" font-weight="600" font-size="10" letter-spacing="4" fill="#9AA191">GLOW</text>
+</svg>

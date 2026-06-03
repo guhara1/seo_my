@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" role="img" aria-label="Marina Bakehouse">
+  <circle cx="26" cy="30" r="15" fill="none" stroke="#D2A35B" stroke-width="3"/>
+  <circle cx="26" cy="30" r="5" fill="#D2A35B"/>
+  <text x="50" y="28" font-family="Archivo, Arial, sans-serif" font-weight="700" font-size="18" fill="#EDEFE7">Marina</text>
+  <text x="50" y="45" font-family="Archivo, Arial, sans-serif" font-weight="600" font-size="10" letter-spacing="2.5" fill="#9AA191">BAKEHOUSE</text>
+</svg>

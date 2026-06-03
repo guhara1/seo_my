@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60" role="img" aria-label="TechNiaga">
+  <polygon points="26,12 40,21 40,39 26,48 12,39 12,21" fill="none" stroke="#4FA3D9" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M20 30 l5 5 l9 -11" fill="none" stroke="#4FA3D9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="50" y="38" font-family="Archivo, Arial, sans-serif" font-size="19" fill="#EDEFE7"><tspan font-weight="700">Tech</tspan><tspan font-weight="400" fill="#A7AE9D">Niaga</tspan></text>
+</svg>
