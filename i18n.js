@@ -7,7 +7,7 @@
   var COMMON = {
     zh: {
       nav_home:"首页", nav_services:"服务", nav_markets:"市场", nav_whyus:"为何选择我们",
-      nav_results:"成果", nav_contact:"联系", nav_cta:"免费SEO诊断", nav_mag:"杂志",
+      nav_results:"成果", nav_contact:"联系", nav_cta:"免费SEO诊断", nav_mag:"杂志", nav_price:"价格",
       svc_seo:"谷歌SEO排名", svc_back:"外链建设", svc_web:"网站开发", svc_content:"内容与文案",
       svc_sns:"社交媒体营销", svc_video:"视频制作",
       mkt_kr:"韩国市场", mkt_jp:"日本市场", mkt_sea:"东南亚",
@@ -18,7 +18,7 @@
     },
     ja: {
       nav_home:"ホーム", nav_services:"サービス", nav_markets:"市場", nav_whyus:"選ばれる理由",
-      nav_results:"実績", nav_contact:"お問い合わせ", nav_cta:"無料SEO診断", nav_mag:"マガジン",
+      nav_results:"実績", nav_contact:"お問い合わせ", nav_cta:"無料SEO診断", nav_mag:"マガジン", nav_price:"料金",
       svc_seo:"Google SEO 順位", svc_back:"被リンク構築", svc_web:"ウェブサイト制作", svc_content:"コンテンツ＆ライティング",
       svc_sns:"SNSマーケティング", svc_video:"動画制作",
       mkt_kr:"韓国市場", mkt_jp:"日本市場", mkt_sea:"東南アジア",
@@ -29,7 +29,7 @@
     },
     th: {
       nav_home:"หน้าแรก", nav_services:"บริการ", nav_markets:"ตลาด", nav_whyus:"ทำไมต้องเรา",
-      nav_results:"ผลลัพธ์", nav_contact:"ติดต่อ", nav_cta:"ตรวจ SEO ฟรี", nav_mag:"นิตยสาร",
+      nav_results:"ผลลัพธ์", nav_contact:"ติดต่อ", nav_cta:"ตรวจ SEO ฟรี", nav_mag:"นิตยสาร", nav_price:"ราคา",
       svc_seo:"จัดอันดับ SEO บน Google", svc_back:"สร้างลิงก์ย้อนกลับ", svc_web:"พัฒนาเว็บไซต์", svc_content:"เนื้อหาและการเขียน",
       svc_sns:"การตลาดโซเชียลมีเดีย", svc_video:"ผลิตวิดีโอ",
       mkt_kr:"ตลาดเกาหลี", mkt_jp:"ตลาดญี่ปุ่น", mkt_sea:"เอเชียตะวันออกเฉียงใต้",
@@ -40,7 +40,7 @@
     },
     ko: {
       nav_home:"홈", nav_services:"서비스", nav_markets:"시장", nav_whyus:"회사 소개",
-      nav_results:"성과", nav_contact:"문의", nav_cta:"무료 SEO 진단", nav_mag:"매거진",
+      nav_results:"성과", nav_contact:"문의", nav_cta:"무료 SEO 진단", nav_mag:"매거진", nav_price:"가격",
       svc_seo:"구글 SEO 순위", svc_back:"백링크 구축", svc_web:"웹사이트 개발", svc_content:"콘텐츠 & 카피라이팅",
       svc_sns:"소셜미디어 마케팅", svc_video:"영상 제작",
       mkt_kr:"한국 시장", mkt_jp:"일본 시장", mkt_sea:"동남아시아",
