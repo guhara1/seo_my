@@ -59,6 +59,8 @@ article ul li b{color:var(--text);font-family:var(--ff-display);font-weight:600}
 .related a:hover{border-color:rgba(203,242,74,.45);color:var(--lime)}
 .related a .arr{margin-left:auto;color:var(--lime)}
 
+.hero{width:100%;height:auto;display:block;aspect-ratio:1200/630;object-fit:cover;border-radius:18px;border:1px solid var(--line);margin:0 0 28px}
+
 /* ===== magazine listing ===== */
 .mag-head{max-width:760px;margin:8px auto 40px}
 .mag-head h1{font-family:var(--ff-display);font-weight:800;font-size:clamp(32px,5.5vw,52px);line-height:1.08;letter-spacing:-.02em;margin-bottom:16px}
@@ -66,6 +68,7 @@ article ul li b{color:var(--text);font-family:var(--ff-display);font-weight:600}
 .mag-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:1040px;margin:0 auto}
 .mag-card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.02),transparent);padding:26px;transition:.25s}
 .mag-card:hover{border-color:rgba(203,242,74,.4);transform:translateY(-5px)}
+.mag-thumb{width:100%;height:auto;display:block;aspect-ratio:1200/630;object-fit:cover;border-radius:12px;border:1px solid var(--line);margin-bottom:18px}
 .mag-card .cat{display:inline-flex;align-self:flex-start;align-items:center;gap:7px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lime);margin-bottom:14px}
 .mag-card .cat::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime)}
 .mag-card h2{font-family:var(--ff-display);font-weight:700;font-size:21px;line-height:1.2;letter-spacing:-.01em;margin-bottom:10px}
