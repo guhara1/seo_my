@@ -14,7 +14,8 @@
       by_team:"NEXT SEO24 团队", by_loc:"吉隆坡", by_updated:"最后更新 2026年6月3日",
       by_about:"了解我们的团队", bc_home:"首页", faq_h:"常见问题",
       rel_k:"了解更多", rel_home:"返回 NEXT SEO24 首页", cta_btn:"通过 WhatsApp 联系 →",
-      foot_made:"产自吉隆坡 · 服务全球"
+      foot_made:"产自吉隆坡 · 服务全球",
+      foot_about:"吉隆坡的SEO与外链机构。我们让您的网站登上谷歌首页——覆盖韩国、日本与东南亚。", foot_svc:"服务", foot_markets:"市场", foot_company:"公司", foot_rights:"版权所有。"
     },
     ja: {
       nav_home:"ホーム", nav_services:"サービス", nav_markets:"市場", nav_whyus:"選ばれる理由",
@@ -25,7 +26,8 @@
       by_team:"NEXT SEO24 チーム", by_loc:"クアラルンプール", by_updated:"最終更新 2026年6月3日",
       by_about:"私たちのチームについて", bc_home:"ホーム", faq_h:"よくある質問",
       rel_k:"もっと見る", rel_home:"NEXT SEO24 ホームへ戻る", cta_btn:"WhatsApp で相談 →",
-      foot_made:"クアラルンプール発 · 世界へ"
+      foot_made:"クアラルンプール発 · 世界へ",
+      foot_about:"クアラルンプールのSEO＆被リンク エージェンシー。あなたのサイトをGoogleの1ページ目へ — 韓国・日本・東南アジアで。", foot_svc:"サービス", foot_markets:"市場", foot_company:"会社", foot_rights:"無断転載を禁じます。"
     },
     th: {
       nav_home:"หน้าแรก", nav_services:"บริการ", nav_markets:"ตลาด", nav_whyus:"ทำไมต้องเรา",
@@ -36,7 +38,8 @@
       by_team:"ทีม NEXT SEO24", by_loc:"กัวลาลัมเปอร์", by_updated:"อัปเดตล่าสุด 3 มิถุนายน 2026",
       by_about:"เกี่ยวกับทีมของเรา", bc_home:"หน้าแรก", faq_h:"คำถามที่พบบ่อย",
       rel_k:"ดูเพิ่มเติม", rel_home:"กลับสู่หน้าแรก NEXT SEO24", cta_btn:"แชทผ่าน WhatsApp →",
-      foot_made:"ผลิตในกัวลาลัมเปอร์ · ให้บริการทั่วโลก"
+      foot_made:"ผลิตในกัวลาลัมเปอร์ · ให้บริการทั่วโลก",
+      foot_about:"เอเจนซี SEO และลิงก์ย้อนกลับแห่งกัวลาลัมเปอร์ เรานำเว็บไซต์ของคุณขึ้นหน้าแรกของ Google — ครอบคลุมเกาหลี ญี่ปุ่น และเอเชียตะวันออกเฉียงใต้", foot_svc:"บริการ", foot_markets:"ตลาด", foot_company:"บริษัท", foot_rights:"สงวนลิขสิทธิ์"
     },
     ko: {
       nav_home:"홈", nav_services:"서비스", nav_markets:"시장", nav_whyus:"회사 소개",
@@ -47,7 +50,8 @@
       by_team:"NEXT SEO24 팀", by_loc:"쿠알라룸푸르", by_updated:"최종 업데이트 2026년 6월 3일",
       by_about:"팀 소개", bc_home:"홈", faq_h:"자주 묻는 질문",
       rel_k:"더 둘러보기", rel_home:"NEXT SEO24 홈으로", cta_btn:"WhatsApp으로 상담 →",
-      foot_made:"쿠알라룸푸르에서 · 전 세계로"
+      foot_made:"쿠알라룸푸르에서 · 전 세계로",
+      foot_about:"쿠알라룸푸르의 SEO &amp; 백링크 에이전시. 귀사의 웹사이트를 구글 첫 페이지에 — 한국, 일본, 동남아시아 전역에서.", foot_svc:"서비스", foot_markets:"시장", foot_company:"회사", foot_rights:"모든 권리 보유."
     }
   };
 
