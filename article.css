@@ -63,6 +63,28 @@ article ul li b{color:var(--text);font-family:var(--ff-display);font-weight:600}
 footer{border-top:1px solid var(--line);padding:40px 0;margin-top:50px;color:var(--muted-2);font-size:14px}
 .foot-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
+/* ===== full top menu on sub-pages (CSS-only, no JS) ===== */
+.nav-inner > .menu{margin-left:auto;display:flex;align-items:center;gap:2px}
+.menu > a,.menu .navlink{display:flex;align-items:center;gap:5px;padding:9px 13px;border-radius:9px;font-size:14.5px;font-weight:500;color:var(--text);white-space:nowrap;cursor:pointer;transition:.16s;font-family:var(--ff-body)}
+.menu > a:hover,.menu .navlink:hover{background:rgba(255,255,255,.05);color:var(--lime)}
+.menu .item{position:relative}
+.menu .dropdown{position:absolute;top:calc(100% + 8px);left:0;min-width:212px;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:8px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.18s;box-shadow:0 24px 50px -20px rgba(0,0,0,.7);z-index:60}
+.menu .item:hover .dropdown,.menu .item:focus-within .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+.menu .dropdown a{display:block;padding:9px 11px;border-radius:8px;font-size:14px;color:var(--text);white-space:nowrap;transition:.14s}
+.menu .dropdown a:hover{background:rgba(203,242,74,.08);color:var(--lime)}
+.navtoggle,.burger{display:none}
+.nav-inner > .nav-cta{margin-left:8px}
+
+@media(max-width:860px){
+  .burger{display:flex;flex-direction:column;gap:5px;margin-left:auto;background:none;border:0;cursor:pointer;padding:8px}
+  .burger span{width:24px;height:2px;background:var(--text);border-radius:2px}
+  .nav-inner > .menu{position:fixed;inset:70px 0 auto 0;margin:0;flex-direction:column;align-items:stretch;gap:2px;background:var(--panel);border-bottom:1px solid var(--line);padding:12px;max-height:calc(100vh - 70px);overflow:auto;transform:translateY(-135%);transition:.3s;z-index:90}
+  .navtoggle:checked ~ .menu{transform:translateY(0)}
+  .menu > a,.menu .navlink{padding:13px 14px;font-size:16px}
+  .menu .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;background:rgba(0,0,0,.18);min-width:0;margin:2px 0 8px;padding:6px}
+  .nav-inner > .nav-cta{display:none}
+}
+
 @media(max-width:600px){
   body{font-size:16px}
   .nav-cta{padding:9px 14px}
