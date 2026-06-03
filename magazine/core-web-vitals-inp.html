@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Core Web Vitals &amp; INP: A Practical Speed Checklist | RANKFORGE Magazine</title>
+<meta name="description" content="FID is gone — INP is the new responsiveness metric. A plain-language guide to LCP, CLS and INP, why page speed matters for SEO, and a practical checklist for every site owner.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="RANKFORGE SEO Team">
+<link rel="canonical" href="https://www.rankforge.my/magazine/core-web-vitals-inp.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Core Web Vitals &amp; INP: A Practical Speed Checklist">
+<meta property="og:description" content="FID is gone — INP is the new responsiveness metric. Plain-language guidance plus a practical checklist.">
+<meta property="og:url" content="https://www.rankforge.my/magazine/core-web-vitals-inp.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../article.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Core Web Vitals and INP: a practical speed checklist",
+  "author": { "@type": "Organization", "name": "RANKFORGE SEO Team" },
+  "publisher": { "@type": "Organization", "name": "RANKFORGE", "url": "https://www.rankforge.my/" },
+  "datePublished": "2026-06-03",
+  "dateModified": "2026-06-03",
+  "mainEntityOfPage": "https://www.rankforge.my/magazine/core-web-vitals-inp.html",
+  "articleSection": "Web"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rankforge.my/"},
+    {"@type": "ListItem", "position": 2, "name": "Magazine", "item": "https://www.rankforge.my/magazine/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "Core Web Vitals &amp; INP", "item": "https://www.rankforge.my/magazine/core-web-vitals-inp.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><span class="dot"></span>RANKFORGE</a>
+    <input type="checkbox" id="navtoggle" class="navtoggle">
+    <nav class="menu" aria-label="Primary">
+      <a href="../index.html" data-i18n="nav_home">Home</a>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+        </div>
+      </div>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+        </div>
+      </div>
+      <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="../index.html#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../index.html" data-i18n="bc_home">Home</a><span>›</span><a href="index.html" data-i18n="nav_mag">Magazine</a><span>›</span>Core Web Vitals &amp; INP
+    </nav>
+    <article>
+      <div class="post-meta"><span class="cat">Web</span><span>·</span><span>3 June 2026</span><span>·</span><span>6 min read</span></div>
+      <h1>Core Web Vitals and INP: a practical speed checklist</h1>
+      <p class="lead">Google retired the old FID metric in March 2024 and replaced it with INP — Interaction to Next Paint. If your team hasn't revisited your performance baseline since then, there's a good chance you're measuring the wrong thing and optimising for a score that no longer matters.</p>
+
+      <div class="byline">
+        <span class="av">RF</span>
+        <span class="meta"><b data-i18n="by_team">RANKFORGE SEO Team</b> · <span data-i18n="by_loc">Kuala Lumpur</span><br><span data-i18n="by_updated">Last updated 3 June 2026</span> · <a href="../why-us.html" data-i18n="by_about">About our team</a></span>
+      </div>
+
+      <p>Core Web Vitals are Google's standardised way of measuring whether a page feels good to use — not just whether it loads, but whether it responds quickly and stays visually stable. They feed directly into Google's page experience signals, which means they're one of the few technical SEO factors where the search engine has publicly confirmed the connection. That said, they don't override content quality; a slow page with genuinely excellent content can still rank. But if your content is at parity with a competitor's, a better Vitals score can tip the balance — and more importantly, a poor experience drives people away before they convert.</p>
+
+      <h2>The three metrics explained without jargon</h2>
+      <p><b>LCP — Largest Contentful Paint</b> measures when the main content of the page becomes visible. Think of it as the moment a user can see the thing they came for — the hero image, the product photo, the article headline. Google's target is under 2.5 seconds. Most of the slow LCP scores we audit trace back to unoptimised images, render-blocking resources, or a slow server response (TTFB).</p>
+      <p><b>CLS — Cumulative Layout Shift</b> measures how much the page jumps around while loading. If a button moves just as someone tries to tap it, or an ad pushes content down after the user has started reading, that's CLS. The threshold is 0.1. It's usually caused by images or embeds with no declared dimensions, or by fonts that swap in late and change line heights.</p>
+      <p><b>INP — Interaction to Next Paint</b> replaced FID (First Input Delay) as the responsiveness metric in March 2024. Where FID only measured the delay before the browser <em>started</em> handling your first interaction, INP measures the full round-trip: you click or tap, and INP records how long until the next paint shows you something changed. Google's target is under 200ms. Anything above 500ms is "poor." INP is harder to pass than FID was because it covers all interactions throughout the page's lifetime, not just the first one.</p>
+
+      <h2>Why this matters for an SEO-led business</h2>
+      <p>We work with clients across Malaysia, Singapore and the wider region, and the honest pattern we see is that mobile performance is where most sites struggle. Southeast Asian audiences are disproportionately mobile-first, on a wide range of device capabilities, and on networks that vary from 5G in city centres to slower connections further out. A page that passes Vitals on a Pixel 8 in KL may fail on a mid-range Android in Johor Bahru.</p>
+      <p>Beyond the ranking signal, the business case is straightforward: slower pages lose more users before they reach the goal. Every hundred-millisecond improvement in LCP tends to reduce bounce. We've seen this pattern repeatedly in A/B tests where the only variable was image format or lazy-loading.</p>
+
+      <h2>A note on JavaScript and Google Search</h2>
+      <p>Google has clarified in its documentation that loading content with JavaScript is not inherently a problem for indexing. Googlebot renders pages and can process client-side content. What remains a problem is render performance for <em>users</em>: heavy JavaScript that keeps the main thread busy increases INP, delays LCP, and makes the page feel sluggish on low-end devices. So the guidance isn't "avoid JavaScript" — it's "manage what JavaScript does to the thread."</p>
+
+      <h2>Practical checklist</h2>
+      <ul>
+        <li><b>Convert images to WebP (or AVIF).</b> JPEG and PNG are rarely the right choice for new builds. WebP consistently delivers 25–35% smaller files at equivalent visual quality. Run PageSpeed Insights to see which images are failing and start there.</li>
+        <li><b>Set explicit width and height on every image and iframe.</b> This reserves space in the layout before the resource loads, eliminating the most common source of CLS. If you use CSS to make images responsive, add <code>aspect-ratio</code> to your stylesheet.</li>
+        <li><b>Lazy-load below-the-fold images.</b> Adding <code>loading="lazy"</code> to images that aren't in the initial viewport reduces initial page weight with one attribute. Never apply it to your LCP image — that one should load as fast as possible, ideally with a <code>fetchpriority="high"</code> hint.</li>
+        <li><b>Audit your main-thread work.</b> Open Chrome DevTools Performance panel and look for long tasks — anything over 50ms that blocks the thread. Third-party scripts (chat widgets, ad tags, analytics) are frequent offenders. Defer or remove what you don't need.</li>
+        <li><b>Use font-display: swap and preload your critical font.</b> Late-loading fonts cause CLS and can delay LCP if text is the largest element. Preloading your main font file and using <code>font-display: swap</code> keeps the layout stable and text visible immediately.</li>
+        <li><b>Reduce server response time (TTFB).</b> If your Time to First Byte is over 600ms, no amount of front-end work will get you a good LCP. Check your hosting tier, enable server-side caching, and use a CDN for static assets.</li>
+        <li><b>Break up long event handlers.</b> For INP specifically, look for click and scroll handlers that do a lot of work synchronously. Breaking them up with <code>scheduler.yield()</code> or deferring non-critical work allows the browser to paint sooner and lowers your INP score.</li>
+        <li><b>Test on real devices, not just Lighthouse.</b> Lab scores (Lighthouse, PageSpeed Insights) simulate conditions. Field data (CrUX, the "real users" section of Search Console) shows what your actual visitors experience. Both matter; prioritise field data for diagnosis.</li>
+      </ul>
+
+      <h2 data-i18n="faq_h">Frequently asked questions</h2>
+      <h3>Will improving my Core Web Vitals guarantee a ranking boost?</h3>
+      <p>Not directly. Vitals are one input into Google's page experience signal, which itself is one of many ranking factors. A passing score won't overcome thin content, but it does remove a potential handicap and improves conversion even when rankings stay the same.</p>
+      <h3>My Lighthouse score is 95 but my INP in Search Console is "needs improvement" — why?</h3>
+      <p>Lighthouse runs in a controlled lab environment with no real user interactions. INP is measured from actual clicks and taps by real users on real devices. Search Console field data often tells a different story than lab scores, particularly on lower-end Android devices. Fix the long tasks you see in real-world traces, not just the ones Lighthouse flags.</p>
+      <h3>How long does it take to see Vitals improvements reflected in Google's ranking signals?</h3>
+      <p>CrUX (the Chrome User Experience Report) aggregates data over a 28-day rolling window. Once your real-user metrics improve, it typically takes four to six weeks for the data to shift enough to be reflected in Google's signals. Deploy fixes, wait a full reporting cycle, then measure again.</p>
+
+      <div class="cta-box" id="contact">
+        <h2>Want a free audit of your Core Web Vitals?</h2>
+        <p>We'll run a full technical and field-data review of your site speed, flag the highest-impact issues, and give you a prioritised fix list — no obligation.</p>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="cta_btn">Chat on WhatsApp →</a>
+      </div>
+
+      <div class="related">
+        <div class="k" data-i18n="rel_k">Explore more</div>
+        <a href="helpful-content-2026.html">Google's Helpful Content system in 2026 <span class="arr">→</span></a>
+        <a href="../services/web-development.html"><span data-i18n="svc_web">Website Development</span> <span class="arr">→</span></a>
+        <a href="index.html"><span data-i18n="nav_mag">Magazine</span> <span class="arr">→</span></a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <span>© <span id="yr"></span> RANKFORGE Sdn Bhd. Kuala Lumpur</span>
+    <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
+  </div>
+</footer>
+
+<script>
+const WHATSAPP_NUMBER = "601137950507";
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('waLink').href =
+  "https://wa.me/" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent("Hello there, could I get more information about improving my site speed and Core Web Vitals?\n\nName :\nE-Mail :\nEnquiry Topic :");
+</script>
+<script src="../i18n.js"></script>
+</body>
+</html>
