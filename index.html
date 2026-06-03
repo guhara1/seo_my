@@ -328,6 +328,12 @@
   .quote .av{overflow:hidden;padding:0}
   .quote .av img{width:100%;height:100%;object-fit:cover}
 
+  /* ===== IMAGE-AREA MARKERS (remove class "mark-images" on <body> to hide) ===== */
+  .imgph{position:relative;display:block;width:100%}
+  body.mark-images .imgph::before{content:"";position:absolute;inset:0;border:2px dashed rgba(203,242,74,.85);border-radius:12px;pointer-events:none;z-index:4}
+  body.mark-images .imgph::after{content:attr(data-label);position:absolute;top:8px;left:8px;z-index:5;background:var(--lime);color:var(--ink);font-family:var(--ff-display);font-weight:700;font-size:11px;letter-spacing:.03em;padding:4px 9px;border-radius:7px;pointer-events:none;white-space:nowrap}
+  body.mark-images .quote .av{outline:2px dashed rgba(203,242,74,.85);outline-offset:3px}
+
   @media(max-width:760px){
     .logo-wall{grid-template-columns:repeat(3,1fr);gap:16px}
     .shots{grid-template-columns:1fr}
@@ -371,7 +377,7 @@
   }
 </style>
 </head>
-<body>
+<body class="mark-images">
 
 <!-- ===================== NAV ===================== -->
 <header class="nav">
@@ -467,12 +473,12 @@
 <div class="trust">
   <p class="trust-label" data-i18n="trust_label">Trusted by brands across Asia</p>
   <div class="logo-wall">
-    <img src="img/logo-1.svg" width="180" height="56" loading="lazy" alt="Client logo">
-    <img src="img/logo-2.svg" width="180" height="56" loading="lazy" alt="Client logo">
-    <img src="img/logo-3.svg" width="180" height="56" loading="lazy" alt="Client logo">
-    <img src="img/logo-1.svg" width="180" height="56" loading="lazy" alt="Client logo">
-    <img src="img/logo-2.svg" width="180" height="56" loading="lazy" alt="Client logo">
-    <img src="img/logo-3.svg" width="180" height="56" loading="lazy" alt="Client logo">
+    <span class="imgph" data-label="🖼 로고"><img src="img/logo-1.svg" width="180" height="56" loading="lazy" alt="Client logo"></span>
+    <span class="imgph" data-label="🖼 로고"><img src="img/logo-2.svg" width="180" height="56" loading="lazy" alt="Client logo"></span>
+    <span class="imgph" data-label="🖼 로고"><img src="img/logo-3.svg" width="180" height="56" loading="lazy" alt="Client logo"></span>
+    <span class="imgph" data-label="🖼 로고"><img src="img/logo-1.svg" width="180" height="56" loading="lazy" alt="Client logo"></span>
+    <span class="imgph" data-label="🖼 로고"><img src="img/logo-2.svg" width="180" height="56" loading="lazy" alt="Client logo"></span>
+    <span class="imgph" data-label="🖼 로고"><img src="img/logo-3.svg" width="180" height="56" loading="lazy" alt="Client logo"></span>
   </div>
 </div>
 
@@ -579,15 +585,15 @@
     </div>
     <div class="shots">
       <article class="shot reveal">
-        <img src="img/dashboard.svg" width="760" height="460" loading="lazy" alt="Search Console organic clicks growth screenshot">
+        <span class="imgph" data-label="🖼 성과 스크린샷"><img src="img/dashboard.svg" width="760" height="460" loading="lazy" alt="Search Console organic clicks growth screenshot"></span>
         <div class="cap"><b>Search Console</b><span data-i18n="proof_c1">Organic clicks &amp; impressions climbing month over month.</span></div>
       </article>
       <article class="shot reveal">
-        <img src="img/dashboard.svg" width="760" height="460" loading="lazy" alt="Keyword ranking growth screenshot">
+        <span class="imgph" data-label="🖼 성과 스크린샷"><img src="img/dashboard.svg" width="760" height="460" loading="lazy" alt="Keyword ranking growth screenshot"></span>
         <div class="cap"><b>Keyword rankings</b><span data-i18n="proof_c2">Target keywords moving onto page one and holding.</span></div>
       </article>
       <article class="shot reveal">
-        <img src="img/dashboard.svg" width="760" height="460" loading="lazy" alt="Web analytics traffic screenshot">
+        <span class="imgph" data-label="🖼 성과 스크린샷"><img src="img/dashboard.svg" width="760" height="460" loading="lazy" alt="Web analytics traffic screenshot"></span>
         <div class="cap"><b>Analytics</b><span data-i18n="proof_c3">More qualified traffic, lower bounce, more leads.</span></div>
       </article>
     </div>
@@ -646,15 +652,15 @@
     </div>
     <div class="team-grid">
       <article class="member reveal">
-        <img src="img/portrait.svg" width="400" height="400" loading="lazy" alt="Team member portrait">
+        <span class="imgph" data-label="🖼 팀 사진"><img src="img/portrait.svg" width="400" height="400" loading="lazy" alt="Team member portrait"></span>
         <div class="mb"><div class="nm">Aiman R.</div><div class="rl" data-i18n="team_r1">Founder &amp; SEO Lead</div></div>
       </article>
       <article class="member reveal">
-        <img src="img/portrait.svg" width="400" height="400" loading="lazy" alt="Team member portrait">
+        <span class="imgph" data-label="🖼 팀 사진"><img src="img/portrait.svg" width="400" height="400" loading="lazy" alt="Team member portrait"></span>
         <div class="mb"><div class="nm">Sofia L.</div><div class="rl" data-i18n="team_r2">Content &amp; Localization</div></div>
       </article>
       <article class="member reveal">
-        <img src="img/portrait.svg" width="400" height="400" loading="lazy" alt="Team member portrait">
+        <span class="imgph" data-label="🖼 팀 사진"><img src="img/portrait.svg" width="400" height="400" loading="lazy" alt="Team member portrait"></span>
         <div class="mb"><div class="nm">Wei T.</div><div class="rl" data-i18n="team_r3">Web Developer</div></div>
       </article>
     </div>
