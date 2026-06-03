@@ -75,6 +75,17 @@ footer{border-top:1px solid var(--line);padding:40px 0;margin-top:50px;color:var
 .navtoggle,.burger{display:none}
 .nav-inner > .nav-cta{margin-left:8px}
 
+/* language switcher */
+.lang{position:relative}
+.lang-btn{display:flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;font-size:13.5px;font-weight:600;cursor:pointer;background:transparent;color:var(--text);font-family:var(--ff-body)}
+.lang-btn:hover{border-color:rgba(203,242,74,.5)}
+.lang .globe{width:15px;height:15px;opacity:.8}
+.lang-menu{position:absolute;right:0;top:calc(100% + 8px);background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:7px;min-width:158px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s;box-shadow:0 20px 40px -16px rgba(0,0,0,.6);z-index:80}
+.lang.open .lang-menu{opacity:1;visibility:visible;transform:translateY(0)}
+.lang-menu button{display:flex;width:100%;align-items:center;gap:10px;padding:9px 11px;border:0;background:transparent;color:var(--text);font-size:14px;border-radius:9px;cursor:pointer;font-family:var(--ff-body);text-align:left}
+.lang-menu button:hover{background:rgba(255,255,255,.05)}
+.lang-menu button.active{color:var(--lime);background:rgba(203,242,74,.08)}
+
 @media(max-width:860px){
   .burger{display:flex;flex-direction:column;gap:5px;margin-left:auto;background:none;border:0;cursor:pointer;padding:8px}
   .burger span{width:24px;height:2px;background:var(--text);border-radius:2px}

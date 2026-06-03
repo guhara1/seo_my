@@ -54,33 +54,46 @@
   <div class="nav-inner">
     <a href="../index.html" class="brand"><span class="dot"></span>RANKFORGE</a>
     <input type="checkbox" id="navtoggle" class="navtoggle">
-    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
     <nav class="menu" aria-label="Primary">
-      <a href="../index.html">Home</a>
+      <a href="../index.html" data-i18n="nav_home">Home</a>
       <div class="item">
-        <span class="navlink" tabindex="0" role="button" aria-haspopup="true">Services ▾</span>
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
         <div class="dropdown" role="menu">
-          <a href="../services/seo.html">Google SEO Ranking</a>
-          <a href="../services/backlinks.html">Backlink Building</a>
-          <a href="../services/web-development.html">Website Development</a>
-          <a href="../services/content.html">Content &amp; Copywriting</a>
-          <a href="../services/social-media.html">Social Media Marketing</a>
-          <a href="../services/video.html">Video Production</a>
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
         </div>
       </div>
       <div class="item">
-        <span class="navlink" tabindex="0" role="button" aria-haspopup="true">Markets ▾</span>
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
         <div class="dropdown" role="menu">
-          <a href="../markets/korea.html">Korea Market</a>
-          <a href="../markets/japan.html">Japan Market</a>
-          <a href="../markets/southeast-asia.html">Southeast Asia</a>
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
         </div>
       </div>
-      <a href="../why-us.html">Why Us</a>
-      <a href="../index.html#proof">Results</a>
-      <a href="../index.html#contact">Contact</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
     </nav>
-    <a href="#contact" class="nav-cta">Free SEO audit</a>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
   </div>
 </header>
 
@@ -139,7 +152,7 @@
 <footer>
   <div class="foot-inner">
     <span>© <span id="yr"></span> RANKFORGE Sdn Bhd. Kuala Lumpur</span>
-    <span>Made in Kuala Lumpur · Serving the world</span>
+    <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
   </div>
 </footer>
 
@@ -150,5 +163,8 @@ document.getElementById('waLink').href =
   "https://wa.me/" + WHATSAPP_NUMBER +
   "?text=" + encodeURIComponent("Hello there, could I get more information about your video production service?\n\nName :\nE-Mail :\nEnquiry Topic :");
 </script>
+
+<script id="page-i18n">window.PAGE_I18N = { zh:{}, ja:{}, th:{}, ko:{} };</script>
+<script src="../i18n.js"></script>
 </body>
 </html>

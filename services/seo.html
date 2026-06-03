@@ -54,83 +54,96 @@
   <div class="nav-inner">
     <a href="../index.html" class="brand"><span class="dot"></span>RANKFORGE</a>
     <input type="checkbox" id="navtoggle" class="navtoggle">
-    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
     <nav class="menu" aria-label="Primary">
-      <a href="../index.html">Home</a>
+      <a href="../index.html" data-i18n="nav_home">Home</a>
       <div class="item">
-        <span class="navlink" tabindex="0" role="button" aria-haspopup="true">Services ▾</span>
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
         <div class="dropdown" role="menu">
-          <a href="../services/seo.html">Google SEO Ranking</a>
-          <a href="../services/backlinks.html">Backlink Building</a>
-          <a href="../services/web-development.html">Website Development</a>
-          <a href="../services/content.html">Content &amp; Copywriting</a>
-          <a href="../services/social-media.html">Social Media Marketing</a>
-          <a href="../services/video.html">Video Production</a>
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
         </div>
       </div>
       <div class="item">
-        <span class="navlink" tabindex="0" role="button" aria-haspopup="true">Markets ▾</span>
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
         <div class="dropdown" role="menu">
-          <a href="../markets/korea.html">Korea Market</a>
-          <a href="../markets/japan.html">Japan Market</a>
-          <a href="../markets/southeast-asia.html">Southeast Asia</a>
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
         </div>
       </div>
-      <a href="../why-us.html">Why Us</a>
-      <a href="../index.html#proof">Results</a>
-      <a href="../index.html#contact">Contact</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
     </nav>
-    <a href="#contact" class="nav-cta">Free SEO audit</a>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
   </div>
 </header>
 
 <main>
   <div class="wrap">
     <nav class="crumb" aria-label="Breadcrumb">
-      <a href="../index.html">Home</a><span>›</span><a href="../index.html#services">Services</a><span>›</span>Google SEO Ranking
+      <a href="../index.html" data-i18n="bc_home">Home</a><span>›</span><a href="../index.html#services" data-i18n="nav_services">Services</a><span>›</span><span data-i18n="svc_seo">Google SEO Ranking</span>
     </nav>
     <article>
-      <span class="eyebrow">Core service</span>
-      <h1>Google SEO ranking that holds its place.</h1>
-      <p class="lead">Getting to page one is the easy part to promise. Staying there — through core updates, spam updates and rising competition — is what actually grows a business. That is the standard we build to.</p>
+      <span class="eyebrow" data-i18n="se_eyebrow">Core service</span>
+      <h1 data-i18n="se_h1">Google SEO ranking that holds its place.</h1>
+      <p class="lead" data-i18n="se_lead">Getting to page one is the easy part to promise. Staying there — through core updates, spam updates and rising competition — is what actually grows a business. That is the standard we build to.</p>
 
       <div class="byline">
         <span class="av">RF</span>
-        <span class="meta"><b>RANKFORGE SEO Team</b> · Kuala Lumpur<br>Last updated 3 June 2026 · <a href="../why-us.html">About our team</a></span>
+        <span class="meta"><b data-i18n="by_team">RANKFORGE SEO Team</b> · <span data-i18n="by_loc">Kuala Lumpur</span><br><span data-i18n="by_updated">Last updated 3 June 2026</span> · <a href="../why-us.html" data-i18n="by_about">About our team</a></span>
       </div>
 
-      <h2>What we actually do</h2>
-      <p>SEO is the disciplined alignment of three things Google rewards: a site it can crawl easily, pages that answer the searcher's intent, and signals that show real expertise and trust. Every engagement starts with your own data — Search Console, analytics and live rankings — not guesswork:</p>
+      <h2 data-i18n="se_h2a">What we actually do</h2>
+      <p data-i18n="se_p1">SEO is the disciplined alignment of three things Google rewards: a site it can crawl easily, pages that answer the searcher's intent, and signals that show real expertise and trust. Every engagement starts with your own data — Search Console, analytics and live rankings — not guesswork:</p>
       <ul>
-        <li><b>Technical SEO.</b> Crawlability, indexing, site architecture, structured data and Core Web Vitals (including INP), so nothing blocks Google from understanding your pages.</li>
-        <li><b>On-page optimization.</b> Search intent mapping, titles, headings and internal links that make each page the clearest answer to its target query.</li>
-        <li><b>Content built to E-E-A-T.</b> Pages that show first-hand experience, expertise and trust — with clear authorship — instead of thin, generic copy.</li>
-        <li><b>Measurement.</b> Transparent monthly reporting tied to traffic, rankings and leads, so you can see exactly what changed and why.</li>
+        <li data-i18n="se_li1"><b>Technical SEO.</b> Crawlability, indexing, site architecture, structured data and Core Web Vitals (including INP), so nothing blocks Google from understanding your pages.</li>
+        <li data-i18n="se_li2"><b>On-page optimization.</b> Search intent mapping, titles, headings and internal links that make each page the clearest answer to its target query.</li>
+        <li data-i18n="se_li3"><b>Content built to E-E-A-T.</b> Pages that show first-hand experience, expertise and trust — with clear authorship — instead of thin, generic copy.</li>
+        <li data-i18n="se_li4"><b>Measurement.</b> Transparent monthly reporting tied to traffic, rankings and leads, so you can see exactly what changed and why.</li>
       </ul>
 
-      <h2>Built for Google's current guidelines</h2>
-      <p>Google's Helpful Content signals are now part of the core ranking system and work at the <strong>site level</strong> — a pile of low-value pages can drag down your good ones too. So we treat quality as a whole-site concern, not a per-page checkbox. We also follow the "who, how and why" principle: every page has a clear author, a clear reason to exist, and value a visitor cannot get from a generic summary elsewhere.</p>
-      <p>Just as important is what we never do: no keyword stuffing, cloaking, link schemes, doorway pages or mass-produced filler. These shortcuts are exactly what spam updates target, and recovering from a penalty costs far more than doing it right.</p>
+      <h2 data-i18n="se_h2b">Built for Google's current guidelines</h2>
+      <p data-i18n="se_p2">Google's Helpful Content signals are now part of the core ranking system and work at the <strong>site level</strong> — a pile of low-value pages can drag down your good ones too. So we treat quality as a whole-site concern, not a per-page checkbox. We also follow the "who, how and why" principle: every page has a clear author, a clear reason to exist, and value a visitor cannot get from a generic summary elsewhere.</p>
+      <p data-i18n="se_p3">Just as important is what we never do: no keyword stuffing, cloaking, link schemes, doorway pages or mass-produced filler. These shortcuts are exactly what spam updates target, and recovering from a penalty costs far more than doing it right.</p>
 
-      <h2>Frequently asked questions</h2>
-      <h3>How long until I see results?</h3>
-      <p>SEO compounds. Most clients see meaningful movement in three to six months, with the strongest gains later as authority builds. If you need faster visibility, we pair SEO with paid search while the organic base grows.</p>
-      <h3>Can you guarantee the #1 spot?</h3>
-      <p>No honest agency can — Google's ranking factors are not for sale. What we commit to is durable, guideline-safe growth that keeps compounding instead of collapsing at the next update.</p>
-      <h3>Do you work in Korean and Japanese?</h3>
-      <p>Yes. We run native-language SEO for Korea and Japan, including Naver alongside Google, so you reach Asian audiences where they actually search.</p>
+      <h2 data-i18n="faq_h">Frequently asked questions</h2>
+      <h3 data-i18n="se_q1">How long until I see results?</h3>
+      <p data-i18n="se_a1">SEO compounds. Most clients see meaningful movement in three to six months, with the strongest gains later as authority builds. If you need faster visibility, we pair SEO with paid search while the organic base grows.</p>
+      <h3 data-i18n="se_q2">Can you guarantee the #1 spot?</h3>
+      <p data-i18n="se_a2">No honest agency can — Google's ranking factors are not for sale. What we commit to is durable, guideline-safe growth that keeps compounding instead of collapsing at the next update.</p>
+      <h3 data-i18n="se_q3">Do you work in Korean and Japanese?</h3>
+      <p data-i18n="se_a3">Yes. We run native-language SEO for Korea and Japan, including Naver alongside Google, so you reach Asian audiences where they actually search.</p>
 
       <div class="cta-box" id="contact">
-        <h2>See where you rank today</h2>
-        <p>Get a free, no-obligation SEO audit. We'll show you your current position and the exact path to the top — no jargon, no pressure.</p>
-        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener">Chat on WhatsApp →</a>
+        <h2 data-i18n="se_cta_h">See where you rank today</h2>
+        <p data-i18n="se_cta_p">Get a free, no-obligation SEO audit. We'll show you your current position and the exact path to the top — no jargon, no pressure.</p>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="cta_btn">Chat on WhatsApp →</a>
       </div>
 
       <div class="related">
-        <div class="k">Related services</div>
-        <a href="backlinks.html">Backlink Building <span class="arr">→</span></a>
-        <a href="content.html">Content &amp; Copywriting <span class="arr">→</span></a>
-        <a href="../index.html">Back to RANKFORGE home <span class="arr">→</span></a>
+        <div class="k" data-i18n="rel_k">Related services</div>
+        <a href="backlinks.html"><span data-i18n="svc_back">Backlink Building</span> <span class="arr">→</span></a>
+        <a href="content.html"><span data-i18n="svc_content">Content &amp; Copywriting</span> <span class="arr">→</span></a>
+        <a href="../index.html"><span data-i18n="rel_home">Back to RANKFORGE home</span> <span class="arr">→</span></a>
       </div>
     </article>
   </div>
@@ -139,7 +152,7 @@
 <footer>
   <div class="foot-inner">
     <span>© <span id="yr"></span> RANKFORGE Sdn Bhd. Kuala Lumpur</span>
-    <span>Made in Kuala Lumpur · Serving the world</span>
+    <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
   </div>
 </footer>
 
@@ -150,5 +163,99 @@ document.getElementById('waLink').href =
   "https://wa.me/" + WHATSAPP_NUMBER +
   "?text=" + encodeURIComponent("Hello there, could I get more information about your Google SEO ranking service?\n\nName :\nE-Mail :\nEnquiry Topic :");
 </script>
+
+<script id="page-i18n">
+window.PAGE_I18N = {
+  zh: {
+    se_eyebrow:"核心服务",
+    se_h1:"稳居榜首的谷歌SEO排名。",
+    se_lead:"登上首页只是容易许下的承诺。真正让生意增长的，是在核心更新、垃圾内容更新和日益激烈的竞争中依然稳居高位。这正是我们坚持的标准。",
+    se_h2a:"我们实际做什么",
+    se_p1:"SEO是对谷歌看重的三件事进行严谨协调：易于抓取的网站、满足搜索意图的页面，以及体现真实专业度与信任的信号。每次合作都从您自己的数据开始——Search Console、分析与实时排名，而非凭空猜测：",
+    se_li1:"<b>技术SEO。</b> 抓取、收录、网站架构、结构化数据与核心网页指标（含INP），确保没有障碍妨碍谷歌理解您的页面。",
+    se_li2:"<b>页面优化。</b> 搜索意图梳理、标题、标头与内部链接，让每个页面成为目标查询最清晰的答案。",
+    se_li3:"<b>符合E-E-A-T的内容。</b> 展现一手经验、专业度与信任并标明作者的页面，而非单薄、泛泛的文字。",
+    se_li4:"<b>衡量。</b> 与流量、排名和询盘挂钩的透明月度报告，让您清楚看到改变了什么、为什么改变。",
+    se_h2b:"为谷歌最新指南而打造",
+    se_p2:"谷歌的有用内容信号现已成为核心排名系统的一部分，并在<strong>整站层面</strong>起作用——大量低价值页面也会拖累您的优质页面。因此我们把质量视为整站问题，而非逐页打勾。我们也遵循“谁、如何、为何”原则：每个页面都有明确的作者、明确的存在理由，以及访客在别处泛泛摘要中得不到的价值。",
+    se_p3:"同样重要的是我们绝不做的事：不堆砌关键词、不伪装、不做链接操纵、不做门页、不量产填充内容。这些捷径正是垃圾内容更新打击的对象，而从处罚中恢复的代价远高于一开始就做对。",
+    se_q1:"多久能看到成效？",
+    se_a1:"SEO是累积型的。多数客户在三到六个月内看到明显变化，随着权重积累，后期收益最强。若需更快曝光，我们会在夯实自然流量基础的同时配合付费搜索。",
+    se_q2:"你们能保证排名第一吗？",
+    se_a2:"没有诚实的机构能保证——谷歌的排名因素并非可以购买。我们承诺的是稳健、符合指南的增长，能持续累积，而不会在下次更新时崩盘。",
+    se_q3:"你们做韩语和日语吗？",
+    se_a3:"是的。我们为韩国和日本提供母语SEO，包括谷歌之外的Naver，让您在亚洲受众真正搜索的地方触达他们。",
+    se_cta_h:"立即查看您的排名",
+    se_cta_p:"获取免费、无义务的SEO诊断。我们将清楚展示您当前的位置，以及登顶的具体路径——没有术语，没有压力。"
+  },
+  ja: {
+    se_eyebrow:"中核サービス",
+    se_h1:"上位を維持するGoogle SEO。",
+    se_lead:"1ページ目に乗せることは、約束しやすい部分にすぎません。本当にビジネスを伸ばすのは、コアアップデートやスパムアップデート、激化する競争の中でも上位を保ち続けることです。それが私たちの基準です。",
+    se_h2a:"私たちが実際に行うこと",
+    se_p1:"SEOとは、Googleが評価する3つの要素を規律正しく整合させることです。クロールしやすいサイト、検索意図に応えるページ、本物の専門性と信頼を示すシグナル。すべての取り組みは、推測ではなくお客様自身のデータ——Search Console、アナリティクス、実際の順位——から始まります：",
+    se_li1:"<b>テクニカルSEO。</b> クロール性、インデックス、サイト構造、構造化データ、Core Web Vitals（INPを含む）——Googleがページを理解する妨げを取り除きます。",
+    se_li2:"<b>オンページ最適化。</b> 検索意図の整理、タイトル、見出し、内部リンクで、各ページを対象クエリへの最も明快な答えにします。",
+    se_li3:"<b>E-E-A-Tに沿ったコンテンツ。</b> 薄く一般的な文章ではなく、一次体験・専門性・信頼を示し、著者を明示したページ。",
+    se_li4:"<b>計測。</b> 流入・順位・リードに紐づく透明な月次レポートで、何がなぜ変わったかを正確に把握できます。",
+    se_h2b:"Googleの最新ガイドラインに基づいて",
+    se_p2:"Googleの有用なコンテンツのシグナルは現在コアランキングの一部であり、<strong>サイト全体のレベル</strong>で作用します——低品質ページの山は、良質なページの順位まで引き下げます。だから私たちは品質をページごとのチェックではなく、サイト全体の課題として扱います。また「誰が・どのように・なぜ」の原則に従い、各ページに明確な著者、存在する明確な理由、他所の一般的な要約では得られない価値を持たせます。",
+    se_p3:"同じく重要なのは、私たちが決してしないことです。キーワードの詰め込み、クローキング、リンクスキーム、ドアウェイページ、量産された埋め草——いずれもしません。こうした近道こそスパムアップデートが標的とするもので、ペナルティからの回復は最初から正しく行うよりはるかに高くつきます。",
+    se_q1:"成果が出るまでどのくらいかかりますか？",
+    se_a1:"SEOは累積型です。多くのお客様は3〜6か月で明確な動きを実感し、権威が育つほど後の伸びが大きくなります。より早い露出が必要な場合は、自然流入の土台を固めつつ検索広告を併用します。",
+    se_q2:"1位を保証できますか？",
+    se_a2:"誠実な代理店に保証はできません——Googleの順位は買えるものではありません。私たちが約束するのは、次の更新で崩れるのではなく積み上がり続ける、ガイドラインに沿った持続的な成長です。",
+    se_q3:"韓国語と日本語にも対応していますか？",
+    se_a3:"はい。韓国と日本向けにネイティブ言語でSEOを行い、GoogleだけでなくNaverにも対応して、アジアのユーザーが実際に検索する場所でリーチします。",
+    se_cta_h:"今の順位を確認しましょう",
+    se_cta_p:"無料・義務なしのSEO診断を受けてください。現在の位置と、トップへ至る具体的な道筋を——専門用語も売り込みもなしで——お見せします。"
+  },
+  th: {
+    se_eyebrow:"บริการหลัก",
+    se_h1:"อันดับ Google SEO ที่รักษาตำแหน่งไว้ได้",
+    se_lead:"การขึ้นหน้าแรกเป็นเรื่องที่สัญญาได้ง่าย แต่สิ่งที่ทำให้ธุรกิจเติบโตจริงคือการอยู่ตรงนั้นต่อไป — ผ่านคอร์อัปเดต สแปมอัปเดต และการแข่งขันที่รุนแรงขึ้น นั่นคือมาตรฐานที่เรายึดถือ",
+    se_h2a:"สิ่งที่เราทำจริง",
+    se_p1:"SEO คือการจัดวางสามสิ่งที่ Google ให้คุณค่าอย่างมีระเบียบ ได้แก่ เว็บที่รวบรวมข้อมูลได้ง่าย หน้าที่ตอบเจตนาการค้นหา และสัญญาณที่แสดงความเชี่ยวชาญและความน่าเชื่อถือจริง ทุกงานเริ่มจากข้อมูลของคุณเอง — Search Console, อนาลิติกส์ และอันดับจริง ไม่ใช่การเดา:",
+    se_li1:"<b>SEO เชิงเทคนิค</b> การรวบรวมข้อมูล การจัดทำดัชนี โครงสร้างเว็บ ข้อมูลที่มีโครงสร้าง และ Core Web Vitals (รวมถึง INP) เพื่อไม่ให้มีสิ่งใดขวาง Google จากการเข้าใจหน้าของคุณ",
+    se_li2:"<b>การปรับหน้าเว็บ</b> การวางแผนเจตนาการค้นหา หัวข้อ หัวเรื่อง และลิงก์ภายใน ที่ทำให้แต่ละหน้าเป็นคำตอบที่ชัดเจนที่สุดของคีย์เวิร์ดเป้าหมาย",
+    se_li3:"<b>เนื้อหาตามหลัก E-E-A-T</b> หน้าที่แสดงประสบการณ์ตรง ความเชี่ยวชาญ และความน่าเชื่อถือ พร้อมระบุผู้เขียนชัดเจน แทนเนื้อหาบางๆ ทั่วไป",
+    se_li4:"<b>การวัดผล</b> รายงานรายเดือนที่โปร่งใส ผูกกับทราฟฟิก อันดับ และลีด เพื่อให้คุณเห็นชัดว่าอะไรเปลี่ยนและเพราะอะไร",
+    se_h2b:"สร้างตามแนวทางล่าสุดของ Google",
+    se_p2:"สัญญาณ Helpful Content ของ Google ตอนนี้เป็นส่วนหนึ่งของระบบจัดอันดับหลัก และทำงานใน<strong>ระดับทั้งเว็บ</strong> — หน้าคุณภาพต่ำจำนวนมากสามารถฉุดหน้าที่ดีของคุณลงได้ เราจึงมองคุณภาพเป็นเรื่องของทั้งเว็บ ไม่ใช่การติ๊กทีละหน้า เรายังยึดหลัก “ใคร อย่างไร ทำไม”: ทุกหน้ามีผู้เขียนชัดเจน มีเหตุผลที่ต้องมีอยู่ และมีคุณค่าที่ผู้อ่านหาจากบทสรุปทั่วไปที่อื่นไม่ได้",
+    se_p3:"สิ่งที่สำคัญพอกันคือสิ่งที่เราไม่ทำเด็ดขาด: ไม่ยัดคีย์เวิร์ด ไม่ปิดบังเนื้อหา (cloaking) ไม่ทำลิงก์หลอก ไม่ทำหน้า doorway และไม่ผลิตเนื้อหาขยะจำนวนมาก ทางลัดเหล่านี้คือเป้าหมายของสแปมอัปเดต และการฟื้นจากการถูกลงโทษมีต้นทุนสูงกว่าการทำให้ถูกต้องตั้งแต่แรกมาก",
+    se_q1:"ใช้เวลานานแค่ไหนกว่าจะเห็นผล?",
+    se_a1:"SEO เป็นแบบสะสม ลูกค้าส่วนใหญ่เห็นการเปลี่ยนแปลงชัดเจนใน 3–6 เดือน และผลแรงที่สุดมาทีหลังเมื่อความน่าเชื่อถือสะสมขึ้น หากต้องการการมองเห็นเร็วขึ้น เราจะใช้โฆษณาค้นหาควบคู่ไปพร้อมสร้างฐานออร์แกนิก",
+    se_q2:"รับประกันอันดับ 1 ได้ไหม?",
+    se_a2:"ไม่มีเอเจนซีที่ซื่อสัตย์รายใดรับประกันได้ — ปัจจัยจัดอันดับของ Google ไม่ใช่สิ่งที่ซื้อได้ สิ่งที่เรารับปากคือการเติบโตที่ยั่งยืนและสอดคล้องกับแนวทาง ซึ่งสะสมต่อเนื่องแทนที่จะพังในการอัปเดตครั้งถัดไป",
+    se_q3:"ทำภาษาเกาหลีและญี่ปุ่นด้วยไหม?",
+    se_a3:"ใช่ เราทำ SEO ภาษาท้องถิ่นสำหรับเกาหลีและญี่ปุ่น รวมถึง Naver ควบคู่กับ Google เพื่อเข้าถึงผู้ชมเอเชียในที่ที่พวกเขาค้นหาจริง",
+    se_cta_h:"ดูอันดับของคุณวันนี้",
+    se_cta_p:"รับการตรวจ SEO ฟรีไม่มีข้อผูกมัด เราจะแสดงตำแหน่งปัจจุบันของคุณและเส้นทางสู่อันดับสูงสุดอย่างชัดเจน — ไม่มีศัพท์เทคนิค ไม่มีการกดดัน"
+  },
+  ko: {
+    se_eyebrow:"핵심 서비스",
+    se_h1:"순위를 지켜내는 구글 SEO.",
+    se_lead:"첫 페이지에 올리는 건 약속하기 쉬운 부분일 뿐입니다. 코어 업데이트, 스팸 업데이트, 치열해지는 경쟁 속에서도 그 자리를 지켜내는 것이 실제로 비즈니스를 성장시킵니다. 그것이 우리가 지향하는 기준입니다.",
+    se_h2a:"우리가 실제로 하는 일",
+    se_p1:"SEO는 구글이 보상하는 세 가지를 빈틈없이 정렬하는 일입니다. 쉽게 크롤링되는 사이트, 검색 의도에 답하는 페이지, 진짜 전문성과 신뢰를 보여주는 신호. 모든 작업은 추측이 아니라 귀사의 데이터 — 서치 콘솔, 애널리틱스, 실시간 순위 — 에서 시작합니다:",
+    se_li1:"<b>기술 SEO.</b> 크롤링, 색인, 사이트 구조, 구조화 데이터, 코어 웹 바이탈(INP 포함)까지 — 구글이 페이지를 이해하는 데 걸림돌이 없게 합니다.",
+    se_li2:"<b>온페이지 최적화.</b> 검색 의도 설계, 제목, 헤딩, 내부 링크로 각 페이지를 목표 검색어에 대한 가장 명확한 답으로 만듭니다.",
+    se_li3:"<b>E-E-A-T 기반 콘텐츠.</b> 얄팍하고 일반적인 글 대신, 1차 경험·전문성·신뢰를 보여주고 저자를 명시한 페이지.",
+    se_li4:"<b>측정.</b> 트래픽·순위·문의에 연결된 투명한 월간 리포트로 무엇이 왜 바뀌었는지 정확히 확인합니다.",
+    se_h2b:"구글 최신 가이드라인에 맞춰",
+    se_p2:"구글의 도움이 되는 콘텐츠 신호는 이제 핵심 랭킹 시스템의 일부이며 <strong>사이트 단위</strong>로 작동합니다 — 저품질 페이지가 쌓이면 좋은 페이지 순위까지 끌어내립니다. 그래서 우리는 품질을 페이지별 체크가 아니라 사이트 전체의 문제로 다룹니다. 또한 '누가, 어떻게, 왜' 원칙을 따릅니다. 모든 페이지에는 명확한 저자, 존재해야 할 분명한 이유, 다른 곳의 일반적인 요약에서는 얻을 수 없는 가치가 있습니다.",
+    se_p3:"그만큼 중요한 것은 우리가 절대 하지 않는 일입니다. 키워드 스터핑, 클로킹, 링크 스킴, 도어웨이 페이지, 대량 양산 콘텐츠 — 하지 않습니다. 이런 편법이야말로 스팸 업데이트의 표적이며, 페널티에서 회복하는 비용은 처음부터 제대로 하는 것보다 훨씬 큽니다.",
+    se_q1:"성과가 나타나기까지 얼마나 걸리나요?",
+    se_a1:"SEO는 누적형입니다. 대부분의 고객은 3~6개월 안에 뚜렷한 변화를 보며, 권위가 쌓일수록 후반 상승폭이 가장 큽니다. 더 빠른 노출이 필요하면 자연 검색 기반을 다지면서 검색 광고를 병행합니다.",
+    se_q2:"1위를 보장할 수 있나요?",
+    se_a2:"정직한 에이전시라면 보장할 수 없습니다 — 구글의 랭킹 요소는 살 수 있는 것이 아닙니다. 우리가 약속하는 것은 다음 업데이트에서 무너지지 않고 계속 쌓이는, 가이드라인을 준수하는 지속 가능한 성장입니다.",
+    se_q3:"한국어와 일본어도 작업하나요?",
+    se_a3:"네. 한국과 일본을 위해 네이버까지 포함한 현지어 SEO를 진행해, 아시아 고객이 실제로 검색하는 곳에서 닿게 합니다.",
+    se_cta_h:"지금 귀사의 순위를 확인하세요",
+    se_cta_p:"무료·부담 없는 SEO 진단을 받아보세요. 현재 위치와 정상으로 가는 구체적인 경로를 — 전문용어도, 압박도 없이 — 보여드립니다."
+  }
+};
+</script>
+<script src="../i18n.js"></script>
 </body>
 </html>
