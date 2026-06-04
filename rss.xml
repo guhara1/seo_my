@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NEXT SEO24 Magazine</title>
+    <link>https://nextseo24.com/magazine/index.html</link>
+    <atom:link href="https://nextseo24.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
+    <language>en</language>
+    <copyright>Copyright NEXT SEO24</copyright>
+    <lastBuildDate>Wed, 03 Jun 2026 09:00:00 GMT</lastBuildDate>
+    <generator>NEXT SEO24</generator>
+    <image>
+      <url>https://nextseo24.com/img/og-default.png</url>
+      <title>NEXT SEO24 Magazine</title>
+      <link>https://nextseo24.com/magazine/index.html</link>
+    </image>
+
+    <item>
+      <title>Naver vs Google: How to Win Search in Korea</title>
+      <link>https://nextseo24.com/magazine/naver-vs-google-korea.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/naver-vs-google-korea.html</guid>
+      <description>Korea's search market is split between Naver and Google. A practical guide to deciding where to invest, how the two engines differ, and why winning Korea means working both.</description>
+      <enclosure url="https://nextseo24.com/img/cover-naver-korea.jpg" type="image/jpeg" length="0" />
+      <pubDate>Wed, 03 Jun 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Google's Helpful Content System in 2026, Explained</title>
+      <link>https://nextseo24.com/magazine/helpful-content-2026.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/helpful-content-2026.html</guid>
+      <description>Google's Helpful Content system is now part of core ranking and operates at the site level. Learn what that means, how AI-generated content is judged, and what to do with thin or underperforming pages.</description>
+      <enclosure url="https://nextseo24.com/img/cover-helpful-content.jpg" type="image/jpeg" length="0" />
+      <pubDate>Wed, 27 May 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>White-Hat Backlinks: What Still Moves Rankings</title>
+      <link>https://nextseo24.com/magazine/white-hat-backlinks.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/white-hat-backlinks.html</guid>
+      <description>Links remain a top ranking signal — but only the right ones. Relevance and context beat volume, and link schemes are exactly what spam updates target. Here's how to earn authority safely.</description>
+      <enclosure url="https://nextseo24.com/img/cover-backlinks.jpg" type="image/jpeg" length="0" />
+      <pubDate>Wed, 20 May 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Core Web Vitals &amp; INP: A Practical Speed Checklist</title>
+      <link>https://nextseo24.com/magazine/core-web-vitals-inp.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/core-web-vitals-inp.html</guid>
+      <description>FID is gone — INP is Google's new responsiveness metric. A practical checklist covering LCP, CLS and INP so your site earns both rankings and conversions.</description>
+      <enclosure url="https://nextseo24.com/img/cover-cwv.jpg" type="image/jpeg" length="0" />
+      <pubDate>Wed, 13 May 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Entering Southeast Asia: A Localization Playbook</title>
+      <link>https://nextseo24.com/magazine/southeast-asia-localization.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/southeast-asia-localization.html</guid>
+      <description>SEA is Google-dominant, multilingual and WhatsApp-first. What global brands get wrong entering the region, and how to localize properly using Kuala Lumpur as a hub.</description>
+      <enclosure url="https://nextseo24.com/img/cover-sea.jpg" type="image/jpeg" length="0" />
+      <pubDate>Wed, 06 May 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Marketing an Online Sports Game App: ASO + SEO</title>
+      <link>https://nextseo24.com/magazine/sports-game-app-marketing.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/sports-game-app-marketing.html</guid>
+      <description>How to get an online sports game app discovered — App Store Optimization, web SEO and localized content that drive real installs across Korea, Japan and Southeast Asia.</description>
+      <enclosure url="https://nextseo24.com/img/cover-sports-app.jpg" type="image/jpeg" length="0" />
+      <pubDate>Wed, 29 Apr 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>How Long Does SEO Take to Work? A Realistic Timeline</title>
+      <link>https://nextseo24.com/magazine/how-long-does-seo-take.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/how-long-does-seo-take.html</guid>
+      <description>Honest answer: meaningful SEO results typically take 3-6 months, with compounding gains beyond that. Learn what drives the timeline and how to set realistic expectations.</description>
+      <enclosure url="https://nextseo24.com/img/cover-seo-time.jpg" type="image/jpeg" length="0" />
+      <pubDate>Wed, 22 Apr 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>How Much Does SEO Cost in Malaysia? 2026 Pricing Guide</title>
+      <link>https://nextseo24.com/magazine/how-much-does-seo-cost-malaysia.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/how-much-does-seo-cost-malaysia.html</guid>
+      <description>SEO pricing in Malaysia ranges from RM 800 to RM 8,000+ per month. Learn what drives the cost, how retainer vs project models compare, and how to evaluate any quote fairly.</description>
+      <enclosure url="https://nextseo24.com/img/cover-seo-cost.jpg" type="image/jpeg" length="0" />
+      <pubDate>Wed, 15 Apr 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>SEO vs SEM (Google Ads): Which Should You Invest In?</title>
+      <link>https://nextseo24.com/magazine/seo-vs-sem.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/seo-vs-sem.html</guid>
+      <description>SEO earns compounding organic traffic; Google Ads buys instant clicks. Compare trade-offs, see when each wins, and why most businesses benefit from running both.</description>
+      <enclosure url="https://nextseo24.com/img/cover-seo-vs-sem.jpg" type="image/jpeg" length="0" />
+      <pubDate>Wed, 08 Apr 2026 09:00:00 GMT</pubDate>
+    </item>
+
+  </channel>
+</rss>

@@ -1,4 +1,32 @@
+# robots.txt — NEXT SEO24 (https://nextseo24.com)
+# 모든 검색엔진 전체 크롤링 허용 (Google / Naver / Bing / Yandex 등)
+
 User-agent: *
 Allow: /
 
-Sitemap: https://www.rankforge.my/sitemap.xml
+# --- 주요 검색엔진 봇 명시 허용 (빠른 색인 유도) ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# 네이버 검색 봇
+User-agent: Yeti
+Allow: /
+
+# 다음(카카오) 검색 봇
+User-agent: Daum
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# 크롤링 지연 없음
+Crawl-delay: 0
+
+Sitemap: https://nextseo24.com/sitemap.xml
+Sitemap: https://nextseo24.com/rss.xml
