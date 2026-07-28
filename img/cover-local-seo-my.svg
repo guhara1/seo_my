@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Infographic: Local SEO for Malaysia — Google Maps local pack ranking with three business listings and star ratings">
+  <defs>
+    <linearGradient id="bgfade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161B17"/>
+      <stop offset="1" stop-color="#0B0D0C"/>
+    </linearGradient>
+    <radialGradient id="pinglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#CBF24A" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#CBF24A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgfade)"/>
+
+  <!-- map grid backdrop -->
+  <g stroke="rgba(232,233,227,0.06)" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="170" x2="1200" y2="170"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/><line x1="0" y1="330" x2="1200" y2="330"/>
+    <line x1="0" y1="410" x2="1200" y2="410"/><line x1="0" y1="490" x2="1200" y2="490"/>
+    <line x1="0" y1="570" x2="1200" y2="570"/>
+    <line x1="150" y1="0" x2="150" y2="675"/><line x1="350" y1="0" x2="350" y2="675"/>
+    <line x1="550" y1="0" x2="550" y2="675"/><line x1="750" y1="0" x2="750" y2="675"/>
+    <line x1="950" y1="0" x2="950" y2="675"/>
+  </g>
+
+  <!-- large map pin, left side -->
+  <circle cx="270" cy="330" r="140" fill="url(#pinglow)"/>
+  <g transform="translate(270,300)">
+    <path d="M0 -95 C58 -95 100 -53 100 5 C100 78 0 165 0 165 C0 165 -100 78 -100 5 C-100 -53 -58 -95 0 -95 Z" fill="#CBF24A"/>
+    <circle cx="0" cy="0" r="42" fill="#0B0D0C"/>
+    <text x="0" y="16" text-anchor="middle" font-family="Bricolage Grotesque, Archivo, sans-serif" font-weight="800" font-size="46" fill="#CBF24A">#1</text>
+  </g>
+
+  <!-- local pack card -->
+  <g transform="translate(560,110)">
+    <rect width="560" height="470" rx="20" fill="#161B17" stroke="rgba(232,233,227,0.12)"/>
+    <text x="28" y="46" font-family="Archivo, sans-serif" font-size="14" fill="#8E978C">Google · "seo agency near me"</text>
+    <line x1="0" y1="66" x2="560" y2="66" stroke="rgba(232,233,227,0.10)"/>
+
+    <!-- listing 1 (winner) -->
+    <g transform="translate(24,88)">
+      <rect x="-8" y="-14" width="536" height="112" rx="14" fill="rgba(203,242,74,0.08)" stroke="rgba(203,242,74,0.35)"/>
+      <circle cx="24" cy="42" r="24" fill="#CBF24A"/>
+      <text x="24" y="49" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="20" fill="#0B0D0C">1</text>
+      <text x="66" y="30" font-family="Archivo, sans-serif" font-weight="700" font-size="20" fill="#E9EAE3">NEXT SEO24</text>
+      <text x="66" y="55" font-family="Archivo, sans-serif" font-size="14" fill="#CBF24A">★★★★★ 4.9 (128) · Kuala Lumpur</text>
+      <text x="66" y="78" font-family="Archivo, sans-serif" font-size="13" fill="#8E978C">Open · SEO &amp; digital marketing agency</text>
+    </g>
+
+    <!-- listing 2 -->
+    <g transform="translate(24,214)">
+      <circle cx="24" cy="42" r="24" fill="rgba(232,233,227,0.10)"/>
+      <text x="24" y="49" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="20" fill="#8E978C">2</text>
+      <text x="66" y="30" font-family="Archivo, sans-serif" font-weight="700" font-size="18" fill="#B9BEB6">Competitor A</text>
+      <text x="66" y="55" font-family="Archivo, sans-serif" font-size="14" fill="#6B736A">★★★★☆ 4.2 (54) · Petaling Jaya</text>
+    </g>
+
+    <!-- listing 3 -->
+    <g transform="translate(24,318)">
+      <circle cx="24" cy="42" r="24" fill="rgba(232,233,227,0.10)"/>
+      <text x="24" y="49" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="20" fill="#8E978C">3</text>
+      <text x="66" y="30" font-family="Archivo, sans-serif" font-weight="700" font-size="18" fill="#B9BEB6">Competitor B</text>
+      <text x="66" y="55" font-family="Archivo, sans-serif" font-size="14" fill="#6B736A">★★★☆☆ 3.8 (21) · Subang Jaya</text>
+    </g>
+
+    <rect x="24" y="404" width="512" height="42" rx="10" fill="rgba(255,255,255,0.05)"/>
+    <text x="280" y="430" text-anchor="middle" font-family="Archivo, sans-serif" font-size="13" fill="#8E978C">More local results ▾</text>
+  </g>
+
+  <text x="60" y="620" font-family="Archivo, sans-serif" font-size="13" fill="#4f564e">NEXT SEO24 — Local SEO &amp; Google Business Profile, Malaysia</text>
+</svg>

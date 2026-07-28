@@ -7,13 +7,40 @@
     <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
     <language>en</language>
     <copyright>Copyright NEXT SEO24</copyright>
-    <lastBuildDate>Wed, 03 Jun 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 09:00:00 GMT</lastBuildDate>
     <generator>NEXT SEO24</generator>
     <image>
       <url>https://nextseo24.com/img/og-default.png</url>
       <title>NEXT SEO24 Magazine</title>
       <link>https://nextseo24.com/magazine/index.html</link>
     </image>
+
+    <item>
+      <title>Why Isn't My Website Ranking on Google? 12 Real Reasons</title>
+      <link>https://nextseo24.com/magazine/why-website-not-ranking-google.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/why-website-not-ranking-google.html</guid>
+      <description>The 12 most common reasons a website fails to rank on Google — from indexing errors to thin content and weak backlinks — with how to check and fix each one.</description>
+      <enclosure url="https://nextseo24.com/img/cover-why-not-ranking.svg" type="image/svg+xml" length="0" />
+      <pubDate>Tue, 28 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Local SEO Malaysia: How to Rank #1 on Google Maps</title>
+      <link>https://nextseo24.com/magazine/local-seo-google-maps-malaysia.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/local-seo-google-maps-malaysia.html</guid>
+      <description>A practical Google Business Profile and Local SEO playbook for Malaysian businesses — how the Local Pack actually ranks, what moves it, and a checklist to rank #1 near you.</description>
+      <enclosure url="https://nextseo24.com/img/cover-local-seo-my.svg" type="image/svg+xml" length="0" />
+      <pubDate>Tue, 28 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Google AI Overviews in 2026: How to Stay Visible</title>
+      <link>https://nextseo24.com/magazine/ai-overviews-seo-2026.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/ai-overviews-seo-2026.html</guid>
+      <description>AI Overviews now sit above the fold on most Google searches. How they choose sources, what's changed for SEO, and how to keep your site cited and clicked.</description>
+      <enclosure url="https://nextseo24.com/img/cover-ai-overviews.svg" type="image/svg+xml" length="0" />
+      <pubDate>Tue, 28 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Naver vs Google: How to Win Search in Korea</title>
