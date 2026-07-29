@@ -23,6 +23,9 @@ post is published so future sessions don't duplicate work.
 | 2026-07-28 | why-website-not-ranking-google.html | 12 real reasons a site fails to rank (diagnostic) | SEO |
 | 2026-07-28 | local-seo-google-maps-malaysia.html | Google Business Profile / Local Pack ranking in Malaysia | Local SEO |
 | 2026-07-28 | ai-overviews-seo-2026.html | Google AI Overviews / generative search SEO | AI Search |
+| 2026-07-29 | recover-google-ranking-drop.html | Diagnosing & recovering from a sudden ranking drop | SEO |
+| 2026-07-29 | website-migration-seo-checklist.html | Website migration/redesign SEO checklist (redirect mapping) | Technical SEO |
+| 2026-07-29 | ecommerce-seo-malaysia-marketplace-vs-website.html | Shopee/Lazada marketplace SEO vs owned website | E-commerce |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -54,24 +57,38 @@ not decoration. Next time new magazine posts are published, repeat this
 pattern: link them from at least one relevant market/home page with
 descriptive anchor text, not just from the magazine index.
 
+## Internal linking pass (2026-07-29)
+
+Repeated the same pattern for the three 2026-07-29 posts:
+- `index.html` — "From the magazine" teaser section swapped to feature
+  the three newest posts (ranking-drop recovery, migration checklist,
+  marketplace vs website).
+- `markets/malaysia.html` — in-body link from the existing Shopee/Lazada
+  mention to the new e-commerce post, plus related-pages entry.
+- `markets/korea.html`, `markets/japan.html`, `markets/southeast-asia.html`
+  — related-pages entries for the ranking-drop recovery and/or migration
+  checklist posts (both are market-agnostic, so relevant everywhere);
+  southeast-asia.html also links the e-commerce post since Shopee/Lazada
+  operate across the region, not just Malaysia.
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
 building toward full topical coverage without overlap:
 
-- E-commerce SEO for Malaysian Shopee/Lazada + own-website sellers
 - Keyword research across BM / English / Mandarin for the Malaysian market
 - On-page SEO / technical audit checklist (distinct from the cost/timeline/
-  ranking-diagnostic posts already published)
-- Google algorithm update history & how to recover from a ranking drop
+  ranking-diagnostic/migration posts already published)
 - E-E-A-T in practice: author pages, credentials, trust signals
 - Content marketing / blog strategy for lead generation (not just ranking)
 - Social media + SEO crossover (Instagram/TikTok discovery vs Google)
 - Video SEO / YouTube for Malaysian businesses
-- Migrating a website (redesign/replatform) without losing rankings
 - SEO for multi-branch / franchise businesses in Malaysia
 - B2B SEO / lead-gen for professional services (law, finance, consulting)
 - Voice search and conversational query optimization
+- International/hreflang SEO for a site spanning MY/KR/JP/SEA at once
+- Structured FAQ/HowTo schema in practice (a hands-on implementation guide,
+  distinct from the AI Overviews post's higher-level treatment)
 
 ## Style/template notes for new posts
 

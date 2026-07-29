@@ -7,13 +7,40 @@
     <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
     <language>en</language>
     <copyright>Copyright NEXT SEO24</copyright>
-    <lastBuildDate>Tue, 28 Jul 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 09:00:00 GMT</lastBuildDate>
     <generator>NEXT SEO24</generator>
     <image>
       <url>https://nextseo24.com/img/og-default.png</url>
       <title>NEXT SEO24 Magazine</title>
       <link>https://nextseo24.com/magazine/index.html</link>
     </image>
+
+    <item>
+      <title>My Google Rankings Dropped Overnight — How to Diagnose &amp; Recover</title>
+      <link>https://nextseo24.com/magazine/recover-google-ranking-drop.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/recover-google-ranking-drop.html</guid>
+      <description>A calm, step-by-step process to diagnose whether it's a manual action, algorithm update, technical fault or content issue — and a realistic recovery timeline.</description>
+      <enclosure url="https://nextseo24.com/img/cover-ranking-drop-recovery.svg" type="image/svg+xml" length="0" />
+      <pubDate>Wed, 29 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Website Migration Without Losing Google Rankings</title>
+      <link>https://nextseo24.com/magazine/website-migration-seo-checklist.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/website-migration-seo-checklist.html</guid>
+      <description>A step-by-step SEO migration checklist — full URL mapping, 301 redirects, staging safeguards and post-launch monitoring — so you don't lose rankings.</description>
+      <enclosure url="https://nextseo24.com/img/cover-website-migration.svg" type="image/svg+xml" length="0" />
+      <pubDate>Wed, 29 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>E-commerce SEO Malaysia: Shopee/Lazada vs Your Own Website</title>
+      <link>https://nextseo24.com/magazine/ecommerce-seo-malaysia-marketplace-vs-website.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/ecommerce-seo-malaysia-marketplace-vs-website.html</guid>
+      <description>Should a Malaysian seller invest in Shopee/Lazada or their own website? How marketplace ranking actually works, what it costs you long-term, and the hybrid approach that works.</description>
+      <enclosure url="https://nextseo24.com/img/cover-ecommerce-marketplace.svg" type="image/svg+xml" length="0" />
+      <pubDate>Wed, 29 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Why Isn't My Website Ranking on Google? 12 Real Reasons</title>

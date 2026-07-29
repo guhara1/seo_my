@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Migration Without Losing Google Rankings | NEXT SEO24</title>
+<meta name="description" content="Redesigning or moving your website? A step-by-step SEO migration checklist — full URL mapping, 301 redirects, staging safeguards and post-launch monitoring — so you don't lose rankings.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="NEXT SEO24 Team">
+<link rel="canonical" href="https://nextseo24.com/magazine/website-migration-seo-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Website Migration Without Losing Google Rankings">
+<meta property="og:description" content="A step-by-step SEO migration checklist — URL mapping, 301 redirects, staging safeguards and post-launch monitoring — so a redesign doesn't tank your rankings.">
+<meta property="og:url" content="https://nextseo24.com/magazine/website-migration-seo-checklist.html">
+<meta property="og:image" content="https://nextseo24.com/img/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Website Migration Without Losing Google Rankings">
+<meta name="twitter:description" content="A step-by-step SEO migration checklist — URL mapping, 301 redirects, staging safeguards and post-launch monitoring — so a redesign doesn't tank your rankings.">
+<meta name="twitter:image" content="https://nextseo24.com/img/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../article.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Website migration without losing Google rankings: the full checklist",
+  "image": "https://nextseo24.com/img/cover-website-migration.svg",
+  "author": { "@type": "Organization", "name": "NEXT SEO24 Team" },
+  "publisher": { "@type": "Organization", "name": "NEXT SEO24", "url": "https://nextseo24.com/" },
+  "datePublished": "2026-07-29",
+  "dateModified": "2026-07-29",
+  "mainEntityOfPage": "https://nextseo24.com/magazine/website-migration-seo-checklist.html",
+  "articleSection": "Technical SEO"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nextseo24.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Magazine", "item": "https://nextseo24.com/magazine/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "Website Migration SEO Checklist", "item": "https://nextseo24.com/magazine/website-migration-seo-checklist.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much traffic loss is normal during a website migration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Even a well-executed migration typically shows a temporary dip of around 5-15% for one to three weeks while Google recrawls and reprocesses redirects. A drop beyond that range, or one that doesn't start recovering within a month, usually points to a specific error rather than normal reprocessing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I redirect old pages that have no modern equivalent to the homepage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Mass-redirecting unmatched URLs to the homepage is treated by Google as a soft 404 and wastes the ranking signals those pages held. Redirect each URL to its closest genuine content match; if none exists, let it 404 properly rather than redirecting it somewhere irrelevant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should I keep 301 redirects in place after a migration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Indefinitely where possible, and at minimum for one to two years. Google can take months to fully transfer signals, and external backlinks pointing to old URLs never expire on their own — removing redirects too early breaks both."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#E11D29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+    <input type="checkbox" id="navtoggle" class="navtoggle">
+    <nav class="menu" aria-label="Primary">
+      <a href="../index.html" data-i18n="nav_home">Home</a>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+        </div>
+      </div>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+        </div>
+      </div>
+      <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+      <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="../index.html#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../index.html" data-i18n="bc_home">Home</a><span>›</span><a href="index.html" data-i18n="nav_mag">Magazine</a><span>›</span>Website Migration Checklist
+    </nav>
+    <article>
+      <img class="hero" src="../img/cover-website-migration.svg" width="1200" height="675" alt="Infographic: website migration SEO checklist — old URLs mapped to new URLs with 301 redirects — NEXT SEO24" fetchpriority="high">
+      <div class="post-meta"><span class="cat" data-i18n="wm_cat">Technical SEO</span><span>·</span><span>29 July 2026</span><span>·</span><span data-i18n="wm_read">10 min read</span></div>
+      <h1 data-i18n="wm_h1">Website migration without losing Google rankings: the full checklist</h1>
+      <p class="lead" data-i18n="wm_lead">We've been called in to fix more post-migration traffic collapses than we'd like — a new website launches, looks great, and organic traffic quietly falls 40-70% over the following month. It is almost always preventable. Here is the exact checklist we run for every client migration, redesign or replatform.</p>
+
+      <div class="byline">
+        <span class="av">NS</span>
+        <span class="meta"><b data-i18n="by_team">NEXT SEO24 Team</b> · <span data-i18n="by_loc">Kuala Lumpur</span><br><span data-i18n="wm_updated">Last updated 29 July 2026</span> · <a href="../why-us.html" data-i18n="by_about">About our team</a></span>
+      </div>
+
+      <p data-i18n="wm_p1">A migration is any change that alters URLs, platform or structure — a redesign, a move from WordPress to Shopify, switching domains, or restructuring your site's folders. Google has to rediscover and re-evaluate every page from scratch, and it uses your redirects as the map. Get the map wrong, and years of accumulated ranking signal simply doesn't transfer.</p>
+
+      <h2 data-i18n="wm_h2a">Before you touch anything: build a complete URL inventory</h2>
+      <p data-i18n="wm_p2">The single most common mistake is working only from the current sitemap. Sitemaps frequently miss old, orphaned or unlinked pages that still hold rankings and backlinks. Pull your full URL list from three sources and merge them:</p>
+      <ul>
+        <li data-i18n="wm_li1"><b>Google Search Console.</b> Export every indexed URL from the Coverage/Pages report — this is the definitive list of what Google currently knows about.</li>
+        <li data-i18n="wm_li2"><b>A full site crawl.</b> Use a crawler (Screaming Frog or similar) on the live site to catch pages Search Console hasn't picked up recently.</li>
+        <li data-i18n="wm_li3"><b>Your analytics.</b> Cross-check against Google Analytics for any URL that received real traffic in the last 12 months, even if lightly indexed.</li>
+      </ul>
+
+      <h2 data-i18n="wm_h2b">Map every single URL — not just the top ones</h2>
+      <p data-i18n="wm_p3">Build one spreadsheet: old URL, new URL, priority, status. Two rules make or break this step:</p>
+      <ul>
+        <li data-i18n="wm_li4"><b>One redirect hop, always.</b> Redirect A directly to C — never A→B→C. Redirect chains dilute signal at every hop and some crawlers stop following after a few hops entirely.</li>
+        <li data-i18n="wm_li5"><b>Never mass-redirect to the homepage.</b> A URL with no genuine equivalent should redirect to its closest real content match — a parent category, for example — or be left to 404 properly. Google treats an irrelevant catch-all redirect as a soft 404, and you lose the ranking value of that URL either way while also confusing users.</li>
+      </ul>
+
+      <h2 data-i18n="wm_h2c">Preserve on-page SEO equity during the rebuild</h2>
+      <p data-i18n="wm_p4">Keep title tags, meta descriptions and core headings the same — or very close — at launch, even if the visual design changes completely. Changing platform, design and on-page copy all at once means that if rankings move afterward, you have no way to isolate which change caused it. Roll out content and copy changes as a separate phase after the migration has stabilised.</p>
+
+      <h2 data-i18n="wm_h2d">Keep the staging site out of Google entirely</h2>
+      <p data-i18n="wm_p5">We've seen a staging subdomain get indexed, then compete with and even outrank the real site on launch day because it had more accumulated trust at that URL. Before any content goes on a staging environment, block it with a site-wide <code>noindex</code> meta tag or, more reliably, HTTP authentication so crawlers can never reach it at all. Never rely on <code>robots.txt</code> alone — a disallowed page can still get indexed by URL if it's linked to from elsewhere.</p>
+
+      <h2 data-i18n="wm_h2e">Launch day sequence</h2>
+      <ul>
+        <li data-i18n="wm_li6">Push all redirects live before or at the exact moment the new site goes live — never after.</li>
+        <li data-i18n="wm_li7">Submit the new XML sitemap in Search Console immediately.</li>
+        <li data-i18n="wm_li8">Keep the old sitemap accessible (even if it 404s the individual URLs through your redirect map) for two to four weeks so Google can process the transition in an orderly way.</li>
+        <li data-i18n="wm_li9">Use the URL Inspection tool to request indexing on your 10-20 highest-value pages rather than waiting for organic recrawl.</li>
+        <li data-i18n="wm_li10">Double-check <code>robots.txt</code> didn't inherit a staging "Disallow: /" rule — this single leftover line has taken entire sites out of Google on launch day.</li>
+      </ul>
+
+      <h2 data-i18n="wm_h2f">The first 30 days: what to actually monitor</h2>
+      <p data-i18n="wm_p6">Check Search Console's Coverage report daily for the first two weeks, watching specifically for a spike in 404 or soft-404 errors — that's your redirect map telling you what it missed. Compare traffic to the same period last year rather than last month, since most businesses have real seasonality that's easy to mistake for migration damage. A temporary dip of roughly 5-15% for one to three weeks is normal reprocessing; a drop beyond that, or one that isn't recovering by week four, means something in the checklist above was missed.</p>
+
+      <h2 data-i18n="wm_h2g">Migration disasters we've actually seen</h2>
+      <ul>
+        <li data-i18n="wm_li11"><b>A "Disallow: /" left in production robots.txt</b> after copying it from the staging environment — the entire site vanished from Google within a week.</li>
+        <li data-i18n="wm_li12"><b>Every old blog URL redirected to the new homepage</b> "to be safe" — hundreds of ranking articles reduced to soft 404s overnight.</li>
+        <li data-i18n="wm_li13"><b>A canonical tag left pointing at the staging domain</b> after copy-pasting the template, telling Google the staging site was the "real" version.</li>
+        <li data-i18n="wm_li14"><b>Redirect chains three and four hops long</b> from years of incremental restructuring, silently leaking ranking signal at every hop.</li>
+      </ul>
+      <p data-i18n="wm_p7">If a migration is planned and you want a second pair of eyes on the redirect map before launch, send it to us — this is exactly the kind of review that's far cheaper before launch than after.</p>
+
+      <h2 data-i18n="faq_h">Frequently asked questions</h2>
+      <h3 data-i18n="wm_q1">How much traffic loss is normal during a website migration?</h3>
+      <p data-i18n="wm_a1">Even a well-executed migration typically shows a temporary dip of around 5-15% for one to three weeks while Google recrawls and reprocesses redirects. A drop beyond that range, or one that doesn't start recovering within a month, usually points to a specific error rather than normal reprocessing.</p>
+      <h3 data-i18n="wm_q2">Should I redirect old pages that have no modern equivalent to the homepage?</h3>
+      <p data-i18n="wm_a2">No. Mass-redirecting unmatched URLs to the homepage is treated by Google as a soft 404 and wastes the ranking signals those pages held. Redirect each URL to its closest genuine content match; if none exists, let it 404 properly rather than redirecting it somewhere irrelevant.</p>
+      <h3 data-i18n="wm_q3">How long should I keep 301 redirects in place after a migration?</h3>
+      <p data-i18n="wm_a3">Indefinitely where possible, and at minimum for one to two years. Google can take months to fully transfer signals, and external backlinks pointing to old URLs never expire on their own — removing redirects too early breaks both.</p>
+
+      <div class="cta-box" id="contact">
+        <h2 data-i18n="wm_cta_h">Planning a redesign or replatform?</h2>
+        <p data-i18n="wm_cta_p">Send us your current sitemap and we'll review your migration plan for free before you launch — the redirect mistakes above are far cheaper to catch beforehand.</p>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="cta_btn">Chat on WhatsApp →</a>
+      </div>
+
+      <div class="related">
+        <div class="k" data-i18n="rel_k">Explore more</div>
+        <a href="why-website-not-ranking-google.html"><span data-i18n="art_wr">Why isn't my website ranking on Google? 12 real reasons</span> <span class="arr">→</span></a>
+        <a href="../services/web-development.html"><span data-i18n="svc_web">Website Development</span> <span class="arr">→</span></a>
+        <a href="index.html"><span data-i18n="nav_mag">Magazine</span> <span class="arr">→</span></a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+        <p data-i18n="foot_about">Kuala Lumpur's SEO &amp; backlink agency. We put your website on the first page of Google — across Korea, Japan and Southeast Asia.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/seomarketingmalaysia" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61586533861775" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.6 13.3 6 14.7 6H17V2.5C16.6 2.4 15.3 2.3 13.8 2.3 10.7 2.3 9 4.1 9 7.1V10H6v4h3v8z"/></svg></a>
+          <a href="https://www.linkedin.com/in/%EB%B0%B1%ED%98%B8-%EA%B0%95-a84273261/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.5h3.3V21H3.3zM9 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.32 0 3.93 2.18 3.93 5V21h-3.3v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21H9z"/></svg></a>
+          <a href="https://blog.naver.com/kolpjihu389" aria-label="Naver Blog" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.273 12.845 7.376 0H0v24h7.726V11.156L16.624 24H24V0h-7.727z"/></svg></a>
+          <a href="https://wa.me/601137950507" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2-1.4-.5-.6-.8-1.3-.9-1.5-.1-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5 0-.1 0-.3-.1-.4-.1-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.6.6 1.9.5 2.3.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_svc">Services</h4>
+        <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+        <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+        <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+        <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+        <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+        <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_markets">Markets</h4>
+        <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+        <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+        <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+        <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_company">Company</h4>
+        <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+        <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+        <a href="../case-studies.html" data-i18n="nav_cases">Case Studies</a>
+        <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+        <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> NEXT SEO24 Sdn Bhd. <span data-i18n="foot_rights">All rights reserved.</span></span>
+      <span class="foot-legal"><a href="../privacy-policy.html" data-i18n="foot_privacy">Privacy</a> · <a href="../terms.html" data-i18n="foot_terms">Terms</a></span>
+      <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const WHATSAPP_NUMBER = "601137950507";
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('waLink').href =
+  "https://wa.me/" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent("Hello, I'm planning a website migration/redesign and would like a free review of my redirect plan before launch.\n\nName :\nE-Mail :\nWebsite :\nEnquiry Topic :");
+</script>
+<script id="page-i18n">
+window.PAGE_I18N = {
+  ko: {
+    wm_cat:"기술 SEO",
+    wm_read:"10분 읽기",
+    wm_h1:"구글 순위를 잃지 않는 웹사이트 이전 체크리스트",
+    wm_lead:"새 웹사이트를 런칭한 뒤 한 달 사이 오가닉 트래픽이 40~70% 조용히 빠지는 사고를 저희는 여러 번 수습해왔습니다. 대부분 막을 수 있었던 문제입니다. 리디자인, 리플랫폼, 이전 작업 때마다 저희가 실제로 사용하는 체크리스트를 그대로 공개합니다.",
+    wm_updated:"최종 업데이트 2026년 7월 29일",
+    wm_p1:"이전(마이그레이션)이란 URL, 플랫폼, 구조 중 하나라도 바뀌는 모든 변화를 뜻합니다 — 리디자인, 워드프레스에서 Shopify로 전환, 도메인 이동, 폴더 구조 재편 등. 구글은 모든 페이지를 처음부터 다시 발견하고 재평가해야 하며, 그 지도 역할을 하는 것이 리다이렉트입니다. 이 지도가 틀리면 수년간 쌓아온 순위 신호가 그대로 사라집니다.",
+    wm_h2a:"손대기 전에: 완전한 URL 목록부터 만드세요",
+    wm_p2:"가장 흔한 실수는 현재 사이트맵만 보고 작업하는 것입니다. 사이트맵은 여전히 순위와 백링크를 보유한 오래된·고아·미연결 페이지를 자주 놓칩니다. 세 가지 출처에서 URL 전체 목록을 뽑아 합치세요.",
+    wm_li1:"<b>구글 서치 콘솔.</b> Coverage/페이지 리포트에서 색인된 모든 URL을 내보내세요 — 구글이 현재 알고 있는 것의 확정 목록입니다.",
+    wm_li2:"<b>전체 사이트 크롤.</b> Screaming Frog 등 크롤러로 라이브 사이트를 크롤링해, 서치 콘솔이 최근 놓쳤을 수 있는 페이지를 잡아냅니다.",
+    wm_li3:"<b>애널리틱스.</b> 지난 12개월간 실제 트래픽을 받은 URL은 색인 상태가 약해도 구글 애널리틱스와 대조해 목록에 포함하세요.",
+    wm_h2b:"모든 URL을 매핑하세요 — 상위 몇 개만이 아니라",
+    wm_p3:"스프레드시트 하나에: 기존 URL, 새 URL, 우선순위, 상태를 정리하세요. 성패를 가르는 두 가지 원칙이 있습니다.",
+    wm_li4:"<b>항상 리다이렉트 한 번만.</b> A를 C로 바로 리다이렉트하세요 — A→B→C 체인은 절대 안 됩니다. 리다이렉트 체인은 매 단계마다 신호를 희석시키고, 일부 크롤러는 몇 단계 이후 아예 따라가지 않습니다.",
+    wm_li5:"<b>홈페이지로 대량 리다이렉트 금지.</b> 정확한 대응 페이지가 없는 URL은 가장 가까운 실제 콘텐츠(예: 상위 카테고리)로 리다이렉트하거나, 차라리 정상적으로 404 처리하세요. 구글은 무관한 일괄 리다이렉트를 소프트 404로 취급하며, 어느 쪽이든 그 URL의 순위 가치는 사라지고 사용자에게도 혼란을 줍니다.",
+    wm_h2c:"재구축 중 온페이지 SEO 자산을 지키세요",
+    wm_p4:"디자인이 완전히 바뀌더라도 타이틀 태그, 메타 설명, 핵심 제목은 동일하거나 최대한 비슷하게 유지하세요. 플랫폼·디자인·온페이지 카피를 한 번에 모두 바꾸면, 이후 순위가 움직여도 원인을 특정할 방법이 없습니다. 콘텐츠·카피 변경은 이전이 안정된 뒤 별도 단계로 진행하세요.",
+    wm_h2d:"스테이징 사이트는 구글에 절대 노출되지 않게 하세요",
+    wm_p5:"스테이징 서브도메인이 색인되어, 런칭 당일 그 URL이 더 많은 누적 신뢰를 갖고 있어서 실제 사이트와 경쟁하거나 심지어 앞서는 경우를 본 적이 있습니다. 스테이징 환경에 콘텐츠를 올리기 전, 사이트 전체에 noindex 메타 태그를 걸거나 더 확실하게는 HTTP 인증으로 크롤러가 아예 접근할 수 없게 하세요. robots.txt만 믿지 마세요 — 차단된 페이지도 다른 곳에서 링크되면 URL 자체로 색인될 수 있습니다.",
+    wm_h2e:"런칭 당일 순서",
+    wm_li6:"새 사이트가 라이브되는 순간 또는 그 직전에 모든 리다이렉트를 적용하세요 — 절대 나중에 하지 마세요.",
+    wm_li7:"새 XML 사이트맵을 서치 콘솔에 즉시 제출하세요.",
+    wm_li8:"구글이 전환 과정을 순서대로 처리할 수 있도록, 기존 사이트맵을 2~4주간 접근 가능한 상태로 유지하세요(개별 URL은 리다이렉트 맵을 통해 404가 되더라도).",
+    wm_li9:"오가닉 재크롤을 기다리는 대신, URL 검사 도구로 가치가 가장 높은 10~20개 페이지의 색인을 직접 요청하세요.",
+    wm_li10:"robots.txt가 스테이징의 'Disallow: /' 규칙을 그대로 물려받지 않았는지 다시 확인하세요 — 이 한 줄이 남아 런칭 당일 사이트 전체가 구글에서 사라진 사례가 있습니다.",
+    wm_h2f:"첫 30일: 실제로 확인해야 할 것",
+    wm_p6:"처음 2주간 서치 콘솔의 Coverage 리포트를 매일 확인하며, 특히 404·소프트 404 급증을 주시하세요 — 리다이렉트 맵이 무엇을 놓쳤는지 알려주는 신호입니다. 지난달이 아니라 작년 같은 기간과 비교하세요, 많은 업체가 실제 계절성을 갖고 있어 이전 손상으로 착각하기 쉽습니다. 1~3주간 5~15% 정도의 일시적 하락은 정상적인 재처리 과정이며, 이를 넘어서거나 4주차에도 회복되지 않는다면 위 체크리스트 중 무언가를 놓친 것입니다.",
+    wm_h2g:"저희가 실제로 겪은 이전 참사들",
+    wm_li11:"<b>스테이징에서 복사한 'Disallow: /'가 프로덕션 robots.txt에 그대로 남아</b> 일주일 만에 사이트 전체가 구글에서 사라진 사례.",
+    wm_li12:"<b>'안전하게' 하려고 기존 블로그 URL을 전부 새 홈페이지로 리다이렉트</b>해, 순위를 갖고 있던 수백 개 글이 하룻밤 사이 소프트 404가 된 사례.",
+    wm_li13:"<b>템플릿을 복사-붙여넣기하며 캐노니컬 태그가 스테이징 도메인을 계속 가리키게</b ​​두어, 구글에게 스테이징 사이트가 '진짜' 버전이라고 알려준 사례.",
+    wm_li14:"<b>수년간의 점진적 구조 개편으로 3~4단계에 이른 리다이렉트 체인</b>이 매 단계마다 조용히 순위 신호를 흘려보낸 사례.",
+    wm_p7:"이전 계획이 있고 런칭 전 리다이렉트 맵을 한 번 더 검토받고 싶다면 저희에게 보내주세요 — 런칭 전 검토가 런칭 후 수습보다 훨씬 저렴합니다.",
+    wm_q1:"웹사이트 이전 중 트래픽 감소는 어느 정도가 정상인가요?",
+    wm_a1:"잘 실행된 이전이라도 구글이 재크롤·재처리하는 1~3주 동안 5~15% 정도의 일시적 하락은 흔합니다. 이 범위를 넘어서거나 한 달 내에 회복 조짐이 없다면, 정상적인 재처리가 아니라 특정 오류를 가리키는 신호일 가능성이 높습니다.",
+    wm_q2:"현대적 대응 페이지가 없는 기존 페이지는 홈페이지로 리다이렉트해야 하나요?",
+    wm_a2:"아니요. 대응되지 않는 URL을 홈페이지로 대량 리다이렉트하면 구글은 이를 소프트 404로 취급하고, 그 페이지들이 갖고 있던 순위 신호는 낭비됩니다. 각 URL을 가장 가까운 실제 콘텐츠로 리다이렉트하고, 없다면 무관한 곳으로 보내는 대신 정상적으로 404 처리하세요.",
+    wm_q3:"이전 후 301 리다이렉트는 얼마나 유지해야 하나요?",
+    wm_a3:"가능하면 무기한, 최소 1~2년은 유지하세요. 구글이 신호를 완전히 이전하는 데 몇 달이 걸릴 수 있고, 기존 URL을 가리키는 외부 백링크는 저절로 사라지지 않습니다 — 리다이렉트를 너무 일찍 제거하면 둘 다 깨집니다.",
+    wm_cta_h:"리디자인이나 플랫폼 이전을 계획 중이신가요?",
+    wm_cta_p:"현재 사이트맵을 보내주시면 런칭 전에 이전 계획을 무료로 검토해 드립니다 — 위 리다이렉트 실수들은 사전에 잡는 편이 훨씬 저렴합니다."
+  }
+};
+</script>
+<script src="../i18n.js"></script>
+</body>
+</html>
