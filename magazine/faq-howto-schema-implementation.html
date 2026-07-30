@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ &amp; HowTo Schema in Practice: A Hands-On Guide | NEXT SEO24</title>
+<meta name="description" content="Working JSON-LD examples for FAQPage and HowTo schema, the rules that actually trip people up, and how eligibility for these rich results has changed since 2023.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="NEXT SEO24 Team">
+<link rel="canonical" href="https://nextseo24.com/magazine/faq-howto-schema-implementation.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FAQ & HowTo Schema in Practice: A Hands-On Guide">
+<meta property="og:description" content="Working JSON-LD examples for FAQPage and HowTo schema, common implementation mistakes, and how rich-result eligibility has changed.">
+<meta property="og:url" content="https://nextseo24.com/magazine/faq-howto-schema-implementation.html">
+<meta property="og:image" content="https://nextseo24.com/img/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FAQ & HowTo Schema in Practice: A Hands-On Guide">
+<meta name="twitter:description" content="Working JSON-LD examples for FAQPage and HowTo schema, common implementation mistakes, and how rich-result eligibility has changed.">
+<meta name="twitter:image" content="https://nextseo24.com/img/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../article.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "FAQ and HowTo schema in practice: a hands-on implementation guide",
+  "image": "https://nextseo24.com/img/cover-faq-howto-schema.svg",
+  "author": { "@type": "Organization", "name": "NEXT SEO24 Team" },
+  "publisher": { "@type": "Organization", "name": "NEXT SEO24", "url": "https://nextseo24.com/" },
+  "datePublished": "2026-07-30",
+  "dateModified": "2026-07-30",
+  "mainEntityOfPage": "https://nextseo24.com/magazine/faq-howto-schema-implementation.html",
+  "articleSection": "Technical SEO"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nextseo24.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Magazine", "item": "https://nextseo24.com/magazine/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "FAQ & HowTo Schema Guide", "item": "https://nextseo24.com/magazine/faq-howto-schema-implementation.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does FAQPage schema still show as a rich result for every site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Since 2023, Google has limited FAQ rich results to a narrower set of well-established, authoritative sites rather than showing them broadly. The schema is still worth implementing correctly for the sites that do qualify and for general content clarity, but it shouldn't be the main reason you add it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add FAQ schema to content that isn't visible on the page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The questions and answers in your structured data must match content genuinely visible to users on that page. Markup describing content that isn't actually there is a policy violation that can result in a manual action, not just a missed rich result."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use JSON-LD or microdata for schema markup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JSON-LD is Google's recommended format and the one used throughout this site. It's easier to implement and maintain since it lives in a single script block rather than being woven through your HTML attributes."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#E11D29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+    <input type="checkbox" id="navtoggle" class="navtoggle">
+    <nav class="menu" aria-label="Primary">
+      <a href="../index.html" data-i18n="nav_home">Home</a>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+        </div>
+      </div>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+        </div>
+      </div>
+      <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+      <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="../index.html#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../index.html" data-i18n="bc_home">Home</a><span>›</span><a href="index.html" data-i18n="nav_mag">Magazine</a><span>›</span>FAQ &amp; HowTo Schema Guide
+    </nav>
+    <article>
+      <img class="hero" src="../img/cover-faq-howto-schema.svg" width="1200" height="675" alt="Infographic: FAQ and HowTo structured data implementation — a code editor showing JSON-LD next to the rendered rich result — NEXT SEO24" fetchpriority="high">
+      <div class="post-meta"><span class="cat" data-i18n="sc_cat">Technical SEO</span><span>·</span><span>30 July 2026</span><span>·</span><span data-i18n="sc_read">9 min read</span></div>
+      <h1 data-i18n="sc_h1">FAQ and HowTo schema in practice: a hands-on implementation guide</h1>
+      <p class="lead" data-i18n="sc_lead">Most schema markup guides explain what structured data is and stop there. This one gives you working code, the rules that actually trip people up during implementation, and an honest account of how much rich-result eligibility has narrowed since 2023 — so you know exactly what you're getting before you invest the time.</p>
+
+      <div class="byline">
+        <span class="av">NS</span>
+        <span class="meta"><b data-i18n="by_team">NEXT SEO24 Team</b> · <span data-i18n="by_loc">Kuala Lumpur</span><br><span data-i18n="sc_updated">Last updated 30 July 2026</span> · <a href="../why-us.html" data-i18n="by_about">About our team</a></span>
+      </div>
+
+      <h2 data-i18n="sc_h2a">What this schema actually does — and doesn't</h2>
+      <p data-i18n="sc_p1">FAQPage and HowTo structured data make your content eligible for expanded rich results in Google Search — extra visual space and, potentially, a higher click-through rate for the same ranking position. They are not a direct ranking factor: Google's own documentation is explicit that structured data doesn't guarantee a rich result or a ranking boost by itself. Treat it as a clarity and presentation layer on top of genuinely good content, not a shortcut around writing that content.</p>
+
+      <h2 data-i18n="sc_h2b">A working FAQPage example</h2>
+      <p data-i18n="sc_p2">This is the exact pattern used across every article on this site — a valid, minimal FAQPage block:</p>
+      <pre style="background:rgba(255,255,255,0.04);border:1px solid rgba(232,233,227,0.12);border-radius:12px;padding:18px 20px;overflow-x:auto;font-size:13px;line-height:1.6;color:#B9BEB6"><code>{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does SEO take to work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most sites see meaningful movement in 3-6 months, with gains compounding after that."
+      }
+    }
+  ]
+}</code></pre>
+      <p data-i18n="sc_p3">Add one object per question inside the <code>mainEntity</code> array. The critical rule: every question and answer in the markup must appear, in substance, as visible text on the same page — this is not a place to summarise or add content that only exists in the schema.</p>
+
+      <h2 data-i18n="sc_h2c">A working HowTo example</h2>
+      <p data-i18n="sc_p4">For genuine step-by-step processes — not every page needs one — HowTo schema looks like this:</p>
+      <pre style="background:rgba(255,255,255,0.04);border:1px solid rgba(232,233,227,0.12);border-radius:12px;padding:18px 20px;overflow-x:auto;font-size:13px;line-height:1.6;color:#B9BEB6"><code>{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to submit a sitemap in Search Console",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Open Search Console",
+      "text": "Sign in and select your verified property."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Go to Sitemaps",
+      "text": "Find it under the Indexing section in the left menu."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Submit the URL",
+      "text": "Enter your sitemap path (e.g. sitemap.xml) and click Submit."
+    }
+  ]
+}</code></pre>
+      <p data-i18n="sc_p5">Each <code>HowToStep</code> should correspond to a real, distinct step visible in your content — adding an <code>image</code> property per step where you have one genuinely improves how it can render.</p>
+
+      <h2 data-i18n="sc_h2d">Rules that actually trip people up</h2>
+      <ul>
+        <li data-i18n="sc_li1"><b>Markup must match visible content, exactly.</b> Structured data describing content that isn't genuinely on the page is a policy violation, not just a missed opportunity — it can trigger a manual action, not merely fail to render.</li>
+        <li data-i18n="sc_li2"><b>FAQ rich results are no longer shown broadly.</b> Since 2023, Google has limited FAQ rich-result display to a narrower set of well-established, authoritative sites. Implement it correctly regardless — it's still good practice and may qualify later — but don't treat visible rich results as guaranteed.</li>
+        <li data-i18n="sc_li3"><b>Don't add FAQ schema to every page reflexively.</b> Pages with generic, boilerplate questions added purely to try to trigger a rich result add noise without adding eligibility.</li>
+        <li data-i18n="sc_li4"><b>Validate before publishing, every time.</b> Run new markup through Google's Rich Results Test before it goes live — a single malformed field can invalidate the entire block silently.</li>
+        <li data-i18n="sc_li5"><b>Use JSON-LD, not microdata.</b> JSON-LD lives in one script block, is far easier to maintain, and is Google's recommended format — this entire site uses it exclusively.</li>
+      </ul>
+
+      <h2 data-i18n="sc_h2e">A 2026 update worth knowing about</h2>
+      <p data-i18n="sc_p6">In March 2026, Google added new supported attributes specifically for discussion-forum and Q&amp;A page markup, aimed at helping it understand comment-thread structure more precisely. If your site runs a forum or community Q&amp;A section — distinct from a standard FAQ block — the relevant schema type is <code>DiscussionForumPosting</code>, not <code>FAQPage</code>. It's a narrow use case, but worth knowing the correct type exists rather than forcing forum content into FAQ markup it wasn't designed for.</p>
+
+      <h2 data-i18n="sc_h2f">A pre-publish checklist</h2>
+      <ul>
+        <li data-i18n="sc_li6">Every question/answer or step in the markup exists as visible text on the page</li>
+        <li data-i18n="sc_li7">Tested through Google's Rich Results Test with no errors</li>
+        <li data-i18n="sc_li8">JSON-LD format, placed once per page, not duplicated across templates</li>
+        <li data-i18n="sc_li9">FAQ schema only on pages with genuine, specific questions — not boilerplate</li>
+        <li data-i18n="sc_li10">HowTo schema only on pages describing a real, ordered process</li>
+      </ul>
+      <p data-i18n="sc_p7">If you'd like us to check your current structured data implementation for errors or missed opportunities, send us your site — this is a quick, concrete audit to run.</p>
+
+      <h2 data-i18n="faq_h">Frequently asked questions</h2>
+      <h3 data-i18n="sc_q1">Does FAQPage schema still show as a rich result for every site?</h3>
+      <p data-i18n="sc_a1">No. Since 2023, Google has limited FAQ rich results to a narrower set of well-established, authoritative sites rather than showing them broadly. The schema is still worth implementing correctly for the sites that do qualify and for general content clarity, but it shouldn't be the main reason you add it.</p>
+      <h3 data-i18n="sc_q2">Can I add FAQ schema to content that isn't visible on the page?</h3>
+      <p data-i18n="sc_a2">No. The questions and answers in your structured data must match content genuinely visible to users on that page. Markup describing content that isn't actually there is a policy violation that can result in a manual action, not just a missed rich result.</p>
+      <h3 data-i18n="sc_q3">Should I use JSON-LD or microdata for schema markup?</h3>
+      <p data-i18n="sc_a3">JSON-LD is Google's recommended format and the one used throughout this site. It's easier to implement and maintain since it lives in a single script block rather than being woven through your HTML attributes.</p>
+
+      <div class="cta-box" id="contact">
+        <h2 data-i18n="sc_cta_h">Want your structured data checked for errors?</h2>
+        <p data-i18n="sc_cta_p">Send us your site and we'll review your current schema implementation — what's broken, what's missing, and what's worth adding. No obligation.</p>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="cta_btn">Chat on WhatsApp →</a>
+      </div>
+
+      <div class="related">
+        <div class="k" data-i18n="rel_k">Explore more</div>
+        <a href="ai-overviews-seo-2026.html"><span data-i18n="art_ai">Google AI Overviews in 2026: how to stay visible</span> <span class="arr">→</span></a>
+        <a href="eeat-author-trust-signals.html"><span data-i18n="art_ea">E-E-A-T in practice: real author pages &amp; trust signals</span> <span class="arr">→</span></a>
+        <a href="index.html"><span data-i18n="nav_mag">Magazine</span> <span class="arr">→</span></a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+        <p data-i18n="foot_about">Kuala Lumpur's SEO &amp; backlink agency. We put your website on the first page of Google — across Korea, Japan and Southeast Asia.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/seomarketingmalaysia" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61586533861775" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.6 13.3 6 14.7 6H17V2.5C16.6 2.4 15.3 2.3 13.8 2.3 10.7 2.3 9 4.1 9 7.1V10H6v4h3v8z"/></svg></a>
+          <a href="https://www.linkedin.com/in/%EB%B0%B1%ED%98%B8-%EA%B0%95-a84273261/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.5h3.3V21H3.3zM9 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.32 0 3.93 2.18 3.93 5V21h-3.3v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21H9z"/></svg></a>
+          <a href="https://blog.naver.com/kolpjihu389" aria-label="Naver Blog" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.273 12.845 7.376 0H0v24h7.726V11.156L16.624 24H24V0h-7.727z"/></svg></a>
+          <a href="https://wa.me/601137950507" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2-1.4-.5-.6-.8-1.3-.9-1.5-.1-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5 0-.1 0-.3-.1-.4-.1-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.6.6 1.9.5 2.3.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_svc">Services</h4>
+        <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+        <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+        <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+        <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+        <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+        <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_markets">Markets</h4>
+        <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+        <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+        <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+        <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_company">Company</h4>
+        <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+        <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+        <a href="../case-studies.html" data-i18n="nav_cases">Case Studies</a>
+        <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+        <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> NEXT SEO24 Sdn Bhd. <span data-i18n="foot_rights">All rights reserved.</span></span>
+      <span class="foot-legal"><a href="../privacy-policy.html" data-i18n="foot_privacy">Privacy</a> · <a href="../terms.html" data-i18n="foot_terms">Terms</a></span>
+      <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const WHATSAPP_NUMBER = "601137950507";
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('waLink').href =
+  "https://wa.me/" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent("Hello, I'd like my website's structured data (schema markup) reviewed for errors.\n\nName :\nE-Mail :\nWebsite :\nEnquiry Topic :");
+</script>
+<script id="page-i18n">
+window.PAGE_I18N = {
+  ko: {
+    sc_cat:"기술 SEO",
+    sc_read:"9분 읽기",
+    sc_h1:"FAQ·HowTo 스키마 실전: 손으로 직접 구현하는 가이드",
+    sc_lead:"대부분의 스키마 마크업 가이드는 구조화 데이터가 무엇인지 설명하고 거기서 끝납니다. 이 글은 실제로 작동하는 코드, 구현 중 실제로 발목을 잡는 규칙들, 그리고 2023년 이후 리치 결과 노출 자격이 얼마나 좁아졌는지에 대한 솔직한 설명을 담았습니다 — 시간을 투자하기 전에 정확히 무엇을 얻게 되는지 알 수 있도록.",
+    sc_updated:"최종 업데이트 2026년 7월 30일",
+    sc_h2a:"이 스키마가 실제로 하는 일 — 그리고 하지 않는 일",
+    sc_p1:"FAQPage와 HowTo 구조화 데이터는 구글 검색에서 확장된 리치 결과 자격을 부여합니다 — 같은 순위에서도 더 넓은 시각적 공간과 잠재적으로 더 높은 클릭률을 얻을 수 있습니다. 직접적인 순위 요인은 아닙니다 — 구글 자체 문서도 구조화 데이터가 그 자체로 리치 결과나 순위 상승을 보장하지 않는다고 명시하고 있습니다. 이를 콘텐츠를 쓰는 수고를 대신하는 지름길이 아니라, 이미 좋은 콘텐츠 위에 얹는 명확성·표현 레이어로 다루세요.",
+    sc_h2b:"실제로 작동하는 FAQPage 예시",
+    sc_p2:"이 사이트의 모든 아티클에서 사용하는 것과 정확히 같은 패턴입니다 — 유효하고 최소한의 FAQPage 블록입니다.",
+    sc_p3:"mainEntity 배열 안에 질문마다 하나씩 객체를 추가하세요. 핵심 규칙: 마크업의 모든 질문과 답변은 같은 페이지에서 사용자에게 실제로 보이는 텍스트로 실질적으로 존재해야 합니다 — 스키마에만 존재하는 내용을 요약하거나 추가하는 자리가 아닙니다.",
+    sc_h2c:"실제로 작동하는 HowTo 예시",
+    sc_p4:"진짜 단계별 프로세스에 대해 — 모든 페이지에 필요한 것은 아닙니다 — HowTo 스키마는 다음과 같은 모습입니다.",
+    sc_p5:"각 HowToStep은 콘텐츠에서 눈에 보이는 실제 개별 단계와 일치해야 합니다 — 진짜로 있는 경우 단계마다 image 속성을 추가하면 렌더링 방식이 실질적으로 개선됩니다.",
+    sc_h2d:"실제로 발목을 잡는 규칙들",
+    sc_li1:"<b>마크업은 눈에 보이는 콘텐츠와 정확히 일치해야 합니다.</b> 페이지에 실제로 없는 콘텐츠를 설명하는 구조화 데이터는 단순히 놓친 기회가 아니라 정책 위반입니다 — 렌더링 실패에 그치지 않고 수동 조치로 이어질 수 있습니다.",
+    sc_li2:"<b>FAQ 리치 결과는 더 이상 광범위하게 노출되지 않습니다.</b> 2023년 이후 구글은 FAQ 리치 결과 노출을 더 좁은 범위의 확고하고 권위 있는 사이트로 제한했습니다. 그래도 올바르게 구현하는 것은 여전히 좋은 관행이고 나중에 자격을 얻을 수도 있지만, 리치 결과 노출을 당연한 것으로 여기지 마세요.",
+    sc_li3:"<b>모든 페이지에 반사적으로 FAQ 스키마를 넣지 마세요.</b> 리치 결과를 노리기 위해서만 추가한 일반적이고 상투적인 질문이 있는 페이지는 노출 자격 없이 노이즈만 더합니다.",
+    sc_li4:"<b>발행 전 매번 검증하세요.</b> 새 마크업을 라이브에 올리기 전 구글의 리치 결과 테스트를 거치세요 — 필드 하나만 잘못돼도 블록 전체가 조용히 무효화될 수 있습니다.",
+    sc_li5:"<b>마이크로데이터가 아니라 JSON-LD를 쓰세요.</b> JSON-LD는 스크립트 블록 하나에 들어있어 유지보수가 훨씬 쉽고, 구글이 권장하는 형식입니다 — 이 사이트 전체가 JSON-LD만 사용합니다.",
+    sc_h2e:"알아둘 만한 2026년 업데이트",
+    sc_p6:"2026년 3월, 구글은 댓글 스레드 구조를 더 정밀하게 이해하기 위해 토론 포럼과 Q&amp;A 페이지 마크업에 특화된 새로운 지원 속성을 추가했습니다. 사이트에 일반 FAQ 블록과는 다른 포럼이나 커뮤니티 Q&amp;A 섹션이 있다면, 해당하는 스키마 타입은 FAQPage가 아니라 DiscussionForumPosting입니다. 좁은 사용 사례지만, 포럼 콘텐츠를 원래 용도가 아닌 FAQ 마크업에 억지로 끼워 맞추지 말고 올바른 타입이 따로 있다는 것을 알아두는 편이 좋습니다.",
+    sc_h2f:"발행 전 체크리스트",
+    sc_li6:"마크업의 모든 질문·답변 또는 단계가 페이지에 눈에 보이는 텍스트로 존재하는가",
+    sc_li7:"구글 리치 결과 테스트를 오류 없이 통과했는가",
+    sc_li8:"JSON-LD 형식으로, 페이지당 한 번만, 템플릿 전체에 중복되지 않게 넣었는가",
+    sc_li9:"FAQ 스키마는 상투적인 질문이 아니라 진짜 구체적인 질문이 있는 페이지에만 넣었는가",
+    sc_li10:"HowTo 스키마는 진짜 순서가 있는 프로세스를 설명하는 페이지에만 넣었는가",
+    sc_p7:"현재 구조화 데이터 구현에 오류나 놓친 기회가 있는지 확인받고 싶다면 사이트를 보내주세요 — 빠르고 구체적으로 진단해 드립니다.",
+    sc_q1:"FAQPage 스키마가 모든 사이트에서 여전히 리치 결과로 노출되나요?",
+    sc_a1:"아니요. 2023년 이후 구글은 FAQ 리치 결과를 광범위하게 노출하는 대신 더 좁은 범위의 확고하고 권위 있는 사이트로 제한했습니다. 자격이 되는 사이트나 일반적인 콘텐츠 명확성을 위해서는 여전히 올바르게 구현할 가치가 있지만, 그것을 추가하는 주된 이유로 삼아서는 안 됩니다.",
+    sc_q2:"페이지에 보이지 않는 콘텐츠에 FAQ 스키마를 추가해도 되나요?",
+    sc_a2:"안 됩니다. 구조화 데이터의 질문과 답변은 해당 페이지에서 사용자에게 실제로 보이는 콘텐츠와 일치해야 합니다. 실제로 없는 콘텐츠를 설명하는 마크업은 단순히 놓친 리치 결과가 아니라 수동 조치로 이어질 수 있는 정책 위반입니다.",
+    sc_q3:"스키마 마크업에는 JSON-LD와 마이크로데이터 중 무엇을 써야 하나요?",
+    sc_a3:"JSON-LD가 구글이 권장하는 형식이며 이 사이트 전체에서 사용하는 방식입니다. HTML 속성 곳곳에 엮여 들어가는 대신 스크립트 블록 하나에 담기기 때문에 구현과 유지보수가 훨씬 쉽습니다.",
+    sc_cta_h:"구조화 데이터에 오류가 없는지 확인받고 싶으신가요?",
+    sc_cta_p:"사이트를 보내주시면 현재 스키마 구현을 검토해 드립니다 — 무엇이 깨졌고, 무엇이 빠졌고, 무엇을 추가할 가치가 있는지. 의무 없음."
+  }
+};
+</script>
+<script src="../i18n.js"></script>
+</body>
+</html>

@@ -7,13 +7,40 @@
     <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
     <language>en</language>
     <copyright>Copyright NEXT SEO24</copyright>
-    <lastBuildDate>Wed, 29 Jul 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 09:00:00 GMT</lastBuildDate>
     <generator>NEXT SEO24</generator>
     <image>
       <url>https://nextseo24.com/img/og-default.png</url>
       <title>NEXT SEO24 Magazine</title>
       <link>https://nextseo24.com/magazine/index.html</link>
     </image>
+
+    <item>
+      <title>FAQ &amp; HowTo Schema in Practice: A Hands-On Guide</title>
+      <link>https://nextseo24.com/magazine/faq-howto-schema-implementation.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/faq-howto-schema-implementation.html</guid>
+      <description>Working JSON-LD examples for FAQPage and HowTo schema, the rules that actually trip people up, and how eligibility for these rich results has changed since 2023.</description>
+      <enclosure url="https://nextseo24.com/img/cover-faq-howto-schema.svg" type="image/svg+xml" length="0" />
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>E-E-A-T in Practice: Real Author Pages &amp; Trust Signals</title>
+      <link>https://nextseo24.com/magazine/eeat-author-trust-signals.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/eeat-author-trust-signals.html</guid>
+      <description>A hands-on guide to building E-E-A-T that actually holds up: what a real author bio needs, Person schema implementation, and the trust signals Google's guidelines describe.</description>
+      <enclosure url="https://nextseo24.com/img/cover-eeat-author-trust.svg" type="image/svg+xml" length="0" />
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Keyword Research for Malaysia: English, Bahasa Malaysia &amp; Chinese</title>
+      <link>https://nextseo24.com/magazine/keyword-research-malaysia-languages.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/keyword-research-malaysia-languages.html</guid>
+      <description>Direct translation doesn't find real keywords. A practical process for researching what Malaysians actually search in English, Bahasa Malaysia and Chinese — and how to prioritize.</description>
+      <enclosure url="https://nextseo24.com/img/cover-keyword-research-malaysia.svg" type="image/svg+xml" length="0" />
+      <pubDate>Thu, 30 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>My Google Rankings Dropped Overnight — How to Diagnose &amp; Recover</title>

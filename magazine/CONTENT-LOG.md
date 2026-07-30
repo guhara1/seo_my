@@ -26,6 +26,9 @@ post is published so future sessions don't duplicate work.
 | 2026-07-29 | recover-google-ranking-drop.html | Diagnosing & recovering from a sudden ranking drop | SEO |
 | 2026-07-29 | website-migration-seo-checklist.html | Website migration/redesign SEO checklist (redirect mapping) | Technical SEO |
 | 2026-07-29 | ecommerce-seo-malaysia-marketplace-vs-website.html | Shopee/Lazada marketplace SEO vs owned website | E-commerce |
+| 2026-07-30 | keyword-research-malaysia-languages.html | Multilingual keyword research (EN/BM/Chinese) for Malaysia | SEO Strategy |
+| 2026-07-30 | eeat-author-trust-signals.html | E-E-A-T in practice: author pages, Person schema, trust signals | SEO |
+| 2026-07-30 | faq-howto-schema-implementation.html | FAQ/HowTo schema hands-on implementation guide | Technical SEO |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -71,15 +74,28 @@ Repeated the same pattern for the three 2026-07-29 posts:
   southeast-asia.html also links the e-commerce post since Shopee/Lazada
   operate across the region, not just Malaysia.
 
+## Internal linking pass (2026-07-30)
+
+Same pattern for the three 2026-07-30 posts (keyword research, E-E-A-T
+author signals, FAQ/HowTo schema):
+- `index.html` — "From the magazine" teaser swapped to the three newest
+  posts.
+- `markets/malaysia.html` — in-body link from the existing multilingual
+  (EN/BM/Chinese) discussion to the new keyword-research post.
+- `markets/korea.html`, `markets/japan.html` — in-body/related links to
+  the E-E-A-T post (both already discuss E-E-A-T conceptually — this adds
+  the hands-on follow-up) and the schema post.
+- `markets/southeast-asia.html` — related-pages entry for the keyword
+  research post (its multilingual framing applies regionally, not just to
+  Malaysia).
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
 building toward full topical coverage without overlap:
 
-- Keyword research across BM / English / Mandarin for the Malaysian market
 - On-page SEO / technical audit checklist (distinct from the cost/timeline/
   ranking-diagnostic/migration posts already published)
-- E-E-A-T in practice: author pages, credentials, trust signals
 - Content marketing / blog strategy for lead generation (not just ranking)
 - Social media + SEO crossover (Instagram/TikTok discovery vs Google)
 - Video SEO / YouTube for Malaysian businesses
@@ -87,8 +103,11 @@ building toward full topical coverage without overlap:
 - B2B SEO / lead-gen for professional services (law, finance, consulting)
 - Voice search and conversational query optimization
 - International/hreflang SEO for a site spanning MY/KR/JP/SEA at once
-- Structured FAQ/HowTo schema in practice (a hands-on implementation guide,
-  distinct from the AI Overviews post's higher-level treatment)
+- Image SEO in practice: preferred-thumbnail markup (schema + og:image),
+  alt text and file naming that actually helps (ties to the March 2026
+  preferred-image Google update noted in SEO-POLICY.md)
+- Google News eligibility criteria, for clients who publish news-adjacent
+  content (independent, fact-based reporting, bylines, editorial policy)
 
 ## Style/template notes for new posts
 
