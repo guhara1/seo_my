@@ -32,6 +32,9 @@ post is published so future sessions don't duplicate work.
 | 2026-07-31 | on-page-seo-technical-audit-checklist.html | On-page/technical SEO audit checklist — the real order of operations | Technical SEO |
 | 2026-07-31 | b2b-seo-professional-services-malaysia.html | B2B SEO for law firms, accountants & consultants | B2B SEO |
 | 2026-07-31 | social-media-seo-instagram-tiktok-vs-google.html | Social media + SEO crossover — Instagram/TikTok discovery vs Google | Social Media |
+| 2026-07-31 | content-marketing-blog-strategy-lead-generation.html | Content marketing/blog strategy mapped to buyer funnel, for leads not just traffic | Content Marketing |
+| 2026-07-31 | video-seo-youtube-malaysia.html | Video SEO for YouTube — keywords, captions, VideoObject schema | Video SEO |
+| 2026-07-31 | multi-branch-franchise-seo-malaysia.html | SEO for multi-branch/franchise businesses — duplicate content, GBP at scale, hub-and-spoke linking | Local SEO |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -106,14 +109,25 @@ B2B professional services, social media crossover):
 - `markets/southeast-asia.html` — related-pages entry for the social
   media crossover post (mobile-first, social-heavy region).
 
+## Internal linking pass (2026-07-31, batch 2)
+
+Same pattern for the second 2026-07-31 batch (content marketing/lead-gen,
+video SEO, multi-branch/franchise SEO):
+- `index.html` — "From the magazine" teaser swapped to the three newest
+  posts.
+- `markets/malaysia.html` — related-pages entry for the multi-branch/
+  franchise post (directly relevant to KL/Selangor/Penang multi-location
+  SMEs) and an in-body link for the content-marketing post.
+- `markets/korea.html`, `markets/japan.html` — in-body/related links for
+  the video SEO post (both markets have strong video-content culture).
+- `markets/southeast-asia.html` — related-pages entry for the
+  multi-branch/franchise post (regional chains spanning MY/SG/TH).
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
 building toward full topical coverage without overlap:
 
-- Content marketing / blog strategy for lead generation (not just ranking)
-- Video SEO / YouTube for Malaysian businesses
-- SEO for multi-branch / franchise businesses in Malaysia
 - Voice search and conversational query optimization
 - International/hreflang SEO for a site spanning MY/KR/JP/SEA at once
 - Image SEO in practice: preferred-thumbnail markup (schema + og:image),

@@ -7,13 +7,40 @@
     <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
     <language>en</language>
     <copyright>Copyright NEXT SEO24</copyright>
-    <lastBuildDate>Fri, 31 Jul 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 21:00:00 GMT</lastBuildDate>
     <generator>NEXT SEO24</generator>
     <image>
       <url>https://nextseo24.com/img/og-default.png</url>
       <title>NEXT SEO24 Magazine</title>
       <link>https://nextseo24.com/magazine/index.html</link>
     </image>
+
+    <item>
+      <title>Content Marketing &amp; Blog Strategy for Lead Generation (Not Just Rankings)</title>
+      <link>https://nextseo24.com/magazine/content-marketing-blog-strategy-lead-generation.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/content-marketing-blog-strategy-lead-generation.html</guid>
+      <description>Traffic isn't the goal — leads are. A practical content strategy that maps posts to how your buyer actually decides, with a realistic publishing cadence for small teams.</description>
+      <enclosure url="https://nextseo24.com/img/cover-content-marketing-leadgen.svg" type="image/svg+xml" length="0" />
+      <pubDate>Fri, 31 Jul 2026 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Video SEO for YouTube: A Practical Guide for Malaysian Businesses</title>
+      <link>https://nextseo24.com/magazine/video-seo-youtube-malaysia.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/video-seo-youtube-malaysia.html</guid>
+      <description>YouTube is the second-largest search engine and works differently from Google web search. Keyword research, titles, captions and VideoObject schema that actually help.</description>
+      <enclosure url="https://nextseo24.com/img/cover-video-seo-youtube.svg" type="image/svg+xml" length="0" />
+      <pubDate>Fri, 31 Jul 2026 21:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>SEO for Multi-Branch &amp; Franchise Businesses in Malaysia</title>
+      <link>https://nextseo24.com/magazine/multi-branch-franchise-seo-malaysia.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/multi-branch-franchise-seo-malaysia.html</guid>
+      <description>One brand, many locations, one set of rankings to win. How to avoid duplicate-content penalties, structure location pages, and manage Google Business Profiles at scale.</description>
+      <enclosure url="https://nextseo24.com/img/cover-multi-branch-franchise.svg" type="image/svg+xml" length="0" />
+      <pubDate>Fri, 31 Jul 2026 21:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>The On-Page SEO Technical Audit Checklist We Actually Use</title>
