@@ -29,6 +29,9 @@ post is published so future sessions don't duplicate work.
 | 2026-07-30 | keyword-research-malaysia-languages.html | Multilingual keyword research (EN/BM/Chinese) for Malaysia | SEO Strategy |
 | 2026-07-30 | eeat-author-trust-signals.html | E-E-A-T in practice: author pages, Person schema, trust signals | SEO |
 | 2026-07-30 | faq-howto-schema-implementation.html | FAQ/HowTo schema hands-on implementation guide | Technical SEO |
+| 2026-07-31 | on-page-seo-technical-audit-checklist.html | On-page/technical SEO audit checklist — the real order of operations | Technical SEO |
+| 2026-07-31 | b2b-seo-professional-services-malaysia.html | B2B SEO for law firms, accountants & consultants | B2B SEO |
+| 2026-07-31 | social-media-seo-instagram-tiktok-vs-google.html | Social media + SEO crossover — Instagram/TikTok discovery vs Google | Social Media |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -89,18 +92,28 @@ author signals, FAQ/HowTo schema):
   research post (its multilingual framing applies regionally, not just to
   Malaysia).
 
+## Internal linking pass (2026-07-31)
+
+Same pattern for the three 2026-07-31 posts (on-page/technical audit,
+B2B professional services, social media crossover):
+- `index.html` — "From the magazine" teaser swapped to the three newest
+  posts.
+- `markets/malaysia.html` — related-pages entries for all three; the
+  B2B post is relevant to Malaysia's professional-services sector.
+- `markets/korea.html`, `markets/japan.html` — related-pages entries for
+  the B2B professional-services post (both markets have significant
+  outbound B2B/corporate clients).
+- `markets/southeast-asia.html` — related-pages entry for the social
+  media crossover post (mobile-first, social-heavy region).
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
 building toward full topical coverage without overlap:
 
-- On-page SEO / technical audit checklist (distinct from the cost/timeline/
-  ranking-diagnostic/migration posts already published)
 - Content marketing / blog strategy for lead generation (not just ranking)
-- Social media + SEO crossover (Instagram/TikTok discovery vs Google)
 - Video SEO / YouTube for Malaysian businesses
 - SEO for multi-branch / franchise businesses in Malaysia
-- B2B SEO / lead-gen for professional services (law, finance, consulting)
 - Voice search and conversational query optimization
 - International/hreflang SEO for a site spanning MY/KR/JP/SEA at once
 - Image SEO in practice: preferred-thumbnail markup (schema + og:image),

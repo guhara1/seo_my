@@ -7,13 +7,40 @@
     <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
     <language>en</language>
     <copyright>Copyright NEXT SEO24</copyright>
-    <lastBuildDate>Thu, 30 Jul 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 09:00:00 GMT</lastBuildDate>
     <generator>NEXT SEO24</generator>
     <image>
       <url>https://nextseo24.com/img/og-default.png</url>
       <title>NEXT SEO24 Magazine</title>
       <link>https://nextseo24.com/magazine/index.html</link>
     </image>
+
+    <item>
+      <title>The On-Page SEO Technical Audit Checklist We Actually Use</title>
+      <link>https://nextseo24.com/magazine/on-page-seo-technical-audit-checklist.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/on-page-seo-technical-audit-checklist.html</guid>
+      <description>The real order of operations for a technical SEO audit — indexability, crawl efficiency, on-page fundamentals, Core Web Vitals and schema — with mistakes we see repeatedly on Malaysian SME sites.</description>
+      <enclosure url="https://nextseo24.com/img/cover-onpage-audit.svg" type="image/svg+xml" length="0" />
+      <pubDate>Fri, 31 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>B2B SEO for Law Firms, Accountants &amp; Consultants in Malaysia</title>
+      <link>https://nextseo24.com/magazine/b2b-seo-professional-services-malaysia.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/b2b-seo-professional-services-malaysia.html</guid>
+      <description>Why B2B SEO for professional services looks nothing like e-commerce SEO — realistic keyword strategy, trust-driven content and honest timelines.</description>
+      <enclosure url="https://nextseo24.com/img/cover-b2b-professional-services.svg" type="image/svg+xml" length="0" />
+      <pubDate>Fri, 31 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
+
+    <item>
+      <title>Instagram, TikTok or Google? Where Malaysians Actually Search First</title>
+      <link>https://nextseo24.com/magazine/social-media-seo-instagram-tiktok-vs-google.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/social-media-seo-instagram-tiktok-vs-google.html</guid>
+      <description>What the shift toward social search really means, what each platform is actually good at finding, and how to make SEO and social work together instead of competing.</description>
+      <enclosure url="https://nextseo24.com/img/cover-social-seo-crossover.svg" type="image/svg+xml" length="0" />
+      <pubDate>Fri, 31 Jul 2026 09:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>FAQ &amp; HowTo Schema in Practice: A Hands-On Guide</title>

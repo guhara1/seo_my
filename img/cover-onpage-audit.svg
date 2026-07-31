@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Infographic: a five-step technical SEO audit order of operations — indexability, crawl efficiency, on-page fundamentals, Core Web Vitals, structured data">
+  <defs>
+    <linearGradient id="bgfade10" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161B17"/>
+      <stop offset="1" stop-color="#0B0D0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgfade10)"/>
+
+  <g font-family="Archivo, sans-serif">
+    <text x="80" y="80" font-size="22" font-weight="700" fill="#E9EAE3">Technical SEO audit — the order that matters</text>
+
+    <!-- step rail -->
+    <g transform="translate(80,130)">
+      <rect x="18" y="0" width="4" height="470" fill="rgba(203,242,74,0.25)"/>
+
+      <!-- step 1 -->
+      <g transform="translate(0,0)">
+        <circle cx="20" cy="20" r="20" fill="#CBF24A"/>
+        <text x="20" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#0B0D0C">1</text>
+        <rect x="60" y="0" width="1000" height="72" rx="12" fill="#161B17" stroke="rgba(232,233,227,0.12)"/>
+        <text x="84" y="30" font-size="15" font-weight="700" fill="#E9EAE3">Indexability</text>
+        <text x="84" y="52" font-size="12.5" fill="#8E978C">robots.txt · meta robots · canonical tags · sitemap accuracy</text>
+      </g>
+
+      <!-- step 2 -->
+      <g transform="translate(0,94)">
+        <circle cx="20" cy="20" r="20" fill="#20261F" stroke="#CBF24A" stroke-width="2"/>
+        <text x="20" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#CBF24A">2</text>
+        <rect x="60" y="0" width="1000" height="72" rx="12" fill="#161B17" stroke="rgba(232,233,227,0.12)"/>
+        <text x="84" y="30" font-size="15" font-weight="700" fill="#E9EAE3">Crawl efficiency</text>
+        <text x="84" y="52" font-size="12.5" fill="#8E978C">orphan pages · click depth · redirect chains · parameter duplication</text>
+      </g>
+
+      <!-- step 3 -->
+      <g transform="translate(0,188)">
+        <circle cx="20" cy="20" r="20" fill="#20261F" stroke="#CBF24A" stroke-width="2"/>
+        <text x="20" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#CBF24A">3</text>
+        <rect x="60" y="0" width="1000" height="72" rx="12" fill="#161B17" stroke="rgba(232,233,227,0.12)"/>
+        <text x="84" y="30" font-size="15" font-weight="700" fill="#E9EAE3">On-page fundamentals</text>
+        <text x="84" y="52" font-size="12.5" fill="#8E978C">unique titles · one H1 per intent · no keyword cannibalization</text>
+      </g>
+
+      <!-- step 4 -->
+      <g transform="translate(0,282)">
+        <circle cx="20" cy="20" r="20" fill="#20261F" stroke="#CBF24A" stroke-width="2"/>
+        <text x="20" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#CBF24A">4</text>
+        <rect x="60" y="0" width="1000" height="72" rx="12" fill="#161B17" stroke="rgba(232,233,227,0.12)"/>
+        <text x="84" y="30" font-size="15" font-weight="700" fill="#E9EAE3">Core Web Vitals &amp; INP</text>
+        <text x="84" y="52" font-size="12.5" fill="#8E978C">real-user data from Search Console, not just a lab test</text>
+      </g>
+
+      <!-- step 5 -->
+      <g transform="translate(0,376)">
+        <circle cx="20" cy="20" r="20" fill="#20261F" stroke="#CBF24A" stroke-width="2"/>
+        <text x="20" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#CBF24A">5</text>
+        <rect x="60" y="0" width="1000" height="72" rx="12" fill="#161B17" stroke="rgba(232,233,227,0.12)"/>
+        <text x="84" y="30" font-size="15" font-weight="700" fill="#E9EAE3">Structured data validation</text>
+        <text x="84" y="52" font-size="12.5" fill="#8E978C">JSON-LD checked against the Rich Results Test, zero errors</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="80" y="640" font-family="Archivo, sans-serif" font-size="13" fill="#4f564e">NEXT SEO24 — The on-page SEO technical audit checklist we actually use</text>
+</svg>

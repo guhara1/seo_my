@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Split-screen infographic comparing what TikTok, Instagram and Google are each actually good at for discovery">
+  <defs>
+    <linearGradient id="bgfade12" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161B17"/>
+      <stop offset="1" stop-color="#0B0D0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgfade12)"/>
+
+  <g font-family="Archivo, sans-serif">
+    <text x="600" y="66" text-anchor="middle" font-size="20" font-weight="700" fill="#E9EAE3">What each platform is actually good at finding</text>
+
+    <!-- three columns -->
+    <g transform="translate(80,100)">
+      <rect width="330" height="440" rx="16" fill="#161B17" stroke="rgba(232,233,227,0.12)"/>
+      <text x="165" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#E9EAE3">TikTok</text>
+      <text x="165" y="70" text-anchor="middle" font-size="11.5" fill="#8E978C">unfiltered, first-person</text>
+      <g font-size="12" fill="#B9BEB6">
+        <rect x="24" y="100" width="282" height="40" rx="8" fill="rgba(232,233,227,0.05)"/>
+        <text x="40" y="125">Is this place worth going to?</text>
+        <rect x="24" y="150" width="282" height="40" rx="8" fill="rgba(232,233,227,0.05)"/>
+        <text x="40" y="175">Restaurant &amp; travel discovery</text>
+        <rect x="24" y="200" width="282" height="40" rx="8" fill="rgba(232,233,227,0.05)"/>
+        <text x="40" y="225">Real product demonstrations</text>
+      </g>
+    </g>
+
+    <g transform="translate(435,100)">
+      <rect width="330" height="440" rx="16" fill="#161B17" stroke="rgba(232,233,227,0.12)"/>
+      <text x="165" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#E9EAE3">Instagram</text>
+      <text x="165" y="70" text-anchor="middle" font-size="11.5" fill="#8E978C">visual proof, local browsing</text>
+      <g font-size="12" fill="#B9BEB6">
+        <rect x="24" y="100" width="282" height="40" rx="8" fill="rgba(232,233,227,0.05)"/>
+        <text x="40" y="125">Aesthetic-driven categories</text>
+        <rect x="24" y="150" width="282" height="40" rx="8" fill="rgba(232,233,227,0.05)"/>
+        <text x="40" y="175">Cafes, salons, retail</text>
+        <rect x="24" y="200" width="282" height="40" rx="8" fill="rgba(232,233,227,0.05)"/>
+        <text x="40" y="225">Checking current activity</text>
+      </g>
+    </g>
+
+    <g transform="translate(790,100)">
+      <rect width="330" height="440" rx="16" fill="#161B17" stroke="rgba(203,242,74,0.3)"/>
+      <text x="165" y="46" text-anchor="middle" font-size="16" font-weight="700" fill="#CBF24A">Google</text>
+      <text x="165" y="70" text-anchor="middle" font-size="11.5" fill="#8E978C">still the default for most searches</text>
+      <g font-size="12" fill="#B9BEB6">
+        <rect x="24" y="100" width="282" height="40" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="40" y="125">Transactional &amp; comparison</text>
+        <rect x="24" y="150" width="282" height="40" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="40" y="175">Pricing, hours, "near me"</text>
+        <rect x="24" y="200" width="282" height="40" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="40" y="225">Evaluating multiple options</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="80" y="640" font-family="Archivo, sans-serif" font-size="13" fill="#4f564e">NEXT SEO24 — Instagram, TikTok or Google: where Malaysians actually search first</text>
+</svg>
