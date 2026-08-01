@@ -35,6 +35,7 @@ post is published so future sessions don't duplicate work.
 | 2026-07-31 | content-marketing-blog-strategy-lead-generation.html | Content marketing/blog strategy mapped to buyer funnel, for leads not just traffic | Content Marketing |
 | 2026-07-31 | video-seo-youtube-malaysia.html | Video SEO for YouTube — keywords, captions, VideoObject schema | Video SEO |
 | 2026-07-31 | multi-branch-franchise-seo-malaysia.html | SEO for multi-branch/franchise businesses — duplicate content, GBP at scale, hub-and-spoke linking | Local SEO |
+| 2026-08-01 | voice-search-conversational-seo-malaysia.html | Voice search & conversational SEO — the real story past the 2016 hype, featured snippets, Speakable schema | SEO Strategy |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -123,12 +124,21 @@ video SEO, multi-branch/franchise SEO):
 - `markets/southeast-asia.html` — related-pages entry for the
   multi-branch/franchise post (regional chains spanning MY/SG/TH).
 
+## Internal linking pass (2026-08-01)
+
+Single-post batch (voice search / conversational SEO):
+- `magazine/index.html` — new feature card at top of grid.
+- `index.html` — "From the magazine" teaser: swapped the multi-branch/
+  franchise card for the new voice-search post (kept content-marketing
+  and video-SEO cards, since they're still fresh from the prior batch).
+- `markets/malaysia.html` — related-pages entry + in-body link from the
+  FAQ page context.
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
 building toward full topical coverage without overlap:
 
-- Voice search and conversational query optimization
 - International/hreflang SEO for a site spanning MY/KR/JP/SEA at once
 - Image SEO in practice: preferred-thumbnail markup (schema + og:image),
   alt text and file naming that actually helps (ties to the March 2026
