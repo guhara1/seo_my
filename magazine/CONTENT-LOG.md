@@ -36,6 +36,7 @@ post is published so future sessions don't duplicate work.
 | 2026-07-31 | video-seo-youtube-malaysia.html | Video SEO for YouTube — keywords, captions, VideoObject schema | Video SEO |
 | 2026-07-31 | multi-branch-franchise-seo-malaysia.html | SEO for multi-branch/franchise businesses — duplicate content, GBP at scale, hub-and-spoke linking | Local SEO |
 | 2026-08-01 | voice-search-conversational-seo-malaysia.html | Voice search & conversational SEO — the real story past the 2016 hype, featured snippets, Speakable schema | SEO Strategy |
+| 2026-08-02 | international-hreflang-seo-multi-market.html | International SEO/hreflang for a site spanning MY/KR/JP/SEA — working code, self-reference bug, x-default | Technical SEO |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -134,12 +135,21 @@ Single-post batch (voice search / conversational SEO):
 - `markets/malaysia.html` — related-pages entry + in-body link from the
   FAQ page context.
 
+## Internal linking pass (2026-08-02)
+
+Single-post batch (international SEO / hreflang):
+- `magazine/index.html` — new feature card at top of grid.
+- `index.html` — "From the magazine" teaser: swapped the content-
+  marketing card for the new hreflang post (kept video-SEO and
+  voice-search cards, still fresh from prior batches).
+- `markets/korea.html` and `markets/japan.html` — in-body links, since
+  hreflang correctness matters most for the multi-language market pages.
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
 building toward full topical coverage without overlap:
 
-- International/hreflang SEO for a site spanning MY/KR/JP/SEA at once
 - Image SEO in practice: preferred-thumbnail markup (schema + og:image),
   alt text and file naming that actually helps (ties to the March 2026
   preferred-image Google update noted in SEO-POLICY.md)

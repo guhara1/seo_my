@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>International SEO &amp; Hreflang: Getting It Right Across MY/KR/JP/SEA | NEXT SEO24</title>
+<meta name="description" content="Hreflang doesn't boost rankings — it decides whether Google shows the right language version to the right searcher. Working code, the mistakes that break it, and when to use x-default.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="NEXT SEO24 Team">
+<link rel="canonical" href="https://nextseo24.com/magazine/international-hreflang-seo-multi-market.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="International SEO & Hreflang: Getting It Right Across MY/KR/JP/SEA">
+<meta property="og:description" content="Working hreflang code, the mistakes that break it silently, and when to use x-default — for a site spanning multiple markets and languages.">
+<meta property="og:url" content="https://nextseo24.com/magazine/international-hreflang-seo-multi-market.html">
+<meta property="og:image" content="https://nextseo24.com/img/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="International SEO & Hreflang: Getting It Right Across MY/KR/JP/SEA">
+<meta name="twitter:description" content="Working hreflang code, the mistakes that break it silently, and when to use x-default.">
+<meta name="twitter:image" content="https://nextseo24.com/img/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../article.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "International SEO and hreflang: getting it right across Malaysia, Korea, Japan and Southeast Asia",
+  "image": "https://nextseo24.com/img/cover-hreflang-international-seo.svg",
+  "author": { "@type": "Organization", "name": "NEXT SEO24 Team" },
+  "publisher": { "@type": "Organization", "name": "NEXT SEO24", "url": "https://nextseo24.com/" },
+  "datePublished": "2026-08-02",
+  "dateModified": "2026-08-02",
+  "mainEntityOfPage": "https://nextseo24.com/magazine/international-hreflang-seo-multi-market.html",
+  "articleSection": "Technical SEO"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nextseo24.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Magazine", "item": "https://nextseo24.com/magazine/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "International SEO & Hreflang", "item": "https://nextseo24.com/magazine/international-hreflang-seo-multi-market.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does hreflang directly improve rankings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Hreflang is not a ranking factor — Google has said this explicitly. Its only job is telling Google which language or regional version of a page to show a given searcher. Getting it wrong doesn't lower your rankings directly, but it can show a Korean searcher your Japanese page, which tanks the click-through and conversion rate even if the ranking position itself is fine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need hreflang if my site just has a language switcher with no separate URLs per language?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and it wouldn't work even if you added it. Hreflang requires each language version to live at its own crawlable URL. A JavaScript language switcher that swaps text on the same URL without changing it gives Google nothing to point hreflang tags at, and typically means only your default language ever gets indexed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the single most common hreflang bug?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A missing or incorrect self-referencing tag — every page in a hreflang set, including the page itself, must list itself as one of its own alternates. Skip this on even one language version and Google can end up ignoring the entire hreflang set for that page, not just the missing entry."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#E11D29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+    <input type="checkbox" id="navtoggle" class="navtoggle">
+    <nav class="menu" aria-label="Primary">
+      <a href="../index.html" data-i18n="nav_home">Home</a>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+        </div>
+      </div>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+        </div>
+      </div>
+      <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+      <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="../index.html#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../index.html" data-i18n="bc_home">Home</a><span>›</span><a href="index.html" data-i18n="nav_mag">Magazine</a><span>›</span>International SEO &amp; Hreflang
+    </nav>
+    <article>
+      <img class="hero" src="../img/cover-hreflang-international-seo.svg" width="1200" height="675" alt="Infographic: hreflang tags connecting the English, Korean, Japanese and Thai versions of one page, each self-referencing and cross-referencing correctly — NEXT SEO24" fetchpriority="high">
+      <div class="post-meta"><span class="cat" data-i18n="hl_cat">Technical SEO</span><span>·</span><span>2 August 2026</span><span>·</span><span data-i18n="hl_read">8 min read</span></div>
+      <h1 data-i18n="hl_h1">International SEO and hreflang: getting it right across Malaysia, Korea, Japan and Southeast Asia</h1>
+      <p class="lead" data-i18n="hl_lead">A site with English, Korean, Japanese and Thai versions of the same pages has a specific technical problem most single-market SEO advice never covers: telling Google which version to show which searcher. Get it wrong and a Korean visitor lands on your Japanese page, or your English homepage outranks its own Korean translation in Korea. Here's how hreflang actually works, and where it silently breaks.</p>
+
+      <div class="byline">
+        <span class="av">NS</span>
+        <span class="meta"><b data-i18n="by_team">NEXT SEO24 Team</b> · <span data-i18n="by_loc">Kuala Lumpur</span><br><span data-i18n="hl_updated">Last updated 2 August 2026</span> · <a href="../why-us.html" data-i18n="by_about">About our team</a></span>
+      </div>
+
+      <h2 data-i18n="hl_h2a">What hreflang is actually for</h2>
+      <p data-i18n="hl_p1">Hreflang is not a ranking factor — Google has said this directly. Its only job is helping Google understand that several URLs are different language or regional versions of the same content, so it can show the right one to the right searcher. A perfectly-ranking page is still a failure if hreflang is broken and it's shown to the wrong audience: a Malaysian Google.com.my searcher landing on the Korean-language version of your homepage isn't a ranking problem, it's a routing problem.</p>
+
+      <h2 data-i18n="hl_h2b">A working example</h2>
+      <p data-i18n="hl_p2">For a page that exists in English, Korean, Japanese and Thai, each language version needs the full set of tags — including a tag pointing to itself:</p>
+      <pre style="background:rgba(255,255,255,0.04);border:1px solid rgba(232,233,227,0.12);border-radius:12px;padding:18px 20px;overflow-x:auto;font-size:13px;line-height:1.6;color:#B9BEB6"><code>&lt;link rel="alternate" hreflang="en" href="https://example.com/en/services/seo" /&gt;
+&lt;link rel="alternate" hreflang="ko" href="https://example.com/ko/services/seo" /&gt;
+&lt;link rel="alternate" hreflang="ja" href="https://example.com/ja/services/seo" /&gt;
+&lt;link rel="alternate" hreflang="th" href="https://example.com/th/services/seo" /&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://example.com/en/services/seo" /&gt;</code></pre>
+      <p data-i18n="hl_p3">This exact block — all five tags — belongs on every one of the four language pages, not just one "master" version. Each page must reference itself as well as the others; that's the part almost everyone gets wrong first.</p>
+
+      <h2 data-i18n="hl_h2c">The most common bug: the missing self-reference</h2>
+      <p data-i18n="hl_p4">Every language version must include a hreflang tag pointing to itself, not just the others. Skip the self-reference on even one page and Google can discard the entire hreflang set for that page — not just fail to apply the missing tag, but ignore the whole cluster, leaving that page to compete on its own without the language signal at all. This is the single most common hreflang error we find in technical audits.</p>
+
+      <h2 data-i18n="hl_h2d">Hreflang without matching content is worse than no hreflang</h2>
+      <p data-i18n="hl_p5">Hreflang tells Google "these pages are equivalent, show the right one" — it doesn't verify that they actually are equivalent. Tagging an English page as the Korean alternate of a page that's only partially translated, or worse, not translated at all, sends a false signal that actively confuses ranking and can result in the wrong, mismatched page being shown. If a translation isn't ready yet, leave that language out of the hreflang set entirely rather than pointing it at content that doesn't match.</p>
+
+      <h2 data-i18n="hl_h2e">Subdirectories, subdomains or ccTLDs?</h2>
+      <p data-i18n="hl_p6">For most small and mid-sized multi-market businesses, subdirectories (<code>example.com/ko/</code>, <code>example.com/ja/</code>) are the practical choice — they inherit the main domain's existing authority immediately, rather than starting a subdomain or country-specific domain from zero. Separate ccTLDs (<code>example.co.kr</code>) can be worth the investment for a business with genuine standalone operations in that country, but for most agencies and SMEs expanding into new markets, that cost and complexity isn't justified early on.</p>
+
+      <h2 data-i18n="hl_h2f">x-default: what it's for</h2>
+      <p data-i18n="hl_p7">The <code>x-default</code> tag tells Google which version to show a searcher whose language or location doesn't match any of your specific alternates — a visitor from a country you don't have a dedicated version for. Point it at your default, broadest-reach version (usually English), not at a random language pick. It's a fallback, not a fifth language version competing with the others.</p>
+
+      <h2 data-i18n="hl_h2g">A pre-publish checklist</h2>
+      <ul>
+        <li data-i18n="hl_li1">Every language version includes a self-referencing hreflang tag, not just links to the others</li>
+        <li data-i18n="hl_li2">The hreflang code (<code>en</code>, <code>ko</code>, <code>ja</code>, <code>th</code>) matches the actual language of that page's content, not a guess</li>
+        <li data-i18n="hl_li3">Each hreflang cluster is reciprocal — if page A references page B, page B references page A back</li>
+        <li data-i18n="hl_li4">No hreflang tag points to a page that isn't genuinely equivalent content</li>
+        <li data-i18n="hl_li5"><code>x-default</code> is set once per cluster, pointing at the broadest-reach version</li>
+        <li data-i18n="hl_li6">Validated in Search Console's International Targeting report, not just eyeballed in the source code</li>
+      </ul>
+      <p data-i18n="hl_p8">If you're running a site across multiple markets and aren't sure your hreflang is actually working, send it over — this is a fast, concrete check to run.</p>
+
+      <h2 data-i18n="faq_h">Frequently asked questions</h2>
+      <h3 data-i18n="hl_q1">Does hreflang directly improve rankings?</h3>
+      <p data-i18n="hl_a1">No. Hreflang is not a ranking factor — Google has said this explicitly. Its only job is telling Google which language or regional version of a page to show a given searcher. Getting it wrong doesn't lower your rankings directly, but it can show a Korean searcher your Japanese page, which tanks the click-through and conversion rate even if the ranking position itself is fine.</p>
+      <h3 data-i18n="hl_q2">Do I need hreflang if my site just has a language switcher with no separate URLs per language?</h3>
+      <p data-i18n="hl_a2">No, and it wouldn't work even if you added it. Hreflang requires each language version to live at its own crawlable URL. A JavaScript language switcher that swaps text on the same URL without changing it gives Google nothing to point hreflang tags at, and typically means only your default language ever gets indexed.</p>
+      <h3 data-i18n="hl_q3">What's the single most common hreflang bug?</h3>
+      <p data-i18n="hl_a3">A missing or incorrect self-referencing tag — every page in a hreflang set, including the page itself, must list itself as one of its own alternates. Skip this on even one language version and Google can end up ignoring the entire hreflang set for that page, not just the missing entry.</p>
+
+      <div class="cta-box" id="contact">
+        <h2 data-i18n="hl_cta_h">Not sure your hreflang setup is actually working?</h2>
+        <p data-i18n="hl_cta_p">Send us your site — we'll check your hreflang implementation against Search Console's International Targeting report and tell you exactly what's broken.</p>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="cta_btn">Chat on WhatsApp →</a>
+      </div>
+
+      <div class="related">
+        <div class="k" data-i18n="rel_k">Explore more</div>
+        <a href="on-page-seo-technical-audit-checklist.html"><span data-i18n="art_oa">The on-page SEO technical audit checklist we actually use</span> <span class="arr">→</span></a>
+        <a href="keyword-research-malaysia-languages.html"><span data-i18n="art_kw">Keyword research for Malaysia: EN, BM and Chinese</span> <span class="arr">→</span></a>
+        <a href="website-migration-seo-checklist.html"><span data-i18n="art_wm">Website migration without losing Google rankings</span> <span class="arr">→</span></a>
+        <a href="index.html"><span data-i18n="nav_mag">Magazine</span> <span class="arr">→</span></a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+        <p data-i18n="foot_about">Kuala Lumpur's SEO &amp; backlink agency. We put your website on the first page of Google — across Korea, Japan and Southeast Asia.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/seomarketingmalaysia" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61586533861775" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.6 13.3 6 14.7 6H17V2.5C16.6 2.4 15.3 2.3 13.8 2.3 10.7 2.3 9 4.1 9 7.1V10H6v4h3v8z"/></svg></a>
+          <a href="https://www.linkedin.com/in/%EB%B0%B1%ED%98%B8-%EA%B0%95-a84273261/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.5h3.3V21H3.3zM9 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.32 0 3.93 2.18 3.93 5V21h-3.3v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21H9z"/></svg></a>
+          <a href="https://blog.naver.com/kolpjihu389" aria-label="Naver Blog" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.273 12.845 7.376 0H0v24h7.726V11.156L16.624 24H24V0h-7.727z"/></svg></a>
+          <a href="https://wa.me/601137950507" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2-1.4-.5-.6-.8-1.3-.9-1.5-.1-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5 0-.1 0-.3-.1-.4-.1-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.6.6 1.9.5 2.3.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_svc">Services</h4>
+        <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+        <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+        <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+        <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+        <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+        <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_markets">Markets</h4>
+        <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+        <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+        <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+        <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_company">Company</h4>
+        <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+        <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+        <a href="../case-studies.html" data-i18n="nav_cases">Case Studies</a>
+        <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+        <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> NEXT SEO24 Sdn Bhd. <span data-i18n="foot_rights">All rights reserved.</span></span>
+      <span class="foot-legal"><a href="../privacy-policy.html" data-i18n="foot_privacy">Privacy</a> · <a href="../terms.html" data-i18n="foot_terms">Terms</a></span>
+      <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const WHATSAPP_NUMBER = "601137950507";
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('waLink').href =
+  "https://wa.me/" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent("Hello, I'd like my site's international/hreflang setup checked.\n\nName :\nE-Mail :\nWebsite :\nEnquiry Topic :");
+</script>
+<script id="page-i18n">
+window.PAGE_I18N = {
+  ko: {
+    hl_cat:"기술 SEO",
+    hl_read:"8분 읽기",
+    hl_h1:"국제 SEO와 hreflang: 말레이시아·한국·일본·동남아시아 전역에서 제대로 하는 법",
+    hl_lead:"같은 페이지의 영어·한국어·일본어·태국어 버전을 운영하는 사이트는 대부분의 단일 시장 SEO 조언이 다루지 않는 특정 기술 문제를 안고 있습니다: 구글에게 어느 버전을 어느 검색자에게 보여줄지 알려주는 일입니다. 이를 잘못하면 한국 방문자가 일본어 페이지에 도착하거나, 영어 홈페이지가 한국에서 자사의 한국어 번역본보다 순위가 높아지는 일이 생깁니다. hreflang이 실제로 어떻게 작동하는지, 어디서 조용히 깨지는지 다룹니다.",
+    hl_updated:"최종 업데이트 2026년 8월 2일",
+    hl_h2a:"hreflang이 실제로 하는 일",
+    hl_p1:"hreflang은 순위 요인이 아닙니다 — 구글이 직접 밝힌 사실입니다. hreflang의 유일한 역할은 여러 URL이 같은 콘텐츠의 서로 다른 언어·지역 버전임을 구글이 이해하도록 도와, 올바른 버전을 올바른 검색자에게 보여주게 하는 것입니다. hreflang이 깨져서 엉뚱한 대상에게 노출된다면 순위가 완벽해도 실패입니다: 말레이시아의 google.com.my 검색자가 홈페이지의 한국어 버전에 도착하는 것은 순위 문제가 아니라 라우팅 문제입니다.",
+    hl_h2b:"실제로 작동하는 예시",
+    hl_p2:"영어·한국어·일본어·태국어로 존재하는 페이지의 경우, 각 언어 버전은 자기 자신을 가리키는 태그를 포함해 전체 태그 세트를 가져야 합니다:",
+    hl_p3:"이 정확한 블록 — 다섯 개 태그 전부 — 은 하나의 '마스터' 버전이 아니라 네 개 언어 페이지 각각에 있어야 합니다. 각 페이지는 다른 페이지들뿐 아니라 자기 자신도 참조해야 합니다 — 이것이 거의 모두가 가장 먼저 틀리는 부분입니다.",
+    hl_h2c:"가장 흔한 버그: 빠진 자기 참조",
+    hl_p4:"모든 언어 버전은 다른 버전만이 아니라 자기 자신을 가리키는 hreflang 태그를 포함해야 합니다. 단 하나의 페이지에서라도 자기 참조를 빠뜨리면 구글은 그 페이지의 hreflang 세트 전체를 폐기할 수 있습니다 — 빠진 태그만 적용에 실패하는 게 아니라 클러스터 전체를 무시해, 그 페이지가 언어 신호 없이 홀로 경쟁하게 됩니다. 이것이 기술 감사에서 발견하는 가장 흔한 hreflang 오류입니다.",
+    hl_h2d:"콘텐츠가 일치하지 않는 hreflang은 hreflang이 없는 것보다 나쁩니다",
+    hl_p5:"hreflang은 구글에게 '이 페이지들은 동등하니 올바른 것을 보여주라'고 말할 뿐 실제로 동등한지 검증하지 않습니다. 부분적으로만 번역됐거나 아예 번역되지 않은 페이지의 한국어 대체판으로 영어 페이지를 태그하면 순위를 실제로 혼란시키고 엉뚱하게 불일치하는 페이지가 노출되는 잘못된 신호를 보냅니다. 번역이 아직 준비되지 않았다면, 일치하지 않는 콘텐츠를 가리키게 두지 말고 그 언어를 hreflang 세트에서 완전히 제외하세요.",
+    hl_h2e:"서브디렉토리, 서브도메인, 아니면 ccTLD?",
+    hl_p6:"대부분의 중소·중견 다시장 비즈니스에게는 서브디렉토리(example.com/ko/, example.com/ja/)가 실용적인 선택입니다 — 서브도메인이나 국가별 도메인을 처음부터 시작하는 대신 메인 도메인의 기존 권위를 즉시 물려받습니다. 별도의 ccTLD(example.co.kr)는 해당 국가에 진짜 독립적인 사업 운영이 있는 비즈니스에게는 투자할 가치가 있을 수 있지만, 새 시장으로 확장하는 대부분의 에이전시·중소기업에게는 초기에 그 비용과 복잡성이 정당화되지 않습니다.",
+    hl_h2f:"x-default: 무엇을 위한 것인가",
+    hl_p7:"x-default 태그는 언어나 위치가 특정 대체판 중 어느 것과도 일치하지 않는 검색자 — 전용 버전이 없는 국가의 방문자 — 에게 어느 버전을 보여줄지 구글에 알려줍니다. 무작위 언어가 아니라 기본, 가장 넓은 도달 범위를 가진 버전(보통 영어)을 가리키게 하세요. 다른 버전들과 경쟁하는 다섯 번째 언어 버전이 아니라 폴백입니다.",
+    hl_h2g:"발행 전 체크리스트",
+    hl_li1:"모든 언어 버전이 다른 버전에 대한 링크뿐 아니라 자기 참조 hreflang 태그를 포함하는가",
+    hl_li2:"hreflang 코드(en, ko, ja, th)가 추측이 아니라 그 페이지 콘텐츠의 실제 언어와 일치하는가",
+    hl_li3:"각 hreflang 클러스터가 상호적인가 — A 페이지가 B 페이지를 참조하면 B 페이지도 A를 다시 참조하는가",
+    hl_li4:"진짜로 동등하지 않은 콘텐츠를 가리키는 hreflang 태그가 없는가",
+    hl_li5:"x-default가 클러스터당 한 번, 가장 넓은 도달 범위를 가진 버전을 가리키도록 설정됐는가",
+    hl_li6:"소스 코드를 눈으로 훑는 게 아니라 서치 콘솔의 국제 타겟팅 보고서에서 검증했는가",
+    hl_p8:"여러 시장에서 사이트를 운영 중인데 hreflang이 실제로 작동하는지 확신이 없다면 보내주세요 — 빠르고 구체적으로 확인해 드립니다.",
+    hl_q1:"hreflang이 순위를 직접 향상시키나요?",
+    hl_a1:"아니요. hreflang은 순위 요인이 아닙니다 — 구글이 명시적으로 밝혔습니다. hreflang의 유일한 역할은 특정 검색자에게 어느 언어·지역 버전을 보여줄지 구글에 알려주는 것입니다. 잘못돼도 순위 자체가 직접 낮아지지는 않지만, 한국 검색자에게 일본어 페이지를 보여줄 수 있고, 순위 위치 자체는 괜찮아도 클릭률과 전환율을 떨어뜨립니다.",
+    hl_q2:"언어별 별도 URL 없이 언어 전환 버튼만 있다면 hreflang이 필요한가요?",
+    hl_a2:"아니요, 추가해도 작동하지 않습니다. hreflang은 각 언어 버전이 각자의 크롤링 가능한 URL에 존재할 것을 요구합니다. URL을 바꾸지 않고 같은 URL에서 텍스트만 바꾸는 자바스크립트 언어 전환 버튼은 구글이 hreflang 태그를 가리킬 대상 자체가 없으며, 보통 기본 언어만 색인된다는 것을 의미합니다.",
+    hl_q3:"가장 흔한 hreflang 버그는 무엇인가요?",
+    hl_a3:"빠지거나 잘못된 자기 참조 태그입니다 — hreflang 세트의 모든 페이지는 자기 자신을 포함해 자신을 자체 대체판 중 하나로 나열해야 합니다. 단 하나의 언어 버전에서라도 이를 빠뜨리면 구글이 그 페이지의 hreflang 세트 전체를 무시하게 될 수 있습니다 — 빠진 항목만이 아니라요.",
+    hl_cta_h:"hreflang 설정이 실제로 작동하는지 확신이 없으신가요?",
+    hl_cta_p:"사이트를 보내주시면 서치 콘솔의 국제 타겟팅 보고서와 대조해 hreflang 구현을 확인하고 정확히 무엇이 깨졌는지 알려드립니다."
+  }
+};
+</script>
+<script src="../i18n.js"></script>
+</body>
+</html>
