@@ -37,6 +37,7 @@ post is published so future sessions don't duplicate work.
 | 2026-07-31 | multi-branch-franchise-seo-malaysia.html | SEO for multi-branch/franchise businesses — duplicate content, GBP at scale, hub-and-spoke linking | Local SEO |
 | 2026-08-01 | voice-search-conversational-seo-malaysia.html | Voice search & conversational SEO — the real story past the 2016 hype, featured snippets, Speakable schema | SEO Strategy |
 | 2026-08-02 | international-hreflang-seo-multi-market.html | International SEO/hreflang for a site spanning MY/KR/JP/SEA — working code, self-reference bug, x-default | Technical SEO |
+| 2026-08-04 | image-seo-alt-text-preferred-image-2026.html | Image SEO — alt text, file names, compression numbers, March 2026 preferred-image update | Technical SEO |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -145,14 +146,22 @@ Single-post batch (international SEO / hreflang):
 - `markets/korea.html` and `markets/japan.html` — in-body links, since
   hreflang correctness matters most for the multi-language market pages.
 
+## Internal linking pass (2026-08-04)
+
+Single-post batch (image SEO / alt text / preferred-image update):
+- `magazine/index.html` — new feature card at top of grid.
+- `index.html` — "From the magazine" teaser: swapped the video-SEO
+  card for the new image-SEO post (kept hreflang and voice-search
+  cards, still fresh from prior batches).
+- `markets/malaysia.html` — in-body link from the technical/on-page
+  SEO bullet, since image weight is a common Core Web Vitals culprit
+  on Malaysian SME sites.
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
 building toward full topical coverage without overlap:
 
-- Image SEO in practice: preferred-thumbnail markup (schema + og:image),
-  alt text and file naming that actually helps (ties to the March 2026
-  preferred-image Google update noted in SEO-POLICY.md)
 - Google News eligibility criteria, for clients who publish news-adjacent
   content (independent, fact-based reporting, bylines, editorial policy)
 
