@@ -7,13 +7,22 @@
     <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
     <language>en</language>
     <copyright>Copyright NEXT SEO24</copyright>
-    <lastBuildDate>Tue, 04 Aug 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 09:00:00 GMT</lastBuildDate>
     <generator>NEXT SEO24</generator>
     <image>
       <url>https://nextseo24.com/img/og-default.png</url>
       <title>NEXT SEO24 Magazine</title>
       <link>https://nextseo24.com/magazine/index.html</link>
     </image>
+
+    <item>
+      <title>Google News Eligibility: What Actually Qualifies (and What Doesn't)</title>
+      <link>https://nextseo24.com/magazine/google-news-eligibility-criteria.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/google-news-eligibility-criteria.html</guid>
+      <description>Publishing frequently doesn't make a site eligible for Google News. The real criteria — authorship, editorial policy, original reporting — and an honest read on whether your business even needs it.</description>
+      <enclosure url="https://nextseo24.com/img/cover-google-news-eligibility.svg" type="image/svg+xml" length="0" />
+      <pubDate>Wed, 05 Aug 2026 09:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Image SEO in Practice: Alt Text, File Names &amp; the 2026 Preferred-Image Update</title>
