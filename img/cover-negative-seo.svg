@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Infographic showing a spike of spammy backlinks being filtered out by Google's algorithm before it reaches a site's rankings">
+  <defs>
+    <linearGradient id="bgfade21" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161B17"/>
+      <stop offset="1" stop-color="#0B0D0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgfade21)"/>
+
+  <g font-family="Archivo, sans-serif">
+    <text x="600" y="60" text-anchor="middle" font-size="20" font-weight="700" fill="#E9EAE3">Most spam links never reach your rankings</text>
+
+    <!-- spam links on left, funneling into filter, clean result on right -->
+    <g transform="translate(80,110)">
+      <text x="0" y="0" font-size="13" font-weight="700" fill="#E88484">Spam link spike</text>
+      <g font-size="10.5" fill="#E88484">
+        <rect x="0" y="16" width="240" height="26" rx="6" fill="rgba(232,74,74,0.08)"/><text x="12" y="34">spammy-link-farm.ru</text>
+        <rect x="0" y="48" width="240" height="26" rx="6" fill="rgba(232,74,74,0.08)"/><text x="12" y="66">low-quality-directory.xyz</text>
+        <rect x="0" y="80" width="240" height="26" rx="6" fill="rgba(232,74,74,0.08)"/><text x="12" y="98">auto-spun-content.top</text>
+        <rect x="0" y="112" width="240" height="26" rx="6" fill="rgba(232,74,74,0.08)"/><text x="12" y="130">link-farm-network.info</text>
+        <rect x="0" y="144" width="240" height="26" rx="6" fill="rgba(232,74,74,0.08)"/><text x="12" y="162">+ 200 more, same anchor text</text>
+      </g>
+    </g>
+
+    <!-- filter -->
+    <g transform="translate(430,180)">
+      <polygon points="0,0 220,0 170,140 50,140" fill="rgba(203,242,74,0.1)" stroke="#CBF24A" stroke-width="2"/>
+      <text x="110" y="60" text-anchor="middle" font-size="12" font-weight="700" fill="#CBF24A">Google's</text>
+      <text x="110" y="80" text-anchor="middle" font-size="12" font-weight="700" fill="#CBF24A">link spam</text>
+      <text x="110" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#CBF24A">filters</text>
+    </g>
+
+    <!-- arrow -->
+    <g stroke="rgba(203,242,74,0.4)" stroke-width="2" fill="none">
+      <line x1="330" y1="200" x2="420" y2="200"/>
+      <polygon points="412,192 412,208 428,200" fill="rgba(203,242,74,0.4)"/>
+    </g>
+    <g stroke="rgba(203,242,74,0.4)" stroke-width="2" fill="none">
+      <line x1="670" y1="250" x2="760" y2="250"/>
+      <polygon points="752,242 752,258 768,250" fill="rgba(203,242,74,0.4)"/>
+    </g>
+
+    <!-- result -->
+    <g transform="translate(800,190)">
+      <rect width="330" height="140" rx="14" fill="#161B17" stroke="rgba(203,242,74,0.3)"/>
+      <text x="165" y="40" text-anchor="middle" font-size="14" font-weight="700" fill="#CBF24A">Rankings: unaffected</text>
+      <text x="165" y="70" text-anchor="middle" font-size="11" fill="#8E978C">Automatically ignored,</text>
+      <text x="165" y="90" text-anchor="middle" font-size="11" fill="#8E978C">not penalized —</text>
+      <text x="165" y="110" text-anchor="middle" font-size="11" fill="#8E978C">Disavow only if confirmed real</text>
+    </g>
+
+    <text x="600" y="470" text-anchor="middle" font-size="12.5" fill="#6B736A">Real attacks leave a checkable signature — most ranking drops are something else entirely.</text>
+  </g>
+
+  <text x="80" y="640" font-family="Archivo, sans-serif" font-size="13" fill="#4f564e">NEXT SEO24 — Negative SEO: what it actually is, and the real (limited) response</text>
+</svg>

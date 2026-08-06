@@ -7,13 +7,22 @@
     <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
     <language>en</language>
     <copyright>Copyright NEXT SEO24</copyright>
-    <lastBuildDate>Thu, 06 Aug 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 21:00:00 GMT</lastBuildDate>
     <generator>NEXT SEO24</generator>
     <image>
       <url>https://nextseo24.com/img/og-default.png</url>
       <title>NEXT SEO24 Magazine</title>
       <link>https://nextseo24.com/magazine/index.html</link>
     </image>
+
+    <item>
+      <title>Negative SEO: What It Actually Is, and the Real (Limited) Response</title>
+      <link>https://nextseo24.com/magazine/negative-seo-backlink-attack-response.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/negative-seo-backlink-attack-response.html</guid>
+      <description>Most ranking drops blamed on a competitor's negative SEO attack are something else entirely. How to actually recognize a real backlink attack, and the Disavow Tool used correctly.</description>
+      <enclosure url="https://nextseo24.com/img/cover-negative-seo.svg" type="image/svg+xml" length="0" />
+      <pubDate>Thu, 06 Aug 2026 21:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Local Citations &amp; NAP Consistency: The Quiet Local SEO Killer</title>

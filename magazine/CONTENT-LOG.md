@@ -40,6 +40,7 @@ post is published so future sessions don't duplicate work.
 | 2026-08-04 | image-seo-alt-text-preferred-image-2026.html | Image SEO — alt text, file names, compression numbers, March 2026 preferred-image update | Technical SEO |
 | 2026-08-05 | google-news-eligibility-criteria.html | Google News eligibility — real criteria, common disqualifiers, honest read on whether an SME even needs it | SEO |
 | 2026-08-06 | local-citations-nap-consistency-malaysia.html | Local citations & NAP consistency — why inconsistent business listings quietly hurt local rankings, duplicate GBP fix | Local SEO |
+| 2026-08-06 | negative-seo-backlink-attack-response.html | Negative SEO — what it actually is, why most ranking drops aren't it, real attack signature, Disavow Tool used correctly | SEO |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -181,15 +182,25 @@ Single-post batch (local citations / NAP consistency):
   Profile/Maps bullet, since citation consistency is directly relevant
   to the multi-city local SEO work described there.
 
+## Internal linking pass (2026-08-06, batch 2)
+
+Single-post batch (negative SEO / backlink attack response):
+- `magazine/index.html` — new feature card at top of grid.
+- `index.html` — "From the magazine" teaser: swapped the Google News
+  card for the new negative-SEO post (kept voice-search and NAP-
+  consistency cards, still fresh from prior batches).
+- This topic is diagnostic/conceptual rather than market-specific, so
+  no market-page in-body link was added — the magazine index and
+  homepage teaser satisfy the internal-linking requirement, plus it
+  links directly to the existing recover-google-ranking-drop.html and
+  white-hat-backlinks.html posts.
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
 building toward full topical coverage without overlap. This list was
 replenished on 2026-08-05 after the prior backlog ran out:
 
-- Negative SEO: what it actually is, how to recognise a malicious
-  backlink attack, and the real (limited) response — Disavow Tool, not
-  panic
 - Mobile-first indexing checklist: distinct from the Core Web Vitals
   post — parity between mobile/desktop content, tap-target sizing,
   viewport config, structured data present on both versions
