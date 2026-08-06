@@ -39,6 +39,7 @@ post is published so future sessions don't duplicate work.
 | 2026-08-02 | international-hreflang-seo-multi-market.html | International SEO/hreflang for a site spanning MY/KR/JP/SEA — working code, self-reference bug, x-default | Technical SEO |
 | 2026-08-04 | image-seo-alt-text-preferred-image-2026.html | Image SEO — alt text, file names, compression numbers, March 2026 preferred-image update | Technical SEO |
 | 2026-08-05 | google-news-eligibility-criteria.html | Google News eligibility — real criteria, common disqualifiers, honest read on whether an SME even needs it | SEO |
+| 2026-08-06 | local-citations-nap-consistency-malaysia.html | Local citations & NAP consistency — why inconsistent business listings quietly hurt local rankings, duplicate GBP fix | Local SEO |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -169,15 +170,23 @@ Single-post batch (Google News eligibility):
   so no market-page in-body link was added this round — the magazine
   index and homepage teaser satisfy the internal-linking requirement.
 
+## Internal linking pass (2026-08-06)
+
+Single-post batch (local citations / NAP consistency):
+- `magazine/index.html` — new feature card at top of grid.
+- `index.html` — "From the magazine" teaser: swapped the image-SEO
+  card for the new NAP-consistency post (kept voice-search and
+  Google News cards, still fresh from prior batches).
+- `markets/malaysia.html` — in-body link from the Google Business
+  Profile/Maps bullet, since citation consistency is directly relevant
+  to the multi-city local SEO work described there.
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
 building toward full topical coverage without overlap. This list was
 replenished on 2026-08-05 after the prior backlog ran out:
 
-- Local citations &amp; directory listings: NAP consistency across
-  Malaysian/regional business directories, and why inconsistent listings
-  quietly hurt local rankings
 - Negative SEO: what it actually is, how to recognise a malicious
   backlink attack, and the real (limited) response — Disavow Tool, not
   panic
