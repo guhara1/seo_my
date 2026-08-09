@@ -7,13 +7,22 @@
     <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
     <language>en</language>
     <copyright>Copyright NEXT SEO24</copyright>
-    <lastBuildDate>Sun, 09 Aug 2026 09:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 21:00:00 GMT</lastBuildDate>
     <generator>NEXT SEO24</generator>
     <image>
       <url>https://nextseo24.com/img/og-default.png</url>
       <title>NEXT SEO24 Magazine</title>
       <link>https://nextseo24.com/magazine/index.html</link>
     </image>
+
+    <item>
+      <title>WordPress vs. a Custom-Built Site: SEO Considerations That Actually Matter</title>
+      <link>https://nextseo24.com/magazine/wordpress-vs-custom-site-seo.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/wordpress-vs-custom-site-seo.html</guid>
+      <description>Neither platform automatically ranks higher. What actually matters: who maintains the site day to day, plugin/page-builder bloat, and when a rebuild is genuinely worth the cost.</description>
+      <enclosure url="https://nextseo24.com/img/cover-wordpress-vs-custom.svg" type="image/svg+xml" length="0" />
+      <pubDate>Sun, 09 Aug 2026 21:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>Mobile-First Indexing: The Checklist Most Sites Get Wrong</title>

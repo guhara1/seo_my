@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WordPress vs. a Custom-Built Site: SEO Considerations That Actually Matter | NEXT SEO24</title>
+<meta name="description" content="Neither platform automatically ranks higher. What actually matters: who maintains the site day to day, plugin/page-builder bloat, and when a rebuild is genuinely worth the cost.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="NEXT SEO24 Team">
+<link rel="canonical" href="https://nextseo24.com/magazine/wordpress-vs-custom-site-seo.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WordPress vs. a Custom-Built Site: SEO Considerations That Actually Matter">
+<meta property="og:description" content="Neither platform automatically ranks higher. What actually matters, and when a rebuild is genuinely worth the cost.">
+<meta property="og:url" content="https://nextseo24.com/magazine/wordpress-vs-custom-site-seo.html">
+<meta property="og:image" content="https://nextseo24.com/img/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WordPress vs. a Custom-Built Site: SEO Considerations That Actually Matter">
+<meta name="twitter:description" content="Neither platform automatically ranks higher. What actually matters, and when a rebuild is worth it.">
+<meta name="twitter:image" content="https://nextseo24.com/img/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../article.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "WordPress vs. a custom-built site: SEO considerations that actually matter",
+  "image": "https://nextseo24.com/img/cover-wordpress-vs-custom.svg",
+  "author": { "@type": "Organization", "name": "NEXT SEO24 Team" },
+  "publisher": { "@type": "Organization", "name": "NEXT SEO24", "url": "https://nextseo24.com/" },
+  "datePublished": "2026-08-09",
+  "dateModified": "2026-08-09",
+  "mainEntityOfPage": "https://nextseo24.com/magazine/wordpress-vs-custom-site-seo.html",
+  "articleSection": "Strategy"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nextseo24.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Magazine", "item": "https://nextseo24.com/magazine/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "WordPress vs Custom-Built Site SEO", "item": "https://nextseo24.com/magazine/wordpress-vs-custom-site-seo.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is WordPress bad for SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. WordPress itself isn't the problem — some of the highest-ranking sites in the world run on it. The SEO issues attributed to WordPress almost always come from plugin conflicts, a heavy page-builder generating bloated markup, or an accumulation of unused plugins, not from the platform's core code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will a custom-built site automatically rank higher than WordPress?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A custom build gives you more direct control over performance and markup, but it doesn't rank better by default — a poorly built custom site can be just as slow and messy as a poorly configured WordPress site. Ranking comes from content quality, technical execution and authority, not the platform choice itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is it actually worth migrating from WordPress to a custom build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When the content is largely static and rarely changes, when Core Web Vitals are consistently failing despite genuine optimization effort within WordPress, or when plugin conflicts have become a recurring maintenance burden. It's rarely worth it for a site with a marketing team publishing new content weekly — the ongoing dev cost of a custom CMS usually outweighs the performance gain for that use case."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#E11D29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+    <input type="checkbox" id="navtoggle" class="navtoggle">
+    <nav class="menu" aria-label="Primary">
+      <a href="../index.html" data-i18n="nav_home">Home</a>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+        </div>
+      </div>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+        </div>
+      </div>
+      <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+      <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="../index.html#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../index.html" data-i18n="bc_home">Home</a><span>›</span><a href="index.html" data-i18n="nav_mag">Magazine</a><span>›</span>WordPress vs Custom-Built Site SEO
+    </nav>
+    <article>
+      <img class="hero" src="../img/cover-wordpress-vs-custom.svg" width="1200" height="675" alt="Infographic comparing WordPress and a custom-built site across plugin overhead, maintenance cost and Core Web Vitals control — NEXT SEO24" fetchpriority="high">
+      <div class="post-meta"><span class="cat" data-i18n="wp_cat">Strategy</span><span>·</span><span>9 August 2026</span><span>·</span><span data-i18n="wp_read">8 min read</span></div>
+      <h1 data-i18n="wp_h1">WordPress vs. a custom-built site: SEO considerations that actually matter</h1>
+      <p class="lead" data-i18n="wp_lead">"Should we rebuild in a custom stack for better SEO?" comes up often enough that it's worth answering directly: the platform isn't what determines your rankings. Some of the fastest, highest-ranking sites in the world run on WordPress; some of the slowest, worst-performing ones do too. Here's what actually matters, and the honest question that should drive the decision.</p>
+
+      <div class="byline">
+        <span class="av">NS</span>
+        <span class="meta"><b data-i18n="by_team">NEXT SEO24 Team</b> · <span data-i18n="by_loc">Kuala Lumpur</span><br><span data-i18n="wp_updated">Last updated 9 August 2026</span> · <a href="../why-us.html" data-i18n="by_about">About our team</a></span>
+      </div>
+
+      <h2 data-i18n="wp_h2a">This isn't really a "which is better" question</h2>
+      <p data-i18n="wp_p1">Both platforms can rank #1 for competitive terms, and both can fail badly on Core Web Vitals and crawlability. The actual differences aren't about which one Google prefers — Google has no platform preference at all — they're about what each makes easy, what each makes hard, and which of those trade-offs fits how your specific business actually operates day to day.</p>
+
+      <h2 data-i18n="wp_h2b">Where WordPress genuinely helps</h2>
+      <ul>
+        <li data-i18n="wp_li1"><b>A mature plugin ecosystem.</b> Structured data, XML sitemaps, redirect management and meta tag control are all solved problems with well-tested plugins — you're not building this tooling from scratch.</li>
+        <li data-i18n="wp_li2"><b>Fast content iteration.</b> A marketing team can publish, update and restructure content without needing a developer for every change — genuinely valuable for a site that blogs weekly or runs frequent campaigns.</li>
+        <li data-i18n="wp_li3"><b>A large support and documentation base.</b> Most technical SEO problems on WordPress have already been solved and documented publicly, which shortens troubleshooting time considerably.</li>
+      </ul>
+
+      <h2 data-i18n="wp_h2c">Where WordPress genuinely hurts, in practice</h2>
+      <ul>
+        <li data-i18n="wp_li4"><b>Page-builder bloat.</b> Heavy visual builders (the kind that generate deeply nested <code>&lt;div&gt;</code> wrappers for every element) routinely produce markup that's several times larger than necessary, directly hurting load speed.</li>
+        <li data-i18n="wp_li5"><b>Plugin conflicts.</b> Two SEO plugins active simultaneously, or a caching plugin serving stale canonical tags, is one of the most common causes of indexability bugs we find during audits.</li>
+        <li data-i18n="wp_li6"><b>Abandoned plugin accumulation.</b> Plugins installed for a since-forgotten reason, never removed, each add page weight and a potential security or compatibility risk with every core update.</li>
+      </ul>
+
+      <h2 data-i18n="wp_h2d">Where a custom-built site genuinely helps</h2>
+      <p data-i18n="wp_p2">Full control over every line of markup and every request the page makes translates directly into Core Web Vitals headroom that's genuinely harder to reach on a plugin-dependent stack — no page builder overhead, no plugin conflicts, no legacy code from a feature nobody uses anymore. For a site where performance is the primary competitive lever, that control is real and valuable.</p>
+
+      <h2 data-i18n="wp_h2e">Where a custom-built site genuinely hurts</h2>
+      <p data-i18n="wp_p3">Every feature that a WordPress plugin solves in an afternoon — a sitemap, a redirect rule, a schema block — has to be built and then maintained by a developer on a custom stack. For a site that publishes content constantly, this ongoing dev dependency is a real, recurring cost that a marketing-led WordPress site simply doesn't carry. The performance ceiling is higher, but so is the cost of reaching and maintaining it.</p>
+
+      <h2 data-i18n="wp_h2f">The real question: who maintains this site day to day?</h2>
+      <p data-i18n="wp_p4">If a marketing team is publishing and restructuring content weekly, WordPress's editorial speed usually outweighs the performance ceiling a custom build could theoretically reach — content velocity matters more than a few hundred milliseconds most of the time. If the site is largely static — a handful of service pages that rarely change, built for maximum speed and minimal ongoing content work — a lean custom build's performance advantage becomes the more relevant factor. Answer that question honestly before the platform question.</p>
+
+      <h2 data-i18n="wp_h2g">When a rebuild is actually worth it</h2>
+      <p data-i18n="wp_p5">A migration is worth the cost when Core Web Vitals stay consistently poor despite genuine optimization effort — proper caching, image compression, a lean theme, plugin cleanup — not as a first response to a slow site. It's also worth it when plugin conflicts have become a recurring, time-consuming maintenance burden rather than an occasional issue. It's rarely worth it purely on the promise of better SEO; the platform switch alone doesn't move rankings, and a badly executed custom build can end up slower than the WordPress site it replaced. If you're mid-migration or considering one, our <a href="website-migration-seo-checklist.html" data-i18n="wp_p5_link">website migration SEO checklist</a> covers the redirect mapping and launch process either direction requires.</p>
+
+      <h2 data-i18n="wp_h2h">A practical checklist for either path</h2>
+      <ul>
+        <li data-i18n="wp_li7">On WordPress: audit installed plugins and remove anything unused, not just deactivated</li>
+        <li data-i18n="wp_li8">On WordPress: confirm only one SEO plugin is active, handling one job each, not overlapping</li>
+        <li data-i18n="wp_li9">On WordPress: check whether the page builder's output can be simplified or replaced with lighter blocks</li>
+        <li data-i18n="wp_li10">On a custom build: confirm sitemap, redirects and structured data are actually being generated and kept current, not a one-time setup</li>
+        <li data-i18n="wp_li11">On either: measure real Core Web Vitals data before deciding a platform switch is the fix</li>
+      </ul>
+      <p data-i18n="wp_p6">If you're weighing a WordPress cleanup against a full rebuild, send us your site — we'll give you an honest read on which actually solves your specific problem.</p>
+
+      <h2 data-i18n="faq_h">Frequently asked questions</h2>
+      <h3 data-i18n="wp_q1">Is WordPress bad for SEO?</h3>
+      <p data-i18n="wp_a1">No. WordPress itself isn't the problem — some of the highest-ranking sites in the world run on it. The SEO issues attributed to WordPress almost always come from plugin conflicts, a heavy page-builder generating bloated markup, or an accumulation of unused plugins, not from the platform's core code.</p>
+      <h3 data-i18n="wp_q2">Will a custom-built site automatically rank higher than WordPress?</h3>
+      <p data-i18n="wp_a2">No. A custom build gives you more direct control over performance and markup, but it doesn't rank better by default — a poorly built custom site can be just as slow and messy as a poorly configured WordPress site. Ranking comes from content quality, technical execution and authority, not the platform choice itself.</p>
+      <h3 data-i18n="wp_q3">When is it actually worth migrating from WordPress to a custom build?</h3>
+      <p data-i18n="wp_a3">When the content is largely static and rarely changes, when Core Web Vitals are consistently failing despite genuine optimization effort within WordPress, or when plugin conflicts have become a recurring maintenance burden. It's rarely worth it for a site with a marketing team publishing new content weekly — the ongoing dev cost of a custom CMS usually outweighs the performance gain for that use case.</p>
+
+      <div class="cta-box" id="contact">
+        <h2 data-i18n="wp_cta_h">Weighing a platform decision for your site?</h2>
+        <p data-i18n="wp_cta_p">Tell us how your site is actually maintained day to day — we'll give you a straight answer on whether WordPress cleanup or a custom rebuild fits better.</p>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="cta_btn">Chat on WhatsApp →</a>
+      </div>
+
+      <div class="related">
+        <div class="k" data-i18n="rel_k">Explore more</div>
+        <a href="core-web-vitals-inp.html"><span data-i18n="art_cwv">Core Web Vitals &amp; INP: a practical speed checklist</span> <span class="arr">→</span></a>
+        <a href="website-migration-seo-checklist.html"><span data-i18n="art_wm">Website migration without losing Google rankings</span> <span class="arr">→</span></a>
+        <a href="on-page-seo-technical-audit-checklist.html"><span data-i18n="art_oa">The on-page SEO technical audit checklist we actually use</span> <span class="arr">→</span></a>
+        <a href="index.html"><span data-i18n="nav_mag">Magazine</span> <span class="arr">→</span></a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+        <p data-i18n="foot_about">Kuala Lumpur's SEO &amp; backlink agency. We put your website on the first page of Google — across Korea, Japan and Southeast Asia.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/seomarketingmalaysia" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61586533861775" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.6 13.3 6 14.7 6H17V2.5C16.6 2.4 15.3 2.3 13.8 2.3 10.7 2.3 9 4.1 9 7.1V10H6v4h3v8z"/></svg></a>
+          <a href="https://www.linkedin.com/in/%EB%B0%B1%ED%98%B8-%EA%B0%95-a84273261/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.5h3.3V21H3.3zM9 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.32 0 3.93 2.18 3.93 5V21h-3.3v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21H9z"/></svg></a>
+          <a href="https://blog.naver.com/kolpjihu389" aria-label="Naver Blog" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.273 12.845 7.376 0H0v24h7.726V11.156L16.624 24H24V0h-7.727z"/></svg></a>
+          <a href="https://wa.me/601137950507" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2-1.4-.5-.6-.8-1.3-.9-1.5-.1-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5 0-.1 0-.3-.1-.4-.1-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.6.6 1.9.5 2.3.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_svc">Services</h4>
+        <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+        <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+        <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+        <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+        <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+        <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_markets">Markets</h4>
+        <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+        <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+        <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+        <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_company">Company</h4>
+        <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+        <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+        <a href="../case-studies.html" data-i18n="nav_cases">Case Studies</a>
+        <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+        <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> NEXT SEO24 Sdn Bhd. <span data-i18n="foot_rights">All rights reserved.</span></span>
+      <span class="foot-legal"><a href="../privacy-policy.html" data-i18n="foot_privacy">Privacy</a> · <a href="../terms.html" data-i18n="foot_terms">Terms</a></span>
+      <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const WHATSAPP_NUMBER = "601137950507";
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('waLink').href =
+  "https://wa.me/" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent("Hello, I'm weighing WordPress cleanup vs a custom-built site and would like advice.\n\nName :\nE-Mail :\nWebsite :\nEnquiry Topic :");
+</script>
+<script id="page-i18n">
+window.PAGE_I18N = {
+  ko: {
+    wp_cat:"전략",
+    wp_read:"8분 읽기",
+    wp_h1:"워드프레스 vs 커스텀 사이트: 실제로 중요한 SEO 고려사항",
+    wp_lead:"'더 나은 SEO를 위해 커스텀 스택으로 다시 만들어야 할까요?'라는 질문은 충분히 자주 나와서 직접 답할 가치가 있습니다: 플랫폼이 순위를 결정하지 않습니다. 세계에서 가장 빠르고 순위가 높은 사이트 중 일부는 워드프레스로 운영되고, 가장 느리고 성능이 나쁜 사이트 중 일부도 마찬가지입니다. 실제로 중요한 것과, 결정을 이끌어야 할 솔직한 질문을 다룹니다.",
+    wp_updated:"최종 업데이트 2026년 8월 9일",
+    wp_h2a:"사실 '어느 것이 더 나은가'의 문제가 아닙니다",
+    wp_p1:"두 플랫폼 모두 경쟁이 치열한 검색어에서 1위를 차지할 수 있고, 둘 다 Core Web Vitals와 크롤링 가능성에서 심각하게 실패할 수도 있습니다. 실제 차이는 구글이 어느 쪽을 선호하는가가 아닙니다 — 구글은 플랫폼에 대한 선호가 전혀 없습니다 — 각각이 무엇을 쉽게 만들고 무엇을 어렵게 만드는지, 그리고 그 트레이드오프 중 어느 것이 실제로 비즈니스가 매일 운영되는 방식에 맞는지가 중요합니다.",
+    wp_h2b:"워드프레스가 실제로 도움이 되는 부분",
+    wp_li1:"<b>성숙한 플러그인 생태계.</b> 구조화 데이터, XML 사이트맵, 리다이렉트 관리, 메타 태그 제어는 모두 잘 검증된 플러그인으로 해결된 문제입니다 — 이런 도구를 처음부터 만들 필요가 없습니다.",
+    wp_li2:"<b>빠른 콘텐츠 반복.</b> 마케팅 팀이 모든 변경마다 개발자 없이도 콘텐츠를 게시·수정·재구성할 수 있습니다 — 매주 블로그를 쓰거나 캠페인을 자주 진행하는 사이트에는 진짜 가치가 있습니다.",
+    wp_li3:"<b>방대한 지원·문서 기반.</b> 워드프레스의 대부분의 기술적 SEO 문제는 이미 공개적으로 해결되고 문서화돼 있어 문제 해결 시간을 크게 단축시킵니다.",
+    wp_h2c:"워드프레스가 실제로 발목을 잡는 부분",
+    wp_li4:"<b>페이지 빌더 비대화.</b> 모든 요소마다 깊이 중첩된 div 래퍼를 생성하는 무거운 비주얼 빌더는 필요한 것보다 몇 배나 큰 마크업을 만들어내 로딩 속도를 직접적으로 해칩니다.",
+    wp_li5:"<b>플러그인 충돌.</b> SEO 플러그인 두 개가 동시에 활성화되어 있거나 캐싱 플러그인이 오래된 canonical 태그를 서빙하는 것은 감사에서 발견하는 가장 흔한 색인 가능성 버그 원인 중 하나입니다.",
+    wp_li6:"<b>방치된 플러그인 누적.</b> 잊혀진 이유로 설치됐지만 제거되지 않은 플러그인은 각각 페이지 무게를 더하고, 코어 업데이트마다 잠재적인 보안·호환성 위험을 안깁니다.",
+    wp_h2d:"커스텀 사이트가 실제로 도움이 되는 부분",
+    wp_p2:"모든 마크업 줄과 페이지가 만드는 모든 요청에 대한 완전한 제어는 플러그인 의존적인 스택에서는 진짜로 도달하기 어려운 Core Web Vitals 여유로 직접 이어집니다 — 페이지 빌더 오버헤드도, 플러그인 충돌도, 더 이상 아무도 쓰지 않는 기능의 레거시 코드도 없습니다. 성능이 주요 경쟁 지렛대인 사이트라면 이 제어력은 실질적이고 가치 있습니다.",
+    wp_h2e:"커스텀 사이트가 실제로 발목을 잡는 부분",
+    wp_p3:"워드프레스 플러그인이 오후 한나절이면 해결하는 모든 기능 — 사이트맵, 리다이렉트 규칙, 스키마 블록 — 은 커스텀 스택에서는 개발자가 만들고 계속 유지보수해야 합니다. 콘텐츠를 꾸준히 발행하는 사이트에게 이 지속적인 개발 의존성은 마케팅 주도 워드프레스 사이트는 전혀 짊어지지 않는 진짜 반복적인 비용입니다. 성능 상한선은 더 높지만, 거기에 도달하고 유지하는 비용도 더 높습니다.",
+    wp_h2f:"진짜 질문: 이 사이트를 누가 매일 관리하는가?",
+    wp_p4:"마케팅 팀이 매주 콘텐츠를 게시하고 재구성한다면, 워드프레스의 편집 속도가 커스텀 빌드가 이론적으로 도달할 수 있는 성능 상한선보다 대부분 더 중요합니다 — 대부분의 경우 콘텐츠 속도가 몇백 밀리초보다 더 중요합니다. 사이트가 대부분 정적이라면 — 거의 바뀌지 않는 소수의 서비스 페이지를 최대 속도와 최소한의 지속적인 콘텐츠 작업을 위해 구축했다면 — 린 커스텀 빌드의 성능 우위가 더 관련 있는 요소가 됩니다. 플랫폼 질문보다 이 질문에 먼저 솔직하게 답하세요.",
+    wp_h2g:"재구축이 실제로 가치 있는 경우",
+    wp_p5:"제대로 된 캐싱, 이미지 압축, 가벼운 테마, 플러그인 정리 같은 진짜 최적화 노력에도 불구하고 Core Web Vitals가 꾸준히 나쁘게 나올 때 마이그레이션은 그 비용을 들일 가치가 있습니다 — 느린 사이트에 대한 첫 대응으로서가 아니라요. 플러그인 충돌이 가끔이 아니라 반복적이고 시간을 잡아먹는 유지보수 부담이 됐을 때도 가치가 있습니다. 단지 '더 나은 SEO'를 약속받고 하는 것은 거의 가치가 없습니다 — 플랫폼 전환만으로는 순위가 움직이지 않고, 형편없이 구축된 커스텀 사이트는 대체한 워드프레스 사이트보다 더 느려질 수도 있습니다. 마이그레이션 중이거나 고려 중이라면, 웹사이트 마이그레이션 SEO 체크리스트가 어느 방향이든 필요한 리다이렉트 매핑과 런칭 과정을 다룹니다.",
+    wp_p5_link:"웹사이트 마이그레이션 SEO 체크리스트",
+    wp_h2h:"어느 경로든 실전 체크리스트",
+    wp_li7:"워드프레스: 설치된 플러그인을 감사하고, 비활성화가 아니라 사용하지 않는 것을 완전히 제거했는가",
+    wp_li8:"워드프레스: SEO 플러그인이 서로 겹치지 않고 하나만 활성화돼 각자의 역할을 맡고 있는가",
+    wp_li9:"워드프레스: 페이지 빌더의 출력을 단순화하거나 더 가벼운 블록으로 대체할 수 있는지 확인했는가",
+    wp_li10:"커스텀 빌드: 사이트맵, 리다이렉트, 구조화 데이터가 일회성 설정이 아니라 실제로 생성되고 최신 상태로 유지되고 있는지 확인했는가",
+    wp_li11:"어느 쪽이든: 플랫폼 전환이 해법이라고 결정하기 전에 실제 Core Web Vitals 데이터를 측정했는가",
+    wp_p6:"워드프레스 정리와 완전한 재구축 사이에서 고민 중이라면 사이트를 보내주세요 — 실제로 어느 쪽이 귀사의 특정 문제를 해결하는지 솔직하게 알려드립니다.",
+    wp_q1:"워드프레스는 SEO에 나쁜가요?",
+    wp_a1:"아니요. 워드프레스 자체는 문제가 아닙니다 — 세계에서 가장 순위가 높은 사이트 중 일부가 워드프레스로 운영됩니다. 워드프레스 탓으로 돌려지는 SEO 문제는 거의 항상 플러그인 충돌, 비대한 마크업을 만드는 무거운 페이지 빌더, 또는 쌓인 미사용 플러그인에서 비롯되지, 플랫폼의 핵심 코드에서 비롯되지 않습니다.",
+    wp_q2:"커스텀 사이트가 워드프레스보다 자동으로 순위가 높아지나요?",
+    wp_a2:"아니요. 커스텀 빌드는 성능과 마크업에 대한 더 직접적인 제어를 주지만, 기본적으로 더 높은 순위를 보장하지 않습니다 — 형편없이 구축된 커스텀 사이트는 잘못 설정된 워드프레스 사이트만큼 느리고 지저분할 수 있습니다. 순위는 플랫폼 선택이 아니라 콘텐츠 품질, 기술적 실행, 권위에서 나옵니다.",
+    wp_q3:"워드프레스에서 커스텀 빌드로 마이그레이션할 가치가 실제로 언제 있나요?",
+    wp_a3:"콘텐츠가 대부분 정적이고 거의 바뀌지 않을 때, 워드프레스 안에서 진짜 최적화 노력에도 불구하고 Core Web Vitals가 꾸준히 실패할 때, 또는 플러그인 충돌이 반복적인 유지보수 부담이 됐을 때입니다. 마케팅 팀이 매주 새 콘텐츠를 발행하는 사이트에는 거의 가치가 없습니다 — 커스텀 CMS의 지속적인 개발 비용이 대체로 그 용도에서는 성능 이득을 넘어섭니다.",
+    wp_cta_h:"사이트를 위한 플랫폼 결정을 고민 중이신가요?",
+    wp_cta_p:"사이트가 실제로 매일 어떻게 관리되는지 알려주세요 — 워드프레스 정리와 커스텀 재구축 중 무엇이 더 맞는지 솔직하게 답해드립니다.",
+    art_cwv:"Core Web Vitals와 INP: 실용적인 속도 체크리스트", art_wm:"구글 순위를 잃지 않는 웹사이트 이전 체크리스트", art_oa:"우리가 실제로 사용하는 온페이지 SEO 기술 감사 체크리스트"
+  }
+};
+</script>
+<script src="../i18n.js"></script>
+</body>
+</html>
