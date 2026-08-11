@@ -43,6 +43,7 @@ post is published so future sessions don't duplicate work.
 | 2026-08-06 | negative-seo-backlink-attack-response.html | Negative SEO — what it actually is, why most ranking drops aren't it, real attack signature, Disavow Tool used correctly | SEO |
 | 2026-08-09 | mobile-first-indexing-checklist.html | Mobile-first indexing checklist — content/schema parity, tap targets, viewport, lazy-load crawlability | Technical SEO |
 | 2026-08-09 | wordpress-vs-custom-site-seo.html | WordPress vs custom-built site SEO — neither ranks higher by default, who maintains it day to day, when a rebuild is worth it | Strategy |
+| 2026-08-11 | seo-reporting-metrics-that-matter.html | SEO reporting — what to actually track month to month, vanity metrics to drop (raw traffic, Domain Authority, backlink count) | SEO Strategy |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -221,6 +222,19 @@ Single-post batch (WordPress vs custom-built site SEO):
   core-web-vitals-inp.html and website-migration-seo-checklist.html
   satisfy the internal-linking requirement.
 
+## Internal linking pass (2026-08-11)
+
+Single-post batch (SEO reporting / metrics that matter):
+- `magazine/index.html` — new feature card at top of grid.
+- `index.html` — "From the magazine" teaser: swapped the WordPress-vs-
+  custom card for the new reporting post (kept mobile-first and
+  voice-search cards, still fresh from prior batches).
+- Client-facing/agency-process topic without a natural market-page
+  tie-in this round — magazine index + homepage teaser + its own
+  related-links to how-long-does-seo-take.html and
+  recover-google-ranking-drop.html satisfy the internal-linking
+  requirement.
+
 ## Not yet covered — safe backlog ideas for future posts
 
 Pick from here first before inventing a new topic, to keep the magazine
@@ -237,8 +251,6 @@ replenished on 2026-08-09 after the prior backlog nearly ran out:
   mentions in other posts
 - Author bio / E-E-A-T for anonymous or small teams — practical options
   when a business genuinely can't put a named person's face on content
-- SEO reporting: what to actually track month to month for a client or
-  stakeholder, and which vanity metrics to stop reporting
 
 ## Style/template notes for new posts
 

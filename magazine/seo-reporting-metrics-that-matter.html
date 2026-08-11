@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Reporting: What to Actually Track (and Which Vanity Metrics to Drop) | NEXT SEO24</title>
+<meta name="description" content="Raw traffic and Domain Authority make a report look busy without proving anything. What to actually track month to month, and the vanity metrics worth dropping.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="NEXT SEO24 Team">
+<link rel="canonical" href="https://nextseo24.com/magazine/seo-reporting-metrics-that-matter.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SEO Reporting: What to Actually Track (and Which Vanity Metrics to Drop)">
+<meta property="og:description" content="What to actually track month to month for a client or stakeholder, and the vanity metrics worth dropping.">
+<meta property="og:url" content="https://nextseo24.com/magazine/seo-reporting-metrics-that-matter.html">
+<meta property="og:image" content="https://nextseo24.com/img/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="SEO Reporting: What to Actually Track (and Which Vanity Metrics to Drop)">
+<meta name="twitter:description" content="What to actually track month to month, and the vanity metrics worth dropping.">
+<meta name="twitter:image" content="https://nextseo24.com/img/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../article.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "SEO reporting: what to actually track, and which vanity metrics to drop",
+  "image": "https://nextseo24.com/img/cover-seo-reporting.svg",
+  "author": { "@type": "Organization", "name": "NEXT SEO24 Team" },
+  "publisher": { "@type": "Organization", "name": "NEXT SEO24", "url": "https://nextseo24.com/" },
+  "datePublished": "2026-08-11",
+  "dateModified": "2026-08-11",
+  "mainEntityOfPage": "https://nextseo24.com/magazine/seo-reporting-metrics-that-matter.html",
+  "articleSection": "SEO Strategy"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nextseo24.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Magazine", "item": "https://nextseo24.com/magazine/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "SEO Reporting Metrics That Matter", "item": "https://nextseo24.com/magazine/seo-reporting-metrics-that-matter.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Domain Authority (DA) worth including in an SEO report?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally no, or only as a minor footnote. Domain Authority is a third-party metric from a specific SEO tool vendor — Google doesn't use it, calculate it, or reference it in any way. It can be a rough directional signal over long periods, but reporting month-to-month DA changes as if they reflect Google's own evaluation of the site is misleading."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should keyword rankings actually be checked?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weekly or monthly tracking is enough for reporting purposes; daily rank-checking mostly captures normal algorithmic noise rather than meaningful movement. Rankings for any given keyword fluctuate day to day even with zero changes to a site — checking too frequently just adds noise a client has to be talked through for no real benefit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the most commonly over-reported metric that should be dropped?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Raw, unsegmented organic traffic. A big month-over-month traffic number with no breakdown by landing page, intent or conversion says almost nothing about business impact — a spike from an unrelated viral post or a seasonal, non-buying query can inflate it without any real gain. Traffic segmented by page and tied to actual leads or conversions is what actually shows whether SEO is working."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#E11D29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+    <input type="checkbox" id="navtoggle" class="navtoggle">
+    <nav class="menu" aria-label="Primary">
+      <a href="../index.html" data-i18n="nav_home">Home</a>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+        </div>
+      </div>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+        </div>
+      </div>
+      <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+      <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="../index.html#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../index.html" data-i18n="bc_home">Home</a><span>›</span><a href="index.html" data-i18n="nav_mag">Magazine</a><span>›</span>SEO Reporting Metrics That Matter
+    </nav>
+    <article>
+      <img class="hero" src="../img/cover-seo-reporting.svg" width="1200" height="675" alt="Infographic contrasting a busy vanity-metric SEO report against a lean report tracking segmented traffic, conversions and Core Web Vitals trend — NEXT SEO24" fetchpriority="high">
+      <div class="post-meta"><span class="cat" data-i18n="sr_cat">SEO Strategy</span><span>·</span><span>11 August 2026</span><span>·</span><span data-i18n="sr_read">7 min read</span></div>
+      <h1 data-i18n="sr_h1">SEO reporting: what to actually track, and which vanity metrics to drop</h1>
+      <p class="lead" data-i18n="sr_lead">A report with fifteen charts and a rising line for "Domain Authority" looks busy — and tells a client almost nothing about whether their business is actually getting more customers. Here's what a monthly SEO report should actually track, and the metrics worth cutting because they measure activity, not outcome.</p>
+
+      <div class="byline">
+        <span class="av">NS</span>
+        <span class="meta"><b data-i18n="by_team">NEXT SEO24 Team</b> · <span data-i18n="by_loc">Kuala Lumpur</span><br><span data-i18n="sr_updated">Last updated 11 August 2026</span> · <a href="../why-us.html" data-i18n="by_about">About our team</a></span>
+      </div>
+
+      <h2 data-i18n="sr_h2a">Why most SEO reports fail to build trust</h2>
+      <p data-i18n="sr_p1">Most reports fail for one of two reasons: too many metrics with no clear priority, so the reader can't tell what actually matters, or the wrong metrics entirely — numbers that move regardless of whether the SEO work is helping. A stakeholder who can't connect a report to their business results loses confidence in the work itself, even when the work is genuinely effective. Reporting the right handful of numbers, clearly, does more for trust than reporting everything available.</p>
+
+      <h2 data-i18n="sr_h2b">Vanity metrics that look impressive but say almost nothing</h2>
+      <ul>
+        <li data-i18n="sr_li1"><b>Raw, unsegmented traffic.</b> A big month-over-month traffic number with no breakdown by page or intent can be inflated by an unrelated viral post or a seasonal, non-buying query — it says nothing about business impact on its own.</li>
+        <li data-i18n="sr_li2"><b>Domain Authority (DA) or similar third-party scores.</b> These are metrics invented by SEO tool vendors, not Google — Google doesn't calculate, use, or even recognize "Domain Authority" as a concept. It can loosely track backlink growth over long periods, but month-to-month DA movement reported as if it reflects real ranking progress is misleading.</li>
+        <li data-i18n="sr_li3"><b>Keyword rankings without volume or intent context.</b> Ranking #3 for a keyword nobody searches, or a keyword with no buying intent, isn't meaningful progress — the position number alone tells you nothing about whether it matters.</li>
+        <li data-i18n="sr_li4"><b>Total backlinks acquired.</b> Ten low-quality links add a number to a slide without adding real authority — quality and relevance matter far more than count, and reporting count alone can even reward the wrong kind of link building.</li>
+      </ul>
+
+      <h2 data-i18n="sr_h2c">What to actually track</h2>
+      <ul>
+        <li data-i18n="sr_li5"><b>Organic traffic segmented by landing page and intent.</b> Growth on the pages that actually drive business — service pages, high-intent blog content — matters far more than sitewide totals.</li>
+        <li data-i18n="sr_li6"><b>Conversions or leads attributed to organic search.</b> Sessions are a proxy; enquiries, form fills or WhatsApp clicks from organic traffic are the actual outcome a business cares about.</li>
+        <li data-i18n="sr_li7"><b>Rankings for a defined set of priority "money" keywords.</b> Not every keyword the site happens to rank for — the specific terms tied to real buying intent, tracked consistently over time.</li>
+        <li data-i18n="sr_li8"><b>Core Web Vitals trend, not a single snapshot.</b> A month-over-month trend line shows whether technical health is improving or degrading; one isolated score doesn't.</li>
+        <li data-i18n="sr_li9"><b>Indexed pages vs. total pages.</b> A growing gap between pages published and pages actually indexed is an early warning sign worth surfacing before it becomes a bigger problem.</li>
+      </ul>
+
+      <h2 data-i18n="sr_h2d">Match the metric to the audience</h2>
+      <p data-i18n="sr_p2">A marketing manager who lives in the account week to week can handle — and often wants — more granular detail: individual keyword movement, page-level traffic breakdowns, technical fix logs. A CEO or business owner generally wants three or four numbers tied directly to revenue: leads generated, cost per lead relative to other channels, and overall trend direction. Sending the marketing manager's level of detail to a CEO usually reads as noise, not thoroughness.</p>
+
+      <h2 data-i18n="sr_h2e">A realistic monthly cadence</h2>
+      <p data-i18n="sr_p3">SEO moves slowly enough that a single month's numbers can be genuinely misleading in isolation — report trend over 3-6 months alongside the monthly snapshot, not just the latest number on its own. A single down month against a six-month upward trend reads very differently from the same down month with no context at all, and both are honest ways to present the same data — only one actually informs the reader.</p>
+
+      <h2 data-i18n="sr_h2f">A sample simple reporting structure</h2>
+      <ul>
+        <li data-i18n="sr_li10">Organic traffic to priority pages, this month vs. last month vs. 6-month trend</li>
+        <li data-i18n="sr_li11">Leads/conversions attributed to organic, with the trend line, not just the total</li>
+        <li data-i18n="sr_li12">Ranking movement for the defined money-keyword set</li>
+        <li data-i18n="sr_li13">Core Web Vitals pass/fail trend</li>
+        <li data-i18n="sr_li14">What changed this month (content published, technical fixes) and why, in plain language</li>
+        <li data-i18n="sr_li15">One clear recommendation or next priority, not a list of everything possible</li>
+      </ul>
+      <p data-i18n="sr_p4">If your current reports feel busy but hard to act on, send us an example — we'll show you what a leaner, clearer version would actually track.</p>
+
+      <h2 data-i18n="faq_h">Frequently asked questions</h2>
+      <h3 data-i18n="sr_q1">Is Domain Authority (DA) worth including in an SEO report?</h3>
+      <p data-i18n="sr_a1">Generally no, or only as a minor footnote. Domain Authority is a third-party metric from a specific SEO tool vendor — Google doesn't use it, calculate it, or reference it in any way. It can be a rough directional signal over long periods, but reporting month-to-month DA changes as if they reflect Google's own evaluation of the site is misleading.</p>
+      <h3 data-i18n="sr_q2">How often should keyword rankings actually be checked?</h3>
+      <p data-i18n="sr_a2">Weekly or monthly tracking is enough for reporting purposes; daily rank-checking mostly captures normal algorithmic noise rather than meaningful movement. Rankings for any given keyword fluctuate day to day even with zero changes to a site — checking too frequently just adds noise a client has to be talked through for no real benefit.</p>
+      <h3 data-i18n="sr_q3">What's the most commonly over-reported metric that should be dropped?</h3>
+      <p data-i18n="sr_a3">Raw, unsegmented organic traffic. A big month-over-month traffic number with no breakdown by landing page, intent or conversion says almost nothing about business impact — a spike from an unrelated viral post or a seasonal, non-buying query can inflate it without any real gain. Traffic segmented by page and tied to actual leads or conversions is what actually shows whether SEO is working.</p>
+
+      <div class="cta-box" id="contact">
+        <h2 data-i18n="sr_cta_h">Tired of SEO reports that are busy but hard to act on?</h2>
+        <p data-i18n="sr_cta_p">Send us an example of your current report — we'll show you what a leaner, business-focused version would actually track.</p>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="cta_btn">Chat on WhatsApp →</a>
+      </div>
+
+      <div class="related">
+        <div class="k" data-i18n="rel_k">Explore more</div>
+        <a href="how-long-does-seo-take.html"><span data-i18n="art_hl2">How long does SEO take? A realistic results timeline</span> <span class="arr">→</span></a>
+        <a href="recover-google-ranking-drop.html"><span data-i18n="art_rd">My Google rankings dropped overnight — how to recover</span> <span class="arr">→</span></a>
+        <a href="content-marketing-blog-strategy-lead-generation.html"><span data-i18n="art_cm">Content marketing &amp; blog strategy for lead generation</span> <span class="arr">→</span></a>
+        <a href="index.html"><span data-i18n="nav_mag">Magazine</span> <span class="arr">→</span></a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+        <p data-i18n="foot_about">Kuala Lumpur's SEO &amp; backlink agency. We put your website on the first page of Google — across Korea, Japan and Southeast Asia.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/seomarketingmalaysia" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61586533861775" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.6 13.3 6 14.7 6H17V2.5C16.6 2.4 15.3 2.3 13.8 2.3 10.7 2.3 9 4.1 9 7.1V10H6v4h3v8z"/></svg></a>
+          <a href="https://www.linkedin.com/in/%EB%B0%B1%ED%98%B8-%EA%B0%95-a84273261/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.5h3.3V21H3.3zM9 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.32 0 3.93 2.18 3.93 5V21h-3.3v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21H9z"/></svg></a>
+          <a href="https://blog.naver.com/kolpjihu389" aria-label="Naver Blog" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.273 12.845 7.376 0H0v24h7.726V11.156L16.624 24H24V0h-7.727z"/></svg></a>
+          <a href="https://wa.me/601137950507" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2-1.4-.5-.6-.8-1.3-.9-1.5-.1-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5 0-.1 0-.3-.1-.4-.1-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.6.6 1.9.5 2.3.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_svc">Services</h4>
+        <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+        <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+        <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+        <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+        <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+        <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_markets">Markets</h4>
+        <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+        <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+        <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+        <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_company">Company</h4>
+        <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+        <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+        <a href="../case-studies.html" data-i18n="nav_cases">Case Studies</a>
+        <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+        <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> NEXT SEO24 Sdn Bhd. <span data-i18n="foot_rights">All rights reserved.</span></span>
+      <span class="foot-legal"><a href="../privacy-policy.html" data-i18n="foot_privacy">Privacy</a> · <a href="../terms.html" data-i18n="foot_terms">Terms</a></span>
+      <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const WHATSAPP_NUMBER = "601137950507";
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('waLink').href =
+  "https://wa.me/" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent("Hello, I'd like help making my SEO reporting clearer and more business-focused.\n\nName :\nE-Mail :\nWebsite :\nEnquiry Topic :");
+</script>
+<script id="page-i18n">
+window.PAGE_I18N = {
+  ko: {
+    sr_cat:"SEO 전략",
+    sr_read:"7분 읽기",
+    sr_h1:"SEO 리포팅: 실제로 추적해야 할 것과 버려야 할 허영 지표",
+    sr_lead:"차트 15개와 우상향하는 'Domain Authority' 선 그래프가 담긴 리포트는 바빠 보입니다 — 그리고 클라이언트에게 실제로 고객이 늘고 있는지에 대해서는 거의 아무것도 말해주지 않습니다. 이 글은 월간 SEO 리포트가 실제로 추적해야 할 것과, 결과가 아니라 활동만 측정하기 때문에 잘라내야 할 지표를 다룹니다.",
+    sr_updated:"최종 업데이트 2026년 8월 11일",
+    sr_h2a:"대부분의 SEO 리포트가 신뢰를 쌓지 못하는 이유",
+    sr_p1:"대부분의 리포트는 두 가지 이유 중 하나로 실패합니다: 우선순위 없이 지표가 너무 많아서 독자가 무엇이 실제로 중요한지 알 수 없거나, 아예 잘못된 지표 — SEO 작업이 도움이 되든 안 되든 움직이는 숫자 — 를 다루기 때문입니다. 리포트를 자사 비즈니스 성과와 연결하지 못하는 이해관계자는 그 작업이 실제로 효과가 있어도 작업 자체에 대한 신뢰를 잃습니다. 가능한 모든 것을 보고하는 것보다, 올바른 소수의 숫자를 명확하게 보고하는 것이 신뢰에 훨씬 더 도움이 됩니다.",
+    sr_h2b:"인상적으로 보이지만 거의 아무것도 말해주지 않는 허영 지표",
+    sr_li1:"<b>세분화되지 않은 원본 트래픽.</b> 페이지나 의도별 분석 없는 큰 전월 대비 트래픽 숫자는 관련 없는 바이럴 게시물이나 구매와 무관한 계절성 검색어로 부풀려질 수 있습니다 — 그 자체로는 비즈니스 영향에 대해 아무것도 말해주지 않습니다.",
+    sr_li2:"<b>Domain Authority(DA)나 유사한 서드파티 점수.</b> 이 지표들은 구글이 아니라 SEO 도구 벤더가 만든 것입니다 — 구글은 'Domain Authority'라는 개념을 계산하지도, 사용하지도, 인식하지도 않습니다. 장기간에 걸쳐 백링크 성장을 대략적으로 추적할 수는 있지만, 월별 DA 변화를 실제 구글 순위 진전을 반영하는 것처럼 보고하는 것은 오해를 불러일으킵니다.",
+    sr_li3:"<b>검색량이나 의도 맥락 없는 키워드 순위.</b> 아무도 검색하지 않는 키워드나 구매 의도가 없는 키워드에서 3위를 하는 것은 의미 있는 진전이 아닙니다 — 순위 숫자 하나만으로는 그것이 중요한지 전혀 알 수 없습니다.",
+    sr_li4:"<b>획득한 총 백링크 수.</b> 저품질 링크 열 개는 슬라이드에 숫자를 더할 뿐 진짜 권위를 더하지 않습니다 — 개수보다 품질과 관련성이 훨씬 더 중요하며, 개수만 보고하면 잘못된 종류의 링크 빌딩에 오히려 보상을 줄 수도 있습니다.",
+    sr_h2c:"실제로 추적해야 할 것",
+    sr_li5:"<b>페이지·의도별로 세분화된 오가닉 트래픽.</b> 사이트 전체 합계보다 실제로 비즈니스를 이끄는 페이지 — 서비스 페이지, 고의도 블로그 콘텐츠 — 의 성장이 훨씬 더 중요합니다.",
+    sr_li6:"<b>오가닉 검색에 귀속된 전환·리드.</b> 세션은 대리 지표일 뿐입니다. 오가닉 트래픽에서 나온 문의, 폼 제출, WhatsApp 클릭이야말로 비즈니스가 실제로 신경 쓰는 결과입니다.",
+    sr_li7:"<b>정의된 우선순위 '핵심' 키워드 세트의 순위.</b> 사이트가 우연히 순위에 오른 모든 키워드가 아니라, 실제 구매 의도와 연결된 특정 검색어를 시간에 걸쳐 일관되게 추적한 것.",
+    sr_li8:"<b>단일 스냅샷이 아니라 Core Web Vitals 추세.</b> 전월 대비 추세선은 기술적 건강이 개선되는지 악화되는지 보여주지만, 고립된 점수 하나는 그렇지 않습니다.",
+    sr_li9:"<b>색인된 페이지 수 대 전체 페이지 수.</b> 발행된 페이지와 실제 색인된 페이지 사이에 벌어지는 격차는 더 큰 문제가 되기 전에 드러낼 가치가 있는 조기 경고 신호입니다.",
+    sr_h2d:"지표를 청중에 맞추기",
+    sr_p2:"매주 계정을 들여다보는 마케팅 매니저는 더 세밀한 디테일을 감당할 수 있고 대체로 원합니다 — 개별 키워드 움직임, 페이지별 트래픽 분석, 기술 수정 로그. CEO나 사업주는 보통 매출과 직접 연결된 서너 개의 숫자를 원합니다: 생성된 리드, 다른 채널 대비 리드당 비용, 전체적인 추세 방향. 마케팅 매니저 수준의 디테일을 CEO에게 보내면 대체로 꼼꼼함이 아니라 노이즈로 읽힙니다.",
+    sr_h2e:"현실적인 월간 주기",
+    sr_p3:"SEO는 충분히 느리게 움직이기 때문에 한 달치 숫자만으로는 그 자체로 진짜 오해를 부를 수 있습니다 — 최신 숫자만이 아니라 3~6개월에 걸친 추세를 월간 스냅샷과 함께 보고하세요. 6개월간의 상승 추세와 함께 놓인 한 달의 하락은 맥락 없이 놓인 같은 하락과 매우 다르게 읽히며, 둘 다 같은 데이터를 정직하게 제시하는 방식이지만 오직 하나만이 실제로 독자에게 정보를 줍니다.",
+    sr_h2f:"간단한 리포트 구조 예시",
+    sr_li10:"우선순위 페이지의 오가닉 트래픽, 이번 달 vs 지난달 vs 6개월 추세",
+    sr_li11:"오가닉에 귀속된 리드·전환, 총합만이 아니라 추세선과 함께",
+    sr_li12:"정의된 핵심 키워드 세트의 순위 변화",
+    sr_li13:"Core Web Vitals 통과·실패 추세",
+    sr_li14:"이번 달 무엇이 바뀌었는지(발행한 콘텐츠, 기술적 수정)와 그 이유를 평이한 언어로",
+    sr_li15:"가능한 모든 것의 목록이 아니라 하나의 명확한 권장사항이나 다음 우선순위",
+    sr_p4:"현재 리포트가 바빠 보이지만 실행하기 어렵게 느껴진다면 예시를 보내주세요 — 더 간결하고 명확한 버전이 실제로 무엇을 추적할지 보여드립니다.",
+    sr_q1:"Domain Authority(DA)를 SEO 리포트에 포함할 가치가 있나요?",
+    sr_a1:"보통은 아니고, 넣더라도 사소한 각주 정도로만요. Domain Authority는 특정 SEO 도구 벤더가 만든 서드파티 지표입니다 — 구글은 이를 사용하지도, 계산하지도, 어떤 식으로든 참조하지도 않습니다. 장기간에 걸쳐 대략적인 방향성 신호가 될 수는 있지만, 월별 DA 변화를 마치 구글 자체의 사이트 평가를 반영하는 것처럼 보고하는 것은 오해를 불러일으킵니다.",
+    sr_q2:"키워드 순위는 실제로 얼마나 자주 확인해야 하나요?",
+    sr_a2:"리포팅 목적으로는 주간이나 월간 추적으로 충분합니다. 매일 순위를 확인하는 것은 대체로 의미 있는 움직임이 아니라 정상적인 알고리즘 노이즈를 포착할 뿐입니다. 사이트에 아무 변화가 없어도 어떤 키워드든 순위는 하루하루 변동하며, 너무 자주 확인하면 실질적인 이득 없이 클라이언트에게 설명해야 할 노이즈만 늘어납니다.",
+    sr_q3:"가장 흔하게 과도하게 보고되는, 버려야 할 지표는 무엇인가요?",
+    sr_a3:"세분화되지 않은 원본 오가닉 트래픽입니다. 랜딩 페이지, 의도, 전환별 분석 없는 큰 전월 대비 트래픽 숫자는 비즈니스 영향에 대해 거의 아무것도 말해주지 않습니다 — 관련 없는 바이럴 게시물이나 구매와 무관한 계절성 검색어로 인한 급증이 실질적인 이득 없이 숫자를 부풀릴 수 있습니다. 페이지별로 세분화되고 실제 리드나 전환과 연결된 트래픽이야말로 SEO가 실제로 효과가 있는지 보여줍니다.",
+    sr_cta_h:"바빠 보이지만 실행하기 어려운 SEO 리포트에 지치셨나요?",
+    sr_cta_p:"현재 리포트 예시를 보내주세요 — 더 간결하고 비즈니스 중심적인 버전이 실제로 무엇을 추적할지 보여드립니다.",
+    art_hl2:"SEO는 얼마나 걸려 효과가 날까? 현실적인 결과 타임라인", art_rd:"구글 순위가 하룻밤 새 떨어졌어요 — 회복하는 법", art_cm:"리드 창출을 위한 콘텐츠 마케팅·블로그 전략"
+  }
+};
+</script>
+<script src="../i18n.js"></script>
+</body>
+</html>
