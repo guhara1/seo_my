@@ -7,13 +7,22 @@
     <description>SEO, content and digital marketing insights for Malaysia and across Asia — from NEXT SEO24, a Kuala Lumpur based SEO agency.</description>
     <language>en</language>
     <copyright>Copyright NEXT SEO24</copyright>
-    <lastBuildDate>Tue, 11 Aug 2026 21:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 21:00:00 GMT</lastBuildDate>
     <generator>NEXT SEO24</generator>
     <image>
       <url>https://nextseo24.com/img/og-default.png</url>
       <title>NEXT SEO24 Magazine</title>
       <link>https://nextseo24.com/magazine/index.html</link>
     </image>
+
+    <item>
+      <title>E-E-A-T Without a Personal Brand: Practical Options for Small Teams</title>
+      <link>https://nextseo24.com/magazine/eeat-anonymous-small-team-author-bio.html</link>
+      <guid isPermaLink="true">https://nextseo24.com/magazine/eeat-anonymous-small-team-author-bio.html</guid>
+      <description>E-E-A-T doesn't require a celebrity personality or a public personal brand. Practical, honest author-attribution options for small teams and businesses that can't put one face on everything.</description>
+      <enclosure url="https://nextseo24.com/img/cover-eeat-small-team.svg" type="image/svg+xml" length="0" />
+      <pubDate>Wed, 12 Aug 2026 21:00:00 GMT</pubDate>
+    </item>
 
     <item>
       <title>SEO Reporting: What to Actually Track (and Which Vanity Metrics to Drop)</title>

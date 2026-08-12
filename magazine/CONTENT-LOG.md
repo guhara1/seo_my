@@ -44,6 +44,7 @@ post is published so future sessions don't duplicate work.
 | 2026-08-09 | mobile-first-indexing-checklist.html | Mobile-first indexing checklist — content/schema parity, tap targets, viewport, lazy-load crawlability | Technical SEO |
 | 2026-08-09 | wordpress-vs-custom-site-seo.html | WordPress vs custom-built site SEO — neither ranks higher by default, who maintains it day to day, when a rebuild is worth it | Strategy |
 | 2026-08-11 | seo-reporting-metrics-that-matter.html | SEO reporting — what to actually track month to month, vanity metrics to drop (raw traffic, Domain Authority, backlink count) | SEO Strategy |
+| 2026-08-12 | eeat-anonymous-small-team-author-bio.html | E-E-A-T without a personal brand — organization/first-name/rotating-byline attribution options for small teams | SEO |
 
 Each new article was also added to: `magazine/index.html` (card grid + i18n),
 `sitemap.xml`, and `rss.xml`. Hero images live in `img/cover-*`.
@@ -246,11 +247,21 @@ replenished on 2026-08-09 after the prior backlog nearly ran out:
 - SEO for Shopify/e-commerce platforms specifically — distinct from the
   existing marketplace-vs-website post: theme bloat, app conflicts,
   duplicate collection/product URLs, canonical handling on variants
+## Internal linking pass (2026-08-12)
+
+Single-post batch (E-E-A-T for anonymous/small teams):
+- `magazine/index.html` — new feature card at top of grid.
+- `index.html` — "From the magazine" teaser: swapped the SEO-reporting
+  card for the new E-E-A-T post (kept mobile-first and voice-search
+  cards, still fresh from prior batches).
+- Editorial/policy topic without a natural market-page tie-in this
+  round — magazine index + homepage teaser + its own related-links to
+  eeat-author-trust-signals.html and google-news-eligibility-
+  criteria.html satisfy the internal-linking requirement.
+
 - Internal linking strategy in depth — orphan pages, link depth,
   anchor-text diversity, a standalone deep-dive beyond the passing
   mentions in other posts
-- Author bio / E-E-A-T for anonymous or small teams — practical options
-  when a business genuinely can't put a named person's face on content
 
 ## Style/template notes for new posts
 
