@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Infographic comparing a company blog labeled 'News' that fails Google News criteria against a real newsroom page that meets them">
+  <defs>
+    <linearGradient id="bgfade19" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161B17"/>
+      <stop offset="1" stop-color="#0B0D0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgfade19)"/>
+
+  <g font-family="Archivo, sans-serif">
+    <text x="600" y="60" text-anchor="middle" font-size="20" font-weight="700" fill="#E9EAE3">A "News" label isn't the same as meeting the criteria</text>
+
+    <!-- left: fails -->
+    <g transform="translate(80,100)">
+      <rect width="480" height="440" rx="16" fill="#161B17" stroke="rgba(232,74,74,0.3)"/>
+      <text x="240" y="40" text-anchor="middle" font-size="14" font-weight="700" fill="#E88484">✕ "News" blog — doesn't qualify</text>
+      <g font-size="12" fill="#B9BEB6">
+        <rect x="24" y="66" width="432" height="42" rx="8" fill="rgba(232,74,74,0.08)"/>
+        <text x="40" y="92">Author: "Admin"</text>
+        <rect x="24" y="118" width="432" height="42" rx="8" fill="rgba(232,74,74,0.08)"/>
+        <text x="40" y="144">No publish/update date shown</text>
+        <rect x="24" y="170" width="432" height="42" rx="8" fill="rgba(232,74,74,0.08)"/>
+        <text x="40" y="196">Rewrites the company's own press release</text>
+        <rect x="24" y="222" width="432" height="42" rx="8" fill="rgba(232,74,74,0.08)"/>
+        <text x="40" y="248">Promotional tone, no sponsor disclosure</text>
+        <rect x="24" y="274" width="432" height="42" rx="8" fill="rgba(232,74,74,0.08)"/>
+        <text x="40" y="300">No corrections process</text>
+      </g>
+      <text x="240" y="400" text-anchor="middle" font-size="11" fill="#8E978C">frequency ≠ eligibility</text>
+    </g>
+
+    <!-- right: qualifies -->
+    <g transform="translate(640,100)">
+      <rect width="480" height="440" rx="16" fill="#161B17" stroke="rgba(203,242,74,0.35)"/>
+      <text x="240" y="40" text-anchor="middle" font-size="14" font-weight="700" fill="#CBF24A">✓ Real newsroom — meets the bar</text>
+      <g font-size="12" fill="#B9BEB6">
+        <rect x="24" y="66" width="432" height="42" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="40" y="92">Author: named byline, real person</text>
+        <rect x="24" y="118" width="432" height="42" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="40" y="144">Clear published + updated dates</text>
+        <rect x="24" y="170" width="432" height="42" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="40" y="196">Original reporting, own analysis</text>
+        <rect x="24" y="222" width="432" height="42" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="40" y="248">Sponsored content clearly labeled</text>
+        <rect x="24" y="274" width="432" height="42" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="40" y="300">Visible corrections policy</text>
+      </g>
+      <text x="240" y="400" text-anchor="middle" font-size="11" fill="#8E978C">substance, not the section name</text>
+    </g>
+  </g>
+
+  <text x="80" y="640" font-family="Archivo, sans-serif" font-size="13" fill="#4f564e">NEXT SEO24 — Google News eligibility: what actually qualifies, and what doesn't</text>
+</svg>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The On-Page SEO Technical Audit Checklist We Actually Use | NEXT SEO24</title>
+<meta name="description" content="The real order of operations for a technical SEO audit — indexability, crawl efficiency, on-page fundamentals, Core Web Vitals and schema — with the mistakes we see repeatedly on Malaysian SME sites.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="NEXT SEO24 Team">
+<link rel="canonical" href="https://nextseo24.com/magazine/on-page-seo-technical-audit-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The On-Page SEO Technical Audit Checklist We Actually Use">
+<meta property="og:description" content="The real order of operations for a technical SEO audit, and the mistakes we see repeatedly on Malaysian SME sites.">
+<meta property="og:url" content="https://nextseo24.com/magazine/on-page-seo-technical-audit-checklist.html">
+<meta property="og:image" content="https://nextseo24.com/img/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The On-Page SEO Technical Audit Checklist We Actually Use">
+<meta name="twitter:description" content="The real order of operations for a technical SEO audit, and the mistakes we see repeatedly on Malaysian SME sites.">
+<meta name="twitter:image" content="https://nextseo24.com/img/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../article.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The on-page SEO technical audit checklist we actually use",
+  "image": "https://nextseo24.com/img/cover-onpage-audit.svg",
+  "author": { "@type": "Organization", "name": "NEXT SEO24 Team" },
+  "publisher": { "@type": "Organization", "name": "NEXT SEO24", "url": "https://nextseo24.com/" },
+  "datePublished": "2026-07-31",
+  "dateModified": "2026-07-31",
+  "mainEntityOfPage": "https://nextseo24.com/magazine/on-page-seo-technical-audit-checklist.html",
+  "articleSection": "Technical SEO"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nextseo24.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Magazine", "item": "https://nextseo24.com/magazine/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "On-Page SEO Technical Audit Checklist", "item": "https://nextseo24.com/magazine/on-page-seo-technical-audit-checklist.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should a website run a full technical SEO audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A full audit once or twice a year is enough for most SME sites, plus a lighter monthly check of crawl errors, index coverage and Core Web Vitals in Search Console. Audit immediately, outside that schedule, after any redesign, platform migration, or a sudden traffic or ranking drop."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I run a useful technical audit without paid tools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for most of the checklist. Google Search Console (free) covers indexability, crawl errors and Core Web Vitals. Browser dev tools and view-source cover canonical tags, meta robots and structured data. Paid crawlers like Screaming Frog earn their cost mainly on larger sites, for finding orphan pages and redirect chains at scale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the single highest-impact fix to start with after an audit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Indexability problems first, always — a page that's blocked, canonicalized away, or noindexed can't rank no matter how good the content is. Fix those before touching content quality, internal linking or Core Web Vitals, since none of that work matters on a page Google can't index."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#E11D29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+    <input type="checkbox" id="navtoggle" class="navtoggle">
+    <nav class="menu" aria-label="Primary">
+      <a href="../index.html" data-i18n="nav_home">Home</a>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+        </div>
+      </div>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+        </div>
+      </div>
+      <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+      <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="../index.html#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../index.html" data-i18n="bc_home">Home</a><span>›</span><a href="index.html" data-i18n="nav_mag">Magazine</a><span>›</span>On-Page SEO Technical Audit Checklist
+    </nav>
+    <article>
+      <img class="hero" src="../img/cover-onpage-audit.svg" width="1200" height="675" alt="Infographic: a five-step technical SEO audit order of operations — indexability, crawl efficiency, on-page fundamentals, Core Web Vitals, structured data — NEXT SEO24" fetchpriority="high">
+      <div class="post-meta"><span class="cat" data-i18n="oa_cat">Technical SEO</span><span>·</span><span>31 July 2026</span><span>·</span><span data-i18n="oa_read">9 min read</span></div>
+      <h1 data-i18n="oa_h1">The on-page SEO technical audit checklist we actually use</h1>
+      <p class="lead" data-i18n="oa_lead">Most "SEO audit checklists" online are 50-item PDFs with no order to them — treating a broken canonical tag the same as a slightly-too-long meta description. That's not how a real audit works. This is the exact order of operations we run on a client site, and why sequence matters as much as the individual checks.</p>
+
+      <div class="byline">
+        <span class="av">NS</span>
+        <span class="meta"><b data-i18n="by_team">NEXT SEO24 Team</b> · <span data-i18n="by_loc">Kuala Lumpur</span><br><span data-i18n="oa_updated">Last updated 31 July 2026</span> · <a href="../why-us.html" data-i18n="by_about">About our team</a></span>
+      </div>
+
+      <h2 data-i18n="oa_h2a">Why the order matters more than the checklist</h2>
+      <p data-i18n="oa_p1">If you fix a slow homepage before fixing a canonical tag that's telling Google to index a completely different URL, you've just made a faster page that still won't rank. Every audit we run follows the same five-stage order, because each stage can silently undo the value of the ones after it. Skip ahead, and you'll polish work that never had a chance to matter.</p>
+
+      <h2 data-i18n="oa_h2b">Step 1 — Indexability, before anything else</h2>
+      <p data-i18n="oa_p2">Check, in this order: robots.txt isn't blocking pages it shouldn't (a shockingly common launch-day accident); meta robots tags aren't set to <code>noindex</code> on pages meant to rank; canonical tags point to the URL itself, not a competitor page or a stripped-down parameter version; and the XML sitemap only lists indexable, 200-status URLs — not a mix of redirects, 404s and canonicalized-away pages, which quietly erodes Google's trust in the whole sitemap.</p>
+      <pre style="background:rgba(255,255,255,0.04);border:1px solid rgba(232,233,227,0.12);border-radius:12px;padding:18px 20px;overflow-x:auto;font-size:13px;line-height:1.6;color:#B9BEB6"><code>&lt;!-- Bug we find constantly: a page canonicalizing to the homepage
+     instead of itself, usually left over from a CMS default --&gt;
+&lt;link rel="canonical" href="https://example.com/"&gt;
+
+&lt;!-- Should read: --&gt;
+&lt;link rel="canonical" href="https://example.com/services/backlinks"&gt;</code></pre>
+      <p data-i18n="oa_p3">This single bug — a wrong self-referencing canonical — can silently remove an entire service page from Google's index while every other signal on the page looks perfectly healthy. It's the first thing we check, precisely because nothing else on this list matters if it's present.</p>
+
+      <h2 data-i18n="oa_h2c">Step 2 — Crawl efficiency</h2>
+      <ul>
+        <li data-i18n="oa_li1"><b>Orphan pages.</b> Pages with no internal links pointing to them are hard for Google to find and rarely rank, even when indexed. We crawl the site and cross-reference against the sitemap to find them.</li>
+        <li data-i18n="oa_li2"><b>Click depth.</b> Important pages buried more than 3-4 clicks from the homepage get crawled less often and pass less internal authority. Category and service pages should sit close to the top of the structure.</li>
+        <li data-i18n="oa_li3"><b>Redirect chains.</b> A URL that redirects to a redirect to a redirect wastes crawl budget and dilutes link equity at every hop. We flag anything longer than a single 301.</li>
+        <li data-i18n="oa_li4"><b>Parameter duplication.</b> URLs like <code>?utm_source=</code>, <code>?sort=price</code> or session IDs can create dozens of near-duplicate indexable URLs from one real page if canonicals aren't handling them correctly.</li>
+      </ul>
+
+      <h2 data-i18n="oa_h2d">Step 3 — On-page fundamentals, done properly</h2>
+      <p data-i18n="oa_p4">Once Google can find and index the right URLs, we check that each page is actually about one thing: a unique, descriptive title tag under roughly 60 characters; exactly one H1 that matches search intent, not the brand name repeated on every page; a meta description that earns the click rather than restating the title; and no two pages competing for the same primary keyword — a problem we see constantly on sites where a blog post and a service page both target "SEO services Malaysia."</p>
+
+      <h2 data-i18n="oa_h2e">Step 4 — Core Web Vitals and INP</h2>
+      <p data-i18n="oa_p5">Speed and interactivity get checked after indexability and structure, not before — a fast page that Google can't find is still invisible. For the full method we use here, see our dedicated <a href="core-web-vitals-inp.html" data-i18n="oa_p5_link">Core Web Vitals and INP speed checklist</a>, which covers the practical fixes in more depth than fits here.</p>
+
+      <h2 data-i18n="oa_h2f">Step 5 — Structured data validation</h2>
+      <p data-i18n="oa_p6">Last, we validate every JSON-LD block against Google's Rich Results Test and check it matches visible page content exactly — mismatched or broken schema is a policy risk, not just a missed opportunity. Our <a href="faq-howto-schema-implementation.html" data-i18n="oa_p6_link">FAQ and HowTo schema implementation guide</a> has working code examples if you're building this from scratch.</p>
+
+      <h2 data-i18n="oa_h2g">Mistakes we see repeatedly on Malaysian SME sites</h2>
+      <ul>
+        <li data-i18n="oa_li5"><b>Hreflang errors on multilingual sites.</b> A site serving English, Bahasa Malaysia and Chinese versions of the same page often has hreflang tags pointing to the wrong URL, or missing the required self-referencing tag — which can cause Google to show the wrong language version in search results.</li>
+        <li data-i18n="oa_li6"><b>WordPress plugins fighting each other.</b> Two SEO plugins active at once, or a caching plugin serving stale canonical tags, is one of the most common causes of indexability bugs we find during migration audits.</li>
+        <li data-i18n="oa_li7"><b>Soft 404s.</b> A "page not found" message that returns a 200 status code instead of a real 404 confuses Google into indexing dead pages, diluting the site's overall quality signals.</li>
+        <li data-i18n="oa_li8"><b>Blocking CSS/JS in robots.txt.</b> Google renders pages like a browser to judge quality and Core Web Vitals — blocking the resources it needs to render properly is a self-inflicted wound we still find on older sites.</li>
+      </ul>
+
+      <h2 data-i18n="oa_h2h">A pre-publish audit checklist</h2>
+      <ul>
+        <li data-i18n="oa_li9">Robots.txt and meta robots checked page by page, not just at the site level</li>
+        <li data-i18n="oa_li10">Every important URL self-canonicalizes correctly</li>
+        <li data-i18n="oa_li11">XML sitemap contains only 200-status, indexable URLs</li>
+        <li data-i18n="oa_li12">No orphan pages, no redirect chains longer than one hop</li>
+        <li data-i18n="oa_li13">Hreflang tags verified for every language version, including self-reference</li>
+        <li data-i18n="oa_li14">Core Web Vitals checked in Search Console's real-user data, not just a lab test</li>
+        <li data-i18n="oa_li15">All structured data passes the Rich Results Test with zero errors</li>
+      </ul>
+      <p data-i18n="oa_p7">If you'd like us to run this exact audit on your site, send it over — we'll tell you specifically what's blocking you, not hand back a generic scorecard.</p>
+
+      <h2 data-i18n="faq_h">Frequently asked questions</h2>
+      <h3 data-i18n="oa_q1">How often should a website run a full technical SEO audit?</h3>
+      <p data-i18n="oa_a1">A full audit once or twice a year is enough for most SME sites, plus a lighter monthly check of crawl errors, index coverage and Core Web Vitals in Search Console. Audit immediately, outside that schedule, after any redesign, platform migration, or a sudden traffic or ranking drop.</p>
+      <h3 data-i18n="oa_q2">Can I run a useful technical audit without paid tools?</h3>
+      <p data-i18n="oa_a2">Yes, for most of the checklist. Google Search Console (free) covers indexability, crawl errors and Core Web Vitals. Browser dev tools and view-source cover canonical tags, meta robots and structured data. Paid crawlers like Screaming Frog earn their cost mainly on larger sites, for finding orphan pages and redirect chains at scale.</p>
+      <h3 data-i18n="oa_q3">What's the single highest-impact fix to start with after an audit?</h3>
+      <p data-i18n="oa_a3">Indexability problems first, always — a page that's blocked, canonicalized away, or noindexed can't rank no matter how good the content is. Fix those before touching content quality, internal linking or Core Web Vitals, since none of that work matters on a page Google can't index.</p>
+
+      <div class="cta-box" id="contact">
+        <h2 data-i18n="oa_cta_h">Want your site audited using this exact process?</h2>
+        <p data-i18n="oa_cta_p">Send us your site and we'll run the full five-stage audit — indexability, crawl efficiency, on-page, speed and schema — and tell you what's actually blocking your rankings.</p>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="cta_btn">Chat on WhatsApp →</a>
+      </div>
+
+      <div class="related">
+        <div class="k" data-i18n="rel_k">Explore more</div>
+        <a href="core-web-vitals-inp.html"><span data-i18n="art_cwv">Core Web Vitals &amp; INP: a practical speed checklist</span> <span class="arr">→</span></a>
+        <a href="website-migration-seo-checklist.html"><span data-i18n="art_wm">Website migration without losing Google rankings</span> <span class="arr">→</span></a>
+        <a href="faq-howto-schema-implementation.html"><span data-i18n="art_sc">FAQ &amp; HowTo schema in practice</span> <span class="arr">→</span></a>
+        <a href="index.html"><span data-i18n="nav_mag">Magazine</span> <span class="arr">→</span></a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+        <p data-i18n="foot_about">Kuala Lumpur's SEO &amp; backlink agency. We put your website on the first page of Google — across Korea, Japan and Southeast Asia.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/seomarketingmalaysia" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61586533861775" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.6 13.3 6 14.7 6H17V2.5C16.6 2.4 15.3 2.3 13.8 2.3 10.7 2.3 9 4.1 9 7.1V10H6v4h3v8z"/></svg></a>
+          <a href="https://www.linkedin.com/in/%EB%B0%B1%ED%98%B8-%EA%B0%95-a84273261/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.5h3.3V21H3.3zM9 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.32 0 3.93 2.18 3.93 5V21h-3.3v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21H9z"/></svg></a>
+          <a href="https://blog.naver.com/kolpjihu389" aria-label="Naver Blog" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.273 12.845 7.376 0H0v24h7.726V11.156L16.624 24H24V0h-7.727z"/></svg></a>
+          <a href="https://wa.me/601137950507" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2-1.4-.5-.6-.8-1.3-.9-1.5-.1-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5 0-.1 0-.3-.1-.4-.1-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.6.6 1.9.5 2.3.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_svc">Services</h4>
+        <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+        <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+        <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+        <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+        <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+        <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_markets">Markets</h4>
+        <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+        <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+        <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+        <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_company">Company</h4>
+        <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+        <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+        <a href="../case-studies.html" data-i18n="nav_cases">Case Studies</a>
+        <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+        <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> NEXT SEO24 Sdn Bhd. <span data-i18n="foot_rights">All rights reserved.</span></span>
+      <span class="foot-legal"><a href="../privacy-policy.html" data-i18n="foot_privacy">Privacy</a> · <a href="../terms.html" data-i18n="foot_terms">Terms</a></span>
+      <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const WHATSAPP_NUMBER = "601137950507";
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('waLink').href =
+  "https://wa.me/" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent("Hello, I'd like a technical SEO audit of my website.\n\nName :\nE-Mail :\nWebsite :\nEnquiry Topic :");
+</script>
+<script id="page-i18n">
+window.PAGE_I18N = {
+  ko: {
+    oa_cat:"기술 SEO",
+    oa_read:"9분 읽기",
+    oa_h1:"우리가 실제로 사용하는 온페이지 SEO 기술 감사 체크리스트",
+    oa_lead:"온라인에 있는 대부분의 'SEO 감사 체크리스트'는 순서 없이 나열된 50개 항목짜리 PDF일 뿐입니다 — 깨진 canonical 태그를 살짝 긴 메타 설명과 똑같이 취급하죠. 실제 감사는 그렇게 작동하지 않습니다. 이 글은 저희가 클라이언트 사이트에서 실제로 실행하는 정확한 작업 순서와, 왜 개별 점검 항목만큼이나 순서가 중요한지를 담았습니다.",
+    oa_updated:"최종 업데이트 2026년 7월 31일",
+    oa_h2a:"체크리스트보다 순서가 더 중요한 이유",
+    oa_p1:"canonical 태그가 완전히 다른 URL을 색인하라고 지시하고 있는 상태에서 느린 홈페이지부터 고친다면, 결국 여전히 순위에 오르지 못할 더 빠른 페이지를 만든 것뿐입니다. 저희가 진행하는 모든 감사는 동일한 5단계 순서를 따릅니다 — 각 단계가 그 뒤 단계들의 가치를 조용히 무효화할 수 있기 때문입니다. 순서를 건너뛰면, 애초에 의미를 가질 기회조차 없었던 작업을 다듬게 됩니다.",
+    oa_h2b:"1단계 — 무엇보다 먼저, 색인 가능성",
+    oa_p2:"다음 순서로 확인합니다: robots.txt가 막아서는 안 될 페이지를 막고 있지 않은지(런칭일에 놀랄 만큼 흔한 실수), 순위에 올라야 할 페이지에 메타 robots가 noindex로 설정돼 있지 않은지, canonical 태그가 경쟁사 페이지나 파라미터가 제거된 버전이 아니라 페이지 자기 자신을 가리키는지, 그리고 XML 사이트맵이 리다이렉트·404·canonical로 제외된 페이지가 섞이지 않고 색인 가능한 200 상태 URL만 나열하고 있는지 — 섞여 있으면 사이트맵 전체에 대한 구글의 신뢰가 조용히 떨어집니다.",
+    oa_p3:"자기 자신이 아니라 잘못된 canonical 하나가, 페이지의 다른 모든 신호가 완벽하게 건강해 보이는 동안에도 서비스 페이지 전체를 구글 색인에서 조용히 제거할 수 있습니다. 이것이 저희가 가장 먼저 확인하는 항목인 이유는, 이게 있으면 이 목록의 다른 어떤 것도 의미가 없기 때문입니다.",
+    oa_h2c:"2단계 — 크롤 효율성",
+    oa_li1:"<b>고아 페이지.</b> 내부에서 아무도 링크하지 않는 페이지는 구글이 찾기 어렵고, 색인이 되더라도 순위에 오르는 경우가 드뭅니다. 사이트맵과 대조해 크롤링하며 이런 페이지를 찾습니다.",
+    oa_li2:"<b>클릭 깊이.</b> 홈페이지에서 3~4클릭 이상 떨어진 중요한 페이지는 크롤링 빈도가 낮아지고 전달받는 내부 권위도 줄어듭니다. 카테고리·서비스 페이지는 구조 상단에 가깝게 배치해야 합니다.",
+    oa_li3:"<b>리다이렉트 체인.</b> 리다이렉트가 또 다른 리다이렉트로, 또 그다음으로 이어지는 URL은 크롤 예산을 낭비하고 각 단계마다 링크 가치를 희석시킵니다. 301 하나를 초과하는 모든 경우를 표시합니다.",
+    oa_li4:"<b>파라미터 중복.</b> canonical이 올바르게 처리되지 않으면 ?utm_source=, ?sort=price, 세션 ID 같은 URL이 페이지 하나에서 수십 개의 유사 중복 색인 URL을 만들어낼 수 있습니다.",
+    oa_h2d:"3단계 — 온페이지 기본기를 제대로",
+    oa_p4:"구글이 올바른 URL을 찾고 색인할 수 있게 된 뒤, 각 페이지가 실제로 한 가지 주제만 다루는지 확인합니다: 페이지마다 고유하고 60자 내외의 설명적인 타이틀 태그, 모든 페이지에서 브랜드명을 반복하는 게 아니라 검색 의도와 일치하는 H1 정확히 하나, 타이틀을 그대로 반복하지 않고 클릭을 유도하는 메타 설명, 그리고 두 페이지가 같은 핵심 키워드를 두고 경쟁하지 않는지 — 블로그 글과 서비스 페이지가 둘 다 'SEO services Malaysia'를 노리는 경우를 사이트에서 끊임없이 발견합니다.",
+    oa_h2e:"4단계 — Core Web Vitals와 INP",
+    oa_p5:"속도와 상호작용성은 색인 가능성과 구조를 확인한 다음에 점검합니다 — 구글이 찾을 수 없는 빠른 페이지는 여전히 보이지 않는 존재입니다. 저희가 사용하는 전체 방법은 여기서 다루는 것보다 더 깊이 실용적인 해결책을 담은 전용 글, Core Web Vitals와 INP 속도 체크리스트를 참고하세요.",
+    oa_p5_link:"Core Web Vitals와 INP 속도 체크리스트",
+    oa_h2f:"5단계 — 구조화 데이터 검증",
+    oa_p6:"마지막으로 모든 JSON-LD 블록을 구글의 리치 결과 테스트로 검증하고 눈에 보이는 페이지 콘텐츠와 정확히 일치하는지 확인합니다 — 불일치하거나 깨진 스키마는 단순히 놓친 기회가 아니라 정책 위험입니다. 처음부터 구축한다면 실제 작동하는 코드 예시가 담긴 FAQ·HowTo 스키마 구현 가이드를 참고하세요.",
+    oa_p6_link:"FAQ·HowTo 스키마 구현 가이드",
+    oa_h2g:"말레이시아 중소기업 사이트에서 반복적으로 발견하는 실수",
+    oa_li5:"<b>다국어 사이트의 hreflang 오류.</b> 영어·말레이어·중국어 버전을 함께 제공하는 사이트는 hreflang 태그가 잘못된 URL을 가리키거나 필수인 자기 참조 태그가 빠져 있는 경우가 많습니다 — 이는 구글이 검색 결과에서 잘못된 언어 버전을 노출하게 만들 수 있습니다.",
+    oa_li6:"<b>서로 충돌하는 워드프레스 플러그인.</b> SEO 플러그인 두 개가 동시에 활성화되어 있거나 캐싱 플러그인이 오래된 canonical 태그를 서빙하는 것은 마이그레이션 감사에서 발견하는 가장 흔한 색인 가능성 버그의 원인 중 하나입니다.",
+    oa_li7:"<b>소프트 404.</b> 실제 404 대신 200 상태 코드를 반환하는 '페이지를 찾을 수 없음' 메시지는 구글이 죽은 페이지를 색인하도록 혼란을 주어 사이트 전체 품질 신호를 희석시킵니다.",
+    oa_li8:"<b>robots.txt에서 CSS/JS 차단.</b> 구글은 브라우저처럼 페이지를 렌더링해 품질과 Core Web Vitals를 판단합니다 — 렌더링에 필요한 리소스를 차단하는 것은 여전히 오래된 사이트에서 발견되는 자충수입니다.",
+    oa_h2h:"발행 전 감사 체크리스트",
+    oa_li9:"사이트 전체 수준이 아니라 페이지별로 robots.txt와 메타 robots를 확인했는가",
+    oa_li10:"중요한 모든 URL이 올바르게 자기 자신을 canonical로 지정하는가",
+    oa_li11:"XML 사이트맵에 색인 가능한 200 상태 URL만 포함돼 있는가",
+    oa_li12:"고아 페이지가 없고, 한 단계를 초과하는 리다이렉트 체인이 없는가",
+    oa_li13:"자기 참조를 포함해 모든 언어 버전의 hreflang 태그를 검증했는가",
+    oa_li14:"랩 테스트뿐 아니라 서치 콘솔의 실사용자 데이터로 Core Web Vitals를 확인했는가",
+    oa_li15:"모든 구조화 데이터가 리치 결과 테스트를 오류 없이 통과하는가",
+    oa_p7:"이 정확한 감사를 사이트에 적용받고 싶다면 보내주세요 — 일반적인 점수표가 아니라 구체적으로 무엇이 순위를 막고 있는지 알려드립니다.",
+    oa_q1:"웹사이트는 얼마나 자주 전체 기술 SEO 감사를 받아야 하나요?",
+    oa_a1:"대부분의 중소기업 사이트는 연 1~2회 전체 감사면 충분하며, 여기에 서치 콘솔에서 크롤 오류·색인 커버리지·Core Web Vitals를 매월 가볍게 점검하는 것을 더하세요. 리디자인, 플랫폼 마이그레이션, 갑작스러운 트래픽·순위 하락 직후에는 이 일정과 별개로 즉시 감사하세요.",
+    oa_q2:"유료 도구 없이도 유용한 기술 감사를 할 수 있나요?",
+    oa_a2:"체크리스트 대부분은 가능합니다. 구글 서치 콘솔(무료)은 색인 가능성, 크롤 오류, Core Web Vitals를 다룹니다. 브라우저 개발자 도구와 소스 보기는 canonical 태그, 메타 robots, 구조화 데이터를 다룹니다. Screaming Frog 같은 유료 크롤러는 주로 대규모 사이트에서 고아 페이지와 리다이렉트 체인을 규모 있게 찾는 데서 비용만큼의 가치를 냅니다.",
+    oa_q3:"감사 후 가장 먼저 손대야 할, 영향력이 가장 큰 수정 사항은 무엇인가요?",
+    oa_a3:"언제나 색인 가능성 문제가 먼저입니다 — 차단됐거나, canonical로 다른 곳을 가리키거나, noindex된 페이지는 콘텐츠가 아무리 좋아도 순위에 오를 수 없습니다. 콘텐츠 품질, 내부 링크, Core Web Vitals를 손대기 전에 이것부터 고치세요. 구글이 색인할 수 없는 페이지에서는 그 어떤 작업도 의미가 없습니다.",
+    oa_cta_h:"이 정확한 프로세스로 사이트 감사를 받고 싶으신가요?",
+    oa_cta_p:"사이트를 보내주시면 색인 가능성, 크롤 효율성, 온페이지, 속도, 스키마까지 5단계 전체 감사를 진행하고 실제로 순위를 막고 있는 것이 무엇인지 알려드립니다.",
+    art_cwv:"Core Web Vitals와 INP: 실용적인 속도 체크리스트"
+  }
+};
+</script>
+<script src="../i18n.js"></script>
+</body>
+</html>

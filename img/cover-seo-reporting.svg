@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Infographic contrasting a busy vanity-metric SEO report against a lean report tracking segmented traffic, conversions and Core Web Vitals trend">
+  <defs>
+    <linearGradient id="bgfade24" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161B17"/>
+      <stop offset="1" stop-color="#0B0D0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgfade24)"/>
+
+  <g font-family="Archivo, sans-serif">
+    <text x="600" y="56" text-anchor="middle" font-size="20" font-weight="700" fill="#E9EAE3">Busy report vs. clear report</text>
+
+    <!-- busy vanity report -->
+    <g transform="translate(80,95)">
+      <rect width="480" height="450" rx="16" fill="#161B17" stroke="rgba(232,74,74,0.25)"/>
+      <text x="240" y="34" text-anchor="middle" font-size="13" font-weight="700" fill="#E88484">✕ Vanity-metric report</text>
+      <g font-size="10.5" fill="#E88484">
+        <rect x="20" y="52" width="200" height="30" rx="6" fill="rgba(232,74,74,0.08)"/><text x="30" y="71">Raw traffic ↑</text>
+        <rect x="230" y="52" width="230" height="30" rx="6" fill="rgba(232,74,74,0.08)"/><text x="240" y="71">Domain Authority: 34</text>
+        <rect x="20" y="90" width="200" height="30" rx="6" fill="rgba(232,74,74,0.08)"/><text x="30" y="109">Total backlinks: 812</text>
+        <rect x="230" y="90" width="230" height="30" rx="6" fill="rgba(232,74,74,0.08)"/><text x="240" y="109">Rank #4 (no volume shown)</text>
+        <rect x="20" y="128" width="200" height="30" rx="6" fill="rgba(232,74,74,0.08)"/><text x="30" y="147">Pages crawled: 1,204</text>
+        <rect x="230" y="128" width="230" height="30" rx="6" fill="rgba(232,74,74,0.08)"/><text x="240" y="147">Social shares: 56</text>
+        <rect x="20" y="166" width="440" height="30" rx="6" fill="rgba(232,74,74,0.08)"/><text x="30" y="185">...9 more charts, no clear priority</text>
+      </g>
+      <text x="240" y="420" text-anchor="middle" font-size="11" fill="#8E978C">busy, but hard to act on</text>
+    </g>
+
+    <!-- lean clear report -->
+    <g transform="translate(640,95)">
+      <rect width="480" height="450" rx="16" fill="#161B17" stroke="rgba(203,242,74,0.3)"/>
+      <text x="240" y="34" text-anchor="middle" font-size="13" font-weight="700" fill="#CBF24A">✓ Lean, business-focused report</text>
+      <g font-size="11" fill="#B9BEB6">
+        <rect x="20" y="52" width="440" height="52" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="34" y="72">Organic traffic to priority pages</text>
+        <text x="34" y="92" fill="#CBF24A">+18% vs last month, +64% vs 6mo</text>
+
+        <rect x="20" y="116" width="440" height="52" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="34" y="136">Leads from organic search</text>
+        <text x="34" y="156" fill="#CBF24A">32 this month, trending up</text>
+
+        <rect x="20" y="180" width="440" height="52" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="34" y="200">Money-keyword rankings</text>
+        <text x="34" y="220" fill="#CBF24A">6 of 12 now in top 3</text>
+
+        <rect x="20" y="244" width="440" height="52" rx="8" fill="rgba(203,242,74,0.08)"/>
+        <text x="34" y="264">Core Web Vitals trend</text>
+        <text x="34" y="284" fill="#CBF24A">passing, stable for 3 months</text>
+      </g>
+      <text x="240" y="420" text-anchor="middle" font-size="11" fill="#8E978C">four numbers tied to the business</text>
+    </g>
+  </g>
+
+  <text x="80" y="640" font-family="Archivo, sans-serif" font-size="13" fill="#4f564e">NEXT SEO24 — SEO reporting: what to actually track, and which vanity metrics to drop</text>
+</svg>

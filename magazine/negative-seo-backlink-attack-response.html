@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Negative SEO: What It Actually Is, and the Real (Limited) Response | NEXT SEO24</title>
+<meta name="description" content="Most ranking drops blamed on a competitor's &quot;negative SEO&quot; attack are something else entirely. How to actually recognize a real backlink attack, and the Disavow Tool used correctly.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="NEXT SEO24 Team">
+<link rel="canonical" href="https://nextseo24.com/magazine/negative-seo-backlink-attack-response.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Negative SEO: What It Actually Is, and the Real (Limited) Response">
+<meta property="og:description" content="How to actually recognize a real malicious backlink attack, and the Disavow Tool used correctly — not panic.">
+<meta property="og:url" content="https://nextseo24.com/magazine/negative-seo-backlink-attack-response.html">
+<meta property="og:image" content="https://nextseo24.com/img/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Negative SEO: What It Actually Is, and the Real (Limited) Response">
+<meta name="twitter:description" content="How to actually recognize a real malicious backlink attack, and the Disavow Tool used correctly.">
+<meta name="twitter:image" content="https://nextseo24.com/img/og-default.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../article.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Negative SEO: what it actually is, and the real (limited) response",
+  "image": "https://nextseo24.com/img/cover-negative-seo.svg",
+  "author": { "@type": "Organization", "name": "NEXT SEO24 Team" },
+  "publisher": { "@type": "Organization", "name": "NEXT SEO24", "url": "https://nextseo24.com/" },
+  "datePublished": "2026-08-06",
+  "dateModified": "2026-08-06",
+  "mainEntityOfPage": "https://nextseo24.com/magazine/negative-seo-backlink-attack-response.html",
+  "articleSection": "SEO"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nextseo24.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Magazine", "item": "https://nextseo24.com/magazine/index.html"},
+    {"@type": "ListItem", "position": 3, "name": "Negative SEO: Real Response", "item": "https://nextseo24.com/magazine/negative-seo-backlink-attack-response.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can a competitor really tank my rankings with negative SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's rarer than it sounds, and Google's own systems are built to make it harder over time. Google's algorithms are designed to recognize and ignore obviously manipulative link patterns automatically, without punishing the target site. It's not impossible, but it's far less common a cause of a ranking drop than technical issues, algorithm updates, or content-quality problems on your own site."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Disavow Tool actually remove the malicious backlinks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It doesn't delete or remove anything from the linking site — it tells Google to discount those specific links when evaluating your site, effectively asking Google to ignore them. The links still exist; Google just stops counting them against (or for) you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if a ranking drop is negative SEO or something else?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the more common causes first: a recent Google algorithm update, a technical issue like a broken canonical tag or accidental noindex, or a content-quality problem. Only after ruling those out should you check your backlink profile in Search Console for a sudden, unexplained spike of spammy links — genuine negative SEO leaves that specific signature, and it's uncommon enough that it should be the last explanation you check, not the first."
+      }
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="theme-color" content="#E11D29">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+    <input type="checkbox" id="navtoggle" class="navtoggle">
+    <nav class="menu" aria-label="Primary">
+      <a href="../index.html" data-i18n="nav_home">Home</a>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_services">Services</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+          <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+          <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+          <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+          <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+          <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+        </div>
+      </div>
+      <div class="item">
+        <span class="navlink" tabindex="0" role="button" aria-haspopup="true"><span data-i18n="nav_markets">Markets</span> ▾</span>
+        <div class="dropdown" role="menu">
+          <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+          <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+          <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+          <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+        </div>
+      </div>
+      <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+      <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+      <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+      <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+      <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button data-lang="en" class="active">🇬🇧 English</button>
+        <button data-lang="zh">🇨🇳 中文</button>
+        <button data-lang="ja">🇯🇵 日本語</button>
+        <button data-lang="th">🇹🇭 ไทย</button>
+        <button data-lang="ko">🇰🇷 한국어</button>
+      </div>
+    </div>
+    <label for="navtoggle" class="burger" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+    <a href="../index.html#contact" class="nav-cta" data-i18n="nav_cta">Free SEO audit</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="../index.html" data-i18n="bc_home">Home</a><span>›</span><a href="index.html" data-i18n="nav_mag">Magazine</a><span>›</span>Negative SEO: Real Response
+    </nav>
+    <article>
+      <img class="hero" src="../img/cover-negative-seo.svg" width="1200" height="675" alt="Infographic showing a spike of spammy backlinks being filtered out by Google's algorithm before it reaches a site's rankings — NEXT SEO24" fetchpriority="high">
+      <div class="post-meta"><span class="cat" data-i18n="ns_cat">SEO</span><span>·</span><span>6 August 2026</span><span>·</span><span data-i18n="ns_read">7 min read</span></div>
+      <h1 data-i18n="ns_h1">Negative SEO: what it actually is, and the real (limited) response</h1>
+      <p class="lead" data-i18n="ns_lead">"A competitor is doing negative SEO on us" is one of the most common explanations business owners reach for after a ranking drop — and one of the least common actual causes. Here's what negative SEO genuinely is, how rare it actually is, how to recognize a real attack if one is happening, and the one legitimate tool for responding to it.</p>
+
+      <div class="byline">
+        <span class="av">NS</span>
+        <span class="meta"><b data-i18n="by_team">NEXT SEO24 Team</b> · <span data-i18n="by_loc">Kuala Lumpur</span><br><span data-i18n="ns_updated">Last updated 6 August 2026</span> · <a href="../why-us.html" data-i18n="by_about">About our team</a></span>
+      </div>
+
+      <h2 data-i18n="ns_h2a">What negative SEO actually is</h2>
+      <p data-i18n="ns_p1">Negative SEO is a deliberate attempt by someone else — usually assumed to be a competitor — to damage a site's rankings, most commonly by pointing a large volume of spammy, low-quality backlinks at it. Less common variants include scraping and republishing a site's content elsewhere to create duplicate-content confusion, or posting fake negative reviews. It's a real category of malicious activity, but a narrow one — not a catch-all explanation for any ranking drop that doesn't have an obvious cause.</p>
+
+      <h2 data-i18n="ns_h2b">Why most ranking drops are not negative SEO</h2>
+      <p data-i18n="ns_p2">Before suspecting an attack, rule out the far more common causes: a recent Google algorithm or spam update, a technical issue like a broken canonical tag or an accidental noindex, or a genuine content-quality gap that a competitor's page now fills better. Our <a href="recover-google-ranking-drop.html" data-i18n="ns_p2_link">guide to diagnosing a sudden ranking drop</a> walks through this in order — negative SEO belongs at the end of that checklist, not the start, because it's genuinely the least common cause we see in practice.</p>
+
+      <h2 data-i18n="ns_h2c">How to actually recognize a real backlink attack</h2>
+      <p data-i18n="ns_p3">A genuine attack leaves a specific, checkable signature in Search Console's backlink report: a sudden, sharp spike in referring domains over days rather than a gradual build, links overwhelmingly from unrelated foreign-language or clearly spammy sites, and a suspiciously repetitive anchor text pattern — the same exact phrase used across dozens of low-quality domains in a short window. A slow, organic increase in backlinks, even messy-looking ones, is not this pattern.</p>
+
+      <h2 data-i18n="ns_h2d">Why it's harder to pull off than it sounds</h2>
+      <p data-i18n="ns_p4">Google's link-evaluation systems are specifically designed to recognize obviously manipulative, low-quality link patterns and discount them automatically — without penalizing the site being linked to. This is precisely why negative SEO campaigns largely stopped being an effective attack years ago: the mechanism they depend on (spammy links actively hurting the target) is the same mechanism Google has spent years hardening against. It's not that attacks never happen; it's that they're considerably less effective than the fear around them suggests.</p>
+
+      <h2 data-i18n="ns_h2e">The real response: the Disavow Tool, used correctly</h2>
+      <p data-i18n="ns_p5">If you've confirmed a genuine spam link pattern through Search Console, Google's Disavow Tool is the legitimate response — a plain text file listing the domains or specific URLs you want Google to disregard when evaluating your site:</p>
+      <pre style="background:rgba(255,255,255,0.04);border:1px solid rgba(232,233,227,0.12);border-radius:12px;padding:18px 20px;overflow-x:auto;font-size:13px;line-height:1.6;color:#B9BEB6"><code># Disavow file — one domain or URL per line
+domain:spammy-link-farm-example.com
+domain:another-suspicious-domain.net
+https://specific-page-example.com/spam-post</code></pre>
+      <p data-i18n="ns_p6">Important: this doesn't remove or delete the links — it tells Google to stop counting them when it evaluates your site. Also important: Google has stated plainly that most sites never need to use this tool at all, because its own systems already ignore spammy links in the vast majority of cases. Using Disavow on a normal, messy-but-organic backlink profile can do more harm than the links themselves ever would.</p>
+
+      <h2 data-i18n="ns_h2f">A pre-panic checklist</h2>
+      <ul>
+        <li data-i18n="ns_li1">Ruled out a recent algorithm/spam update as the cause first</li>
+        <li data-i18n="ns_li2">Checked for technical issues — canonical tags, robots.txt, accidental noindex</li>
+        <li data-i18n="ns_li3">Reviewed Search Console's backlink report for a genuine sudden spike, not gradual growth</li>
+        <li data-i18n="ns_li4">Confirmed a repetitive, clearly manipulative anchor text pattern across the new links</li>
+        <li data-i18n="ns_li5">Only then — used the Disavow Tool on the specifically confirmed spam domains, not preemptively</li>
+      </ul>
+      <p data-i18n="ns_p7">If you're seeing an unexplained ranking drop and aren't sure whether it's negative SEO or something else, send us your site — we'll walk through the actual diagnosis with you rather than guessing.</p>
+
+      <h2 data-i18n="faq_h">Frequently asked questions</h2>
+      <h3 data-i18n="ns_q1">Can a competitor really tank my rankings with negative SEO?</h3>
+      <p data-i18n="ns_a1">It's rarer than it sounds, and Google's own systems are built to make it harder over time. Google's algorithms are designed to recognize and ignore obviously manipulative link patterns automatically, without punishing the target site. It's not impossible, but it's far less common a cause of a ranking drop than technical issues, algorithm updates, or content-quality problems on your own site.</p>
+      <h3 data-i18n="ns_q2">Does the Disavow Tool actually remove the malicious backlinks?</h3>
+      <p data-i18n="ns_a2">No. It doesn't delete or remove anything from the linking site — it tells Google to discount those specific links when evaluating your site, effectively asking Google to ignore them. The links still exist; Google just stops counting them against (or for) you.</p>
+      <h3 data-i18n="ns_q3">How do I know if a ranking drop is negative SEO or something else?</h3>
+      <p data-i18n="ns_a3">Check the more common causes first: a recent Google algorithm update, a technical issue like a broken canonical tag or accidental noindex, or a content-quality problem. Only after ruling those out should you check your backlink profile in Search Console for a sudden, unexplained spike of spammy links — genuine negative SEO leaves that specific signature, and it's uncommon enough that it should be the last explanation you check, not the first.</p>
+
+      <div class="cta-box" id="contact">
+        <h2 data-i18n="ns_cta_h">Worried about an unexplained ranking drop?</h2>
+        <p data-i18n="ns_cta_p">Send us your site — we'll diagnose the actual cause in order, from most to least common, before jumping to conclusions.</p>
+        <a class="btn" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="cta_btn">Chat on WhatsApp →</a>
+      </div>
+
+      <div class="related">
+        <div class="k" data-i18n="rel_k">Explore more</div>
+        <a href="recover-google-ranking-drop.html"><span data-i18n="art_rd">My Google rankings dropped overnight — how to recover</span> <span class="arr">→</span></a>
+        <a href="white-hat-backlinks.html"><span data-i18n="art_wb">White-hat backlinks: what still moves rankings</span> <span class="arr">→</span></a>
+        <a href="on-page-seo-technical-audit-checklist.html"><span data-i18n="art_oa">The on-page SEO technical audit checklist we actually use</span> <span class="arr">→</span></a>
+        <a href="index.html"><span data-i18n="nav_mag">Magazine</span> <span class="arr">→</span></a>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="../index.html" class="brand"><img src="../img/logo-white.png" alt="NEXT SEO24" class="brand-logo"></a>
+        <p data-i18n="foot_about">Kuala Lumpur's SEO &amp; backlink agency. We put your website on the first page of Google — across Korea, Japan and Southeast Asia.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/seomarketingmalaysia" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61586533861775" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.6 13.3 6 14.7 6H17V2.5C16.6 2.4 15.3 2.3 13.8 2.3 10.7 2.3 9 4.1 9 7.1V10H6v4h3v8z"/></svg></a>
+          <a href="https://www.linkedin.com/in/%EB%B0%B1%ED%98%B8-%EA%B0%95-a84273261/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.3 8.5h3.3V21H3.3zM9 8.5h3.16v1.7h.05c.44-.83 1.5-1.7 3.1-1.7 3.32 0 3.93 2.18 3.93 5V21h-3.3v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.58V21H9z"/></svg></a>
+          <a href="https://blog.naver.com/kolpjihu389" aria-label="Naver Blog" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.273 12.845 7.376 0H0v24h7.726V11.156L16.624 24H24V0h-7.727z"/></svg></a>
+          <a href="https://wa.me/601137950507" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.9.9-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2-1.4-.5-.6-.8-1.3-.9-1.5-.1-.2 0-.4.1-.5l.4-.4c.1-.2.2-.3.2-.5 0-.1 0-.3-.1-.4-.1-.1-.5-1.3-.7-1.7-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.4 1.6.6 1.9.5 2.3.5.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_svc">Services</h4>
+        <a href="../services/seo.html" data-i18n="svc_seo">Google SEO Ranking</a>
+        <a href="../services/backlinks.html" data-i18n="svc_back">Backlink Building</a>
+        <a href="../services/web-development.html" data-i18n="svc_web">Website Development</a>
+        <a href="../services/content.html" data-i18n="svc_content">Content &amp; Copywriting</a>
+        <a href="../services/social-media.html" data-i18n="svc_sns">Social Media Marketing</a>
+        <a href="../services/video.html" data-i18n="svc_video">Video Production</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_markets">Markets</h4>
+        <a href="../markets/malaysia.html" data-i18n="mkt_my">Malaysia Market</a>
+        <a href="../markets/korea.html" data-i18n="mkt_kr">Korea Market</a>
+        <a href="../markets/japan.html" data-i18n="mkt_jp">Japan Market</a>
+        <a href="../markets/southeast-asia.html" data-i18n="mkt_sea">Southeast Asia</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot_company">Company</h4>
+        <a href="../why-us.html" data-i18n="nav_whyus">Why Us</a>
+        <a href="../pricing.html" data-i18n="nav_price">Pricing</a>
+        <a href="../case-studies.html" data-i18n="nav_cases">Case Studies</a>
+        <a href="../magazine/index.html" data-i18n="nav_mag">Magazine</a>
+        <a href="../index.html#proof" data-i18n="nav_results">Results</a>
+        <a href="../index.html#contact" data-i18n="nav_contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> NEXT SEO24 Sdn Bhd. <span data-i18n="foot_rights">All rights reserved.</span></span>
+      <span class="foot-legal"><a href="../privacy-policy.html" data-i18n="foot_privacy">Privacy</a> · <a href="../terms.html" data-i18n="foot_terms">Terms</a></span>
+      <span data-i18n="foot_made">Made in Kuala Lumpur · Serving the world</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const WHATSAPP_NUMBER = "601137950507";
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.getElementById('waLink').href =
+  "https://wa.me/" + WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent("Hello, I'm concerned about an unexplained ranking drop and possible negative SEO.\n\nName :\nE-Mail :\nWebsite :\nEnquiry Topic :");
+</script>
+<script id="page-i18n">
+window.PAGE_I18N = {
+  ko: {
+    ns_cat:"SEO",
+    ns_read:"7분 읽기",
+    ns_h1:"네거티브 SEO: 실제로 무엇이고, 진짜(제한적인) 대응법",
+    ns_lead:"'경쟁사가 우리한테 네거티브 SEO를 하고 있다'는 순위 하락 후 사업주분들이 가장 흔하게 찾는 설명 중 하나이면서, 동시에 가장 드문 실제 원인 중 하나입니다. 네거티브 SEO가 실제로 무엇인지, 실제로 얼마나 드문지, 진짜 공격이 발생했을 때 어떻게 알아차리는지, 그리고 대응할 수 있는 유일하고 정당한 도구를 다룹니다.",
+    ns_updated:"최종 업데이트 2026년 8월 6일",
+    ns_h2a:"네거티브 SEO가 실제로 무엇인가",
+    ns_p1:"네거티브 SEO는 다른 누군가 — 보통 경쟁사로 추정됨 — 가 사이트의 순위를 고의로 손상시키려는 시도로, 가장 흔하게는 스팸성 저품질 백링크를 대량으로 사이트에 겨냥하는 형태입니다. 덜 흔한 변형으로는 사이트 콘텐츠를 스크래핑해 다른 곳에 재게시해 중복 콘텐츠 혼란을 일으키거나, 가짜 부정 리뷰를 게시하는 것이 있습니다. 실재하는 악의적 활동의 한 범주지만 좁은 범주입니다 — 뚜렷한 원인이 없는 모든 순위 하락에 대한 만능 설명이 아닙니다.",
+    ns_h2b:"대부분의 순위 하락이 네거티브 SEO가 아닌 이유",
+    ns_p2:"공격을 의심하기 전에 훨씬 더 흔한 원인부터 배제하세요: 최근 구글 알고리즘·스팸 업데이트, 깨진 canonical 태그나 실수로 noindex가 걸린 것 같은 기술적 문제, 또는 경쟁사 페이지가 이제 더 잘 채우고 있는 진짜 콘텐츠 품질 격차. 저희의 갑작스러운 순위 하락 진단 가이드는 이를 순서대로 짚어줍니다 — 네거티브 SEO는 그 체크리스트의 처음이 아니라 끝에 위치해야 합니다. 실제로 저희가 보는 가장 드문 원인이기 때문입니다.",
+    ns_p2_link:"갑작스러운 순위 하락 진단 가이드",
+    ns_h2c:"실제 백링크 공격을 알아차리는 법",
+    ns_p3:"진짜 공격은 서치 콘솔의 백링크 보고서에 특정하고 확인 가능한 서명을 남깁니다: 점진적인 증가가 아니라 며칠 사이 급격하게 치솟는 참조 도메인, 관련 없는 외국어 사이트나 명백히 스팸성인 사이트에서 압도적으로 몰려오는 링크, 그리고 짧은 기간 동안 수십 개의 저품질 도메인에서 정확히 같은 문구가 반복되는 앵커 텍스트 패턴입니다. 지저분해 보이더라도 느리고 자연스러운 백링크 증가는 이 패턴이 아닙니다.",
+    ns_h2d:"보이는 것보다 실행하기 어려운 이유",
+    ns_p4:"구글의 링크 평가 시스템은 명백히 조작적이고 저품질인 링크 패턴을 자동으로 인식하고 할인 처리하도록 특별히 설계되어 있으며 — 링크를 받은 사이트를 처벌하지 않습니다. 이것이 바로 네거티브 SEO 캠페인이 몇 년 전부터 효과적인 공격 수단으로서 대부분 사라진 이유입니다: 이 공격이 의존하는 메커니즘(스팸 링크가 대상을 실제로 해치는 것)이야말로 구글이 수년간 강화해 온 바로 그 메커니즘입니다. 공격이 절대 일어나지 않는다는 게 아니라, 그 주변의 공포가 시사하는 것보다 훨씬 덜 효과적이라는 뜻입니다.",
+    ns_h2e:"진짜 대응법: 올바르게 사용하는 부인 도구",
+    ns_p5:"서치 콘솔을 통해 진짜 스팸 링크 패턴을 확인했다면, 구글의 부인 도구(Disavow Tool)가 정당한 대응법입니다 — 사이트를 평가할 때 구글이 무시하길 원하는 도메인이나 특정 URL을 나열한 일반 텍스트 파일입니다:",
+    ns_p6:"중요한 점: 이는 링크를 제거하거나 삭제하지 않습니다 — 사이트를 평가할 때 그 링크들을 세지 말라고 구글에 지시하는 것입니다. 또 다른 중요한 점: 구글은 대부분의 사이트가 이 도구를 전혀 쓸 필요가 없다고 명확히 밝혔습니다. 구글 자체 시스템이 이미 대다수 경우에 스팸 링크를 무시하기 때문입니다. 정상적이지만 지저분해 보이는 자연스러운 백링크 프로필에 부인 도구를 사용하면 링크 자체보다 더 큰 해를 끼칠 수 있습니다.",
+    ns_h2f:"패닉 전 체크리스트",
+    ns_li1:"먼저 최근 알고리즘·스팸 업데이트를 원인에서 배제했는가",
+    ns_li2:"canonical 태그, robots.txt, 실수로 걸린 noindex 같은 기술적 문제를 확인했는가",
+    ns_li3:"서치 콘솔의 백링크 보고서를 확인해 점진적 증가가 아니라 진짜 갑작스러운 급증인지 검토했는가",
+    ns_li4:"새 링크들 전반에서 반복적이고 명백히 조작적인 앵커 텍스트 패턴을 확인했는가",
+    ns_li5:"그런 다음에야 — 선제적으로가 아니라 구체적으로 확인된 스팸 도메인에만 부인 도구를 사용했는가",
+    ns_p7:"설명되지 않는 순위 하락을 겪고 있고 그것이 네거티브 SEO인지 다른 문제인지 확신이 없다면 사이트를 보내주세요 — 추측이 아니라 실제 진단을 함께 진행해 드립니다.",
+    ns_q1:"경쟁사가 정말로 네거티브 SEO로 제 순위를 무너뜨릴 수 있나요?",
+    ns_a1:"들리는 것보다 드물고, 구글 자체 시스템이 시간이 지날수록 더 어렵게 만들도록 설계되어 있습니다. 구글의 알고리즘은 명백히 조작적인 링크 패턴을 자동으로 인식하고 무시하도록 설계돼 있으며, 대상 사이트를 처벌하지 않습니다. 불가능한 건 아니지만, 순위 하락의 원인으로는 기술적 문제, 알고리즘 업데이트, 또는 자사 사이트의 콘텐츠 품질 문제보다 훨씬 덜 흔합니다.",
+    ns_q2:"부인 도구가 실제로 악성 백링크를 제거해주나요?",
+    ns_a2:"아니요. 링크가 걸린 사이트에서 아무것도 삭제하거나 제거하지 않습니다 — 사이트를 평가할 때 그 특정 링크들을 할인하라고 구글에 지시하는 것으로, 사실상 구글에게 무시해 달라고 요청하는 것입니다. 링크는 여전히 존재하고, 구글이 그것을 당신에게 유리하게든 불리하게든 세는 것을 멈출 뿐입니다.",
+    ns_q3:"순위 하락이 네거티브 SEO인지 다른 문제인지 어떻게 알 수 있나요?",
+    ns_a3:"더 흔한 원인부터 확인하세요: 최근 구글 알고리즘 업데이트, 깨진 canonical 태그나 실수로 걸린 noindex 같은 기술적 문제, 또는 콘텐츠 품질 문제. 이것들을 배제한 뒤에야 서치 콘솔에서 백링크 프로필을 확인해 설명되지 않는 갑작스러운 스팸 링크 급증이 있는지 보세요 — 진짜 네거티브 SEO는 그 특정한 서명을 남기며, 충분히 드물기 때문에 가장 먼저가 아니라 마지막에 확인해야 할 설명입니다.",
+    ns_cta_h:"설명되지 않는 순위 하락이 걱정되시나요?",
+    ns_cta_p:"사이트를 보내주세요 — 결론으로 바로 뛰어들지 않고 가장 흔한 것부터 가장 드문 것 순으로 실제 원인을 진단해 드립니다.",
+    art_rd:"구글 순위가 하룻밤 새 떨어졌어요 — 회복하는 법", art_wb:"화이트햇 백링크: 지금도 순위를 올리는 것들", art_oa:"우리가 실제로 사용하는 온페이지 SEO 기술 감사 체크리스트"
+  }
+};
+</script>
+<script src="../i18n.js"></script>
+</body>
+</html>

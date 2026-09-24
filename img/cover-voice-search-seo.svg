@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Infographic comparing a short typed keyword query against a longer conversational voice query, both resolving to the same featured snippet answer">
+  <defs>
+    <linearGradient id="bgfade16" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161B17"/>
+      <stop offset="1" stop-color="#0B0D0C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bgfade16)"/>
+
+  <g font-family="Archivo, sans-serif">
+    <text x="600" y="64" text-anchor="middle" font-size="20" font-weight="700" fill="#E9EAE3">Two queries, one answer</text>
+
+    <!-- typed query -->
+    <g transform="translate(80,110)">
+      <rect width="440" height="90" rx="14" fill="#161B17" stroke="rgba(232,233,227,0.15)"/>
+      <text x="24" y="34" font-size="11" fill="#8E978C">Typed search</text>
+      <rect x="24" y="44" width="392" height="30" rx="8" fill="rgba(232,233,227,0.06)"/>
+      <text x="38" y="64" font-size="14" fill="#E9EAE3" font-family="monospace">SEO Malaysia price</text>
+    </g>
+
+    <!-- voice query -->
+    <g transform="translate(680,110)">
+      <rect width="440" height="90" rx="14" fill="#161B17" stroke="rgba(203,242,74,0.3)"/>
+      <text x="24" y="34" font-size="11" fill="#8E978C">Spoken / conversational</text>
+      <circle cx="36" cy="60" r="12" fill="rgba(203,242,74,0.15)" stroke="#CBF24A"/>
+      <text x="36" y="65" text-anchor="middle" font-size="12" fill="#CBF24A">●</text>
+      <text x="58" y="65" font-size="13.5" fill="#E9EAE3">"How much does SEO cost for a small</text>
+      <text x="58" y="84" font-size="13.5" fill="#E9EAE3">business in Malaysia?"</text>
+    </g>
+
+    <!-- arrows converging -->
+    <g stroke="rgba(203,242,74,0.4)" stroke-width="2" fill="none">
+      <path d="M 300 210 L 450 300 L 600 210" />
+      <path d="M 900 210 L 750 300 L 600 210" />
+    </g>
+
+    <!-- shared snippet -->
+    <g transform="translate(340,320)">
+      <rect width="520" height="180" rx="16" fill="rgba(203,242,74,0.1)" stroke="#CBF24A" stroke-width="2"/>
+      <text x="260" y="36" text-anchor="middle" font-size="13" font-weight="700" fill="#CBF24A">Featured snippet — position zero</text>
+      <rect x="24" y="54" width="472" height="1" fill="rgba(203,242,74,0.25)"/>
+      <text x="40" y="82" font-size="12.5" fill="#B9BEB6">"Most Malaysia SEO retainers range from RM1,500</text>
+      <text x="40" y="102" font-size="12.5" fill="#B9BEB6">to RM6,000/month depending on scope..."</text>
+      <text x="40" y="134" font-size="11" fill="#8E978C">↳ read aloud by voice assistants</text>
+      <text x="40" y="154" font-size="11" fill="#8E978C">↳ shown directly for typed search</text>
+    </g>
+
+    <text x="600" y="580" text-anchor="middle" font-size="13" fill="#6B736A">One well-structured answer serves both — there's no separate "voice content" to write.</text>
+  </g>
+
+  <text x="80" y="640" font-family="Archivo, sans-serif" font-size="13" fill="#4f564e">NEXT SEO24 — Voice search &amp; conversational SEO: what actually changed</text>
+</svg>
