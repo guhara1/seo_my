@@ -99,3 +99,36 @@ clients.)
 - See `magazine/CONTENT-LOG.md` for the internal-linking pass already done
   across `index.html` and `markets/*.html`, and for the backlog of topics
   that are still safe to write about without duplicating existing posts.
+
+## Title rule — every post title must carry an explicit subject
+
+Mandatory check before publishing any magazine post (and before
+committing any title change):
+
+- **The title must contain an explicit subject** — the concrete thing the
+  article is about, stated as a noun/noun phrase in the title itself. A
+  reader who sees only the title, with no image, excerpt or context, must
+  know *what* is being discussed.
+- **No subject-less fragments.** Titles that open with a bare verb or a
+  floating modifier and never name their topic are rejected:
+  - Bad: "Getting It Right in 2026", "What Actually Changed", "The
+    Checklist Most Sites Get Wrong", "Why It Keeps Happening"
+  - Good: "International SEO & Hreflang: Getting It Right Across
+    MY/KR/JP/SEA", "Voice Search & Conversational SEO: What Actually
+    Changed", "Mobile-First Indexing: The Checklist Most Sites Get Wrong"
+  - The pattern that works: **subject first, angle second**. A colon
+    construction (`<Subject>: <angle>`) or a question containing the
+    subject ("Why Isn't My Website Ranking on Google?") both satisfy it.
+- The subject should be the post's **primary keyword**, in the words a
+  searcher would actually type — that is what makes this rule an SEO rule
+  and not just a style preference. It also keeps the title self-contained
+  in SERPs, RSS readers, and social cards, where surrounding context is
+  stripped away.
+- **This applies to all title surfaces for the same post**, and they must
+  agree: `<title>`, `<h1>`, the Open Graph / Twitter title, the JSON-LD
+  `headline`, the `magazine/index.html` card title, the `rss.xml` `<title>`,
+  and every translated title in `PAGE_I18N` / the index i18n block. A
+  Korean or Japanese translation that drops the subject noun fails this
+  check even when the English original passes.
+- Keep the subject inside the first ~60 characters so it survives SERP
+  truncation, and keep the ` | NEXT SEO24` suffix out of the h1.

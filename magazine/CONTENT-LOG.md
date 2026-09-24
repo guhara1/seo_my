@@ -281,3 +281,9 @@ Single-post batch (E-E-A-T for anonymous/small teams):
   site's existing `img/dashboard.svg` style — used because no real
   photo/screenshot exists yet. Swap for a real screenshot/photo when
   available, same as the raster `cover-*.jpg` images used by earlier posts.
+- **Title check (mandatory).** Before publishing, verify the title carries
+  an explicit subject — see "Title rule" in `../SEO-POLICY.md`. The
+  subject noun (primary keyword) must appear in `<title>`, `<h1>`, the
+  OG/Twitter title, JSON-LD `headline`, the index card title, the
+  `rss.xml` entry, and every translated title in `PAGE_I18N`. Subject
+  first, angle second.
